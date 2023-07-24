@@ -9,7 +9,7 @@ import {
 import { useLayoutEffect, useRef, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HomeCard from "../components/HomeCard";
-import Carousel from "react-native-snap-carousel";
+import Carousel from "react-native-reanimated-carousel";
 
 const HomeScreen = ({}) => {
 	const navigation = useNavigation();
@@ -68,16 +68,17 @@ const HomeScreen = ({}) => {
 			<View className="items-center justify-center pt-4">
 				<Carousel
 					data={data}
-					layout={"stack"}
+					// layout={"tinder"}
 					ref={useRef(null)}
 					renderItem={RenderItem}
-					sliderWidth={Dimensions.get("window").width}
-					itemWidth={Dimensions.get("window").width}
-					itemHeight={Dimensions.get("window").height / 2}
-					loop={true}
-					// autoplay={true}
-					// autoplayInterval={2000}
-					// inactiveSlideOpacity={0.4}
+					loop
+					width={Dimensions.get("window").width}
+					height={Dimensions.get("window").width / 2}
+					autoPlay={true}
+					scrollAnimationDuration={2000}
+					panGestureHandlerProps={{
+						activeOffsetX: [-10, 10],
+					}}
 				/>
 			</View>
 			{/* Menu */}
