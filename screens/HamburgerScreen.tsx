@@ -1,0 +1,112 @@
+import {
+	View,
+	Text,
+	SafeAreaView,
+	ScrollView,
+	FlatList,
+	Image,
+} from "react-native";
+import { useEffect, useLayoutEffect } from "react";
+import { useNavigation } from "@react-navigation/native";
+
+function HamburgerScreen({ route }) {
+	const navigation = useNavigation();
+	useLayoutEffect(() => {
+		navigation.setOptions({
+			headerTitleAlign: "center",
+			headerStyle: {
+				backgroundColor: "#212121",
+			},
+			headerTitleStyle: {
+				color: "white",
+			},
+			headerTintColor: "white",
+			headerShadowVisible: false,
+		});
+	}, []);
+
+	const images = {
+		DoppioCheddar: require("../assets/DoppioCheddar.png"),
+		HotBurg: require("../assets/HotBurg.png"),
+		Vegetariano: require("../assets/Vegetariano.png"),
+		UovoBurg: require("../assets/UovoBurg.png"),
+		MonteboreBurg: require("../assets/MonteboreBurg.png"),
+		PiggyBurg: require("../assets/PiggyBurg.png"),
+		Pollo: require("../assets/Pollo.png"),
+	};
+
+	const {
+		name,
+		ingredients_detailed,
+		photo,
+		allergen,
+		ingredienti,
+		contorno,
+		patate,
+	} = route.params as {
+		name: string;
+		ingredients_detailed: { ingred: string }[];
+		photo: string;
+		allergen: string;
+		ingredienti: string;
+		contorno: string;
+		patate: string;
+	};
+
+	return (
+		<SafeAreaView className="flex-1 bg-[#212121]">
+			{/* Nome */}
+			<View className="items-center justify-center pt-2">
+				<View className="items-center justify-center py-2 rounded-lg  border-2 border-[#292929] bg-[#1A1A1A] shadow">
+					<Text className="text-white font-bold text-xl px-5">
+						{name}
+					</Text>
+				</View>
+			</View>
+			{/* Colonna a sx */}
+			<View className="flex-row space-x-4">
+				<View className="w-1/3">
+					{/* <Image className="flex-1" source={require(`${photo}`)} /> */}
+					<Image className="h-96 w-32" source={images[photo]} />
+				</View>
+				<View className="flex-shrink">
+					<Text className="underline underline-offset-2 font-semibold text-xl pt-5 text-white">
+						{ingredienti}:
+					</Text>
+					<View className="pt-6">
+						<FlatList
+							className="w-auto"
+							data={ingredients_detailed}
+							renderItem={({ item }) => {
+								return (
+									<View className="pb-6">
+										<Text className="text-white text-lg">
+											{`\u2022 ${item.ingred}`}
+										</Text>
+									</View>
+								);
+							}}
+						/>
+					</View>
+				</View>
+			</View>
+			{/* Contorno */}
+			<View className="flex-row space-x-4 justify-start content-center pl-4 pt-2 items-center">
+				<View className="h-10 items-center">
+					<Text className="underline underline-offset-2 font-semibold text-xl text-white">
+						{contorno}:
+					</Text>
+				</View>
+				<View className="flex-shrink h-10 items-center pt-0.5">
+					<Text className="text-white text-lg">{patate}</Text>
+				</View>
+			</View>
+			{/* Allergeni */}
+			<View className="pl-4 pt-6">
+				<Text className="text-white">{allergen}</Text>
+			</View>
+		</SafeAreaView>
+	);
+}
+
+export default HamburgerScreen;
