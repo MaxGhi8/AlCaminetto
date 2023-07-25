@@ -8,6 +8,15 @@ import {
 } from "react-native";
 import { useEffect, useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
+import {
+	DoppioCheddarImage,
+	HotBurgImage,
+	MonteboreBurgImage,
+	PiggyBurgImage,
+	PolloImage,
+	UovoBurgImage,
+	VegetarianoImage,
+} from "../assets";
 
 function HamburgerScreen({ route }) {
 	const navigation = useNavigation();
@@ -25,14 +34,24 @@ function HamburgerScreen({ route }) {
 		});
 	}, []);
 
+	// const images = {
+	// 	DoppioCheddar: require("../assets/DoppioCheddar.png"),
+	// 	HotBurg: require("../assets/HotBurg.png"),
+	// 	Vegetariano: require("../assets/Vegetariano.png"),
+	// 	UovoBurg: require("../assets/UovoBurg.png"),
+	// 	MonteboreBurg: require("../assets/MonteboreBurg.png"),
+	// 	PiggyBurg: require("../assets/PiggyBurg.png"),
+	// 	Pollo: require("../assets/Pollo.png"),
+	// };
+
 	const images = {
-		DoppioCheddar: require("../assets/DoppioCheddar.png"),
-		HotBurg: require("../assets/HotBurg.png"),
-		Vegetariano: require("../assets/Vegetariano.png"),
-		UovoBurg: require("../assets/UovoBurg.png"),
-		MonteboreBurg: require("../assets/MonteboreBurg.png"),
-		PiggyBurg: require("../assets/PiggyBurg.png"),
-		Pollo: require("../assets/Pollo.png"),
+		DoppioCheddar: DoppioCheddarImage,
+		HotBurg: HotBurgImage,
+		Vegetariano: VegetarianoImage,
+		UovoBurg: UovoBurgImage,
+		MonteboreBurg: MonteboreBurgImage,
+		PiggyBurg: PiggyBurgImage,
+		Pollo: PolloImage,
 	};
 
 	const {
@@ -67,7 +86,7 @@ function HamburgerScreen({ route }) {
 			<View className="flex-row space-x-4">
 				<View className="w-1/3">
 					{/* <Image className="flex-1" source={require(`${photo}`)} /> */}
-					<Image className="h-96 w-32" source={images[photo]} />
+					<Image source={images[photo]} className="h-96 w-32" />
 				</View>
 				<View className="flex-shrink">
 					<Text className="underline underline-offset-2 font-semibold text-xl pt-5 text-white">

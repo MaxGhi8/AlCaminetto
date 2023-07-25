@@ -132,23 +132,21 @@ const MenuItalian = () => {
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1">
-			<View className="flex-1 items-center">
-				<ScrollView className="px-4">
-					{data.map((item, index) => (
-						<HamburgerCard
-							name={item.name}
-							ingredients={item.ingredients}
-							ingredients_detailed={item.ingredients_detailed}
-							price={item.price}
-							photo={item.photo}
-							allergen={item.allergen}
-							ingredienti={"Ingredienti"}
-							contorno={"Contorno"}
-							patate={"Patate al forno"}
-						/>
-					))}
-				</ScrollView>
-			</View>
+			<ScrollView className="flex-1 px-6">
+				{data.map((item, key = { item }) => (
+					<HamburgerCard
+						name={item.name}
+						ingredients={item.ingredients}
+						ingredients_detailed={item.ingredients_detailed}
+						price={item.price}
+						photo={item.photo}
+						allergen={item.allergen}
+						ingredienti={"Ingredienti"}
+						contorno={"Contorno"}
+						patate={"Patate al forno"}
+					/>
+				))}
+			</ScrollView>
 		</SafeAreaView>
 	);
 };

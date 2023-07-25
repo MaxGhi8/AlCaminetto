@@ -10,6 +10,9 @@ import { useLayoutEffect, useRef, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HomeCard from "../components/HomeCard";
 import Carousel from "react-native-reanimated-carousel";
+import { Photo1, Photo2, Photo3, Photo4, Photo5, Photo6 } from "../assets";
+import call from "react-native-phone-call";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const HomeScreen = ({}) => {
 	const navigation = useNavigation();
@@ -28,37 +31,43 @@ const HomeScreen = ({}) => {
 	}, []);
 
 	const language = [
-		{ title: "Italiano", flag: "ita", destination: "MenuItalian" },
-		{ title: "English", flag: "gbr", destination: "MenuEnglish" },
-		{ title: "Deutsch", flag: "deu", destination: "MenuDeutsch" },
-		{ title: "Français", flag: "fra", destination: "MenuFrancais" },
+		{ title: "Italiano", flag: "it", destination: "MenuItalian" },
+		{ title: "English", flag: "gb", destination: "MenuEnglish" },
+		{ title: "Deutsch", flag: "de", destination: "MenuDeutsch" },
+		{ title: "Français", flag: "fr", destination: "MenuFrancais" },
 	];
 
 	const data = [
 		{
-			photo: require("../assets/photo4.png"),
+			photo: Photo4,
 		},
 		{
-			photo: require("../assets/photo5.png"),
+			photo: Photo5,
 		},
 		{
-			photo: require("../assets/photo3.png"),
+			photo: Photo3,
 		},
 		{
-			photo: require("../assets/photo1.png"),
+			photo: Photo1,
 		},
 		{
-			photo: require("../assets/photo6.png"),
+			photo: Photo6,
 		},
 		{
-			photo: require("../assets/photo2.png"),
+			photo: Photo2,
 		},
 	];
+
+	const args = {
+		number: "9093900003", // String value with the number to call
+		prompt: false, // Optional boolean property. Determines if the user should be prompted prior to the call
+		skipCanOpen: true, // Skip the canOpenURL check
+	};
 
 	const RenderItem = ({ item }) => {
 		return (
 			<View className="flex items-center justify-center">
-				<Image className="w-60 h-60" source={item.photo} />
+				<Image source={item.photo} className="w-60 h-60" />
 			</View>
 		);
 	};
@@ -99,6 +108,18 @@ const HomeScreen = ({}) => {
 					</ScrollView>
 				</View>
 			</View>
+			{/* Call us */}
+			{/* <View className="flex-1">
+				<Text className="text-white">Contact us for reservation:</Text>
+				<TouchableOpacity
+					className="rounded-lg px-3 py-4 border-2 border-[#292929] bg-[#1A1A1A] shadow"
+					onPress={() => call(args).catch(console.error)}
+				>
+					<View className="flex-1">
+						<Text className="text-white">HELOOOO</Text>
+					</View>
+				</TouchableOpacity>
+			</View> */}
 		</SafeAreaView>
 	);
 };

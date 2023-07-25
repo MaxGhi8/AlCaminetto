@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import Flag from "react-world-flags";
+import CountryFlag from "react-native-country-flag";
 
 const HomeCard = ({
 	title,
@@ -22,11 +22,7 @@ const HomeCard = ({
 			>
 				<View className="flex-row space-x-16 justify-center">
 					<View>
-						<Flag
-							code={flag}
-							height="26"
-							fallback={<span>Unknown</span>}
-						/>
+						<CountryFlag isoCode={flag} size={26} />
 					</View>
 					<View>
 						<Text className="text-xl font-extrabold text-white">

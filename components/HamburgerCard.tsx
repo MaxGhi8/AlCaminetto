@@ -28,16 +28,16 @@ const HamburgerCard = ({
 	return (
 		<View className="flex-1 py-2">
 			<TouchableOpacity
-				className="flex-1 w-full rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] shadow"
+				className="flex-1 rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] shadow"
 				onPress={() => {
 					navigation.navigate("Hamburger", {
 						name: name,
 						ingredients_detailed: ingredients_detailed,
 						photo: photo,
 						allergen: allergen,
-						ingredienti,
-						contorno,
-						patate,
+						ingredienti: ingredienti,
+						contorno: contorno,
+						patate: patate,
 					});
 				}}
 			>
