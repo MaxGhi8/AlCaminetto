@@ -127,6 +127,7 @@ const HomeScreen = ({}) => {
 					</TouchableOpacity>
 				</View>
 				{/* Indirizzo */}
+
 				<View className="px-4 items-center justify-center py-4">
 					<TouchableOpacity
 						className="rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] shadow"
@@ -136,18 +137,29 @@ const HomeScreen = ({}) => {
 							);
 						}}
 					>
-						<View>
-							<View className="items-center justify-center">
+						<View className="flex-row items-center justify-center space-x-4">
+							<View>
+								<View className="items-center justify-center">
+									<Text className="text-white">
+										Restaurant "Al Caminetto":
+									</Text>
+								</View>
 								<Text className="text-white">
-									Restaurant "Al Caminetto":
+									Piemonte, IT - Garbagna, AL - Via XIV Marzo
+									25.
 								</Text>
 							</View>
-							<Text className="text-white">
-								Piedmont, IT - Garbagna, AL - Via XIV Marzo 25.
-							</Text>
+							<View>
+								<FontAwesome
+									name="map-marker"
+									size={28}
+									color="white"
+								/>
+							</View>
 						</View>
 					</TouchableOpacity>
 				</View>
+
 				{/* Follow us */}
 				<View className="flex-row justify-around pb-4">
 					<TouchableOpacity

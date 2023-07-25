@@ -110,8 +110,8 @@ function HamburgerScreen({ route }) {
 				</View>
 			</View>
 			{/* Contorno */}
-			<View className="flex-row space-x-4 justify-start pl-4 pt-6 items-center">
-				<View className="items-center">
+			<View className="flex-row space-x-4 inline-block align-text-top pl-4 pt-6">
+				<View className="">
 					<Text className="underline underline-offset-2 font-semibold text-xl text-white">
 						{contorno}:
 					</Text>

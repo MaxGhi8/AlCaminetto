@@ -21,6 +21,21 @@ const MenuDeutsch = () => {
 
 	const [data, setData] = useState([
 		{
+			name: "DOPPIO CHEDDAR",
+			ingredients:
+				"Rindfleischburger, Zwiebeln, Speck, doppelter Cheddar, Burgersauce.",
+			ingredients_detailed: [
+				{ ingred: "150 Gramm Rindfleischburger" },
+				{ ingred: "Gedünstete Zwiebeln" },
+				{ ingred: "Knuspriger Speck" },
+				{ ingred: "doppelter Cheddar" },
+				{ ingred: "Burgersauce" },
+			],
+			price: "12",
+			photo: "DoppioCheddar",
+			allergen: "Allergene: Gluten, Ei, Milch, Sesam, Senf.",
+		},
+		{
 			name: "PIGGY BURG",
 			ingredients:
 				"Zerkleinertes Ferkel, geräucherter Käse, Zwiebeln, Speck, Grillsoße.",
@@ -54,6 +69,22 @@ const MenuDeutsch = () => {
 			allergen: "Allergene: Gluten, Ei, Milch, Sesam.",
 		},
 		{
+			name: "MONTEBORE BURG",
+			ingredients:
+				"Rindfleischburger, Montebore, Zwiebeln, Pfeffer, Speck, Alkoholsoße.",
+			ingredients_detailed: [
+				{ ingred: "150 Gramm Rindfleischburger" },
+				{ ingred: "Käse Montebore" },
+				{ ingred: "Gedünstete Zwiebeln" },
+				{ ingred: "Pfeffer" },
+				{ ingred: "Knuspriger Speck" },
+				{ ingred: "Alkoholsoße" },
+			],
+			price: "14",
+			photo: "MonteboreBurg",
+			allergen: "Allergene: Gluten, Ei, Milch, Sesam.",
+		},
+		{
 			name: "UOVO BURG",
 			ingredients: "Rindfleischburger, Ei, Zwiebeln, Speck, Käse.",
 			ingredients_detailed: [
@@ -67,21 +98,7 @@ const MenuDeutsch = () => {
 			photo: "UovoBurg",
 			allergen: "Allergene: Gluten, Ei, Milch, Sesam.",
 		},
-		{
-			name: "DOPPIO CHEDDAR",
-			ingredients:
-				"Rindfleischburger, Zwiebeln, Speck, doppelter Cheddar, Burgersauce.",
-			ingredients_detailed: [
-				{ ingred: "150 Gramm Rindfleischburger" },
-				{ ingred: "Gedünstete Zwiebeln" },
-				{ ingred: "Knuspriger Speck" },
-				{ ingred: "doppelter Cheddar" },
-				{ ingred: "Burgersauce" },
-			],
-			price: "12",
-			photo: "DoppioCheddar",
-			allergen: "Allergene: Gluten, Ei, Milch, Sesam, Senf.",
-		},
+
 		{
 			name: "POLLO",
 			ingredients:
@@ -111,22 +128,6 @@ const MenuDeutsch = () => {
 			price: "11",
 			photo: "Vegetariano",
 			allergen: "Allergene: Gluten, Ei, Milch, Sesam, funghi.",
-		},
-		{
-			name: "MONTEBORE BURG",
-			ingredients:
-				"Rindfleischburger, Montebore, Zwiebeln, Pfeffer, Speck, Alkoholsoße.",
-			ingredients_detailed: [
-				{ ingred: "150 Gramm Rindfleischburger" },
-				{ ingred: "Käse Montebore" },
-				{ ingred: "Gedünstete Zwiebeln" },
-				{ ingred: "Pfeffer" },
-				{ ingred: "Knuspriger Speck" },
-				{ ingred: "Alkoholsoße" },
-			],
-			price: "14",
-			photo: "MonteboreBurg",
-			allergen: "Allergene: Gluten, Ei, Milch, Sesam.",
 		},
 	]);
 

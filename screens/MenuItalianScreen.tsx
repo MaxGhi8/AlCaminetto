@@ -21,6 +21,21 @@ const MenuItalian = () => {
 
 	const [data, setData] = useState([
 		{
+			name: "DOPPIO CHEDDAR",
+			ingredients:
+				"Hamburger di manzo, cipolle, bacon, doppio cheddar, salsa burger.",
+			ingredients_detailed: [
+				{ ingred: "Hamburger di manzo da 150 grammi" },
+				{ ingred: "Cipolle caramellate" },
+				{ ingred: "Bacon croccante" },
+				{ ingred: "Doppio cheddar" },
+				{ ingred: "Salsa burger" },
+			],
+			price: "12",
+			photo: "DoppioCheddar",
+			allergen: "Allergeni: glutine, uovo, latte, sesamo, senape.",
+		},
+		{
 			name: "PIGGY BURG",
 			ingredients:
 				"Maialino sfilacciato, scamorza affumicata, cipolle, bacon, salsa BBQ.",
@@ -54,6 +69,22 @@ const MenuItalian = () => {
 			allergen: "Allergeni: glutine, uovo, latte, sesamo.",
 		},
 		{
+			name: "MONTEBORE BURG",
+			ingredients:
+				"Hamburger di manzo, Montebore, cipolle, peperoni, bacon, salsa alcolica.",
+			ingredients_detailed: [
+				{ ingred: "Hamburger di manzo da 150 grammi" },
+				{ ingred: "Formaggio Montebore" },
+				{ ingred: "Cipolle caramellate" },
+				{ ingred: "Peperoni" },
+				{ ingred: "Bacon croccante" },
+				{ ingred: "Salsa alcolica" },
+			],
+			price: "14",
+			photo: "MonteboreBurg",
+			allergen: "Allergeni: glutine, uovo, latte, sesamo.",
+		},
+		{
 			name: "UOVO BURG",
 			ingredients: "Hamburger di manzo, uovo, cipolle, bacon, formaggio.",
 			ingredients_detailed: [
@@ -67,21 +98,7 @@ const MenuItalian = () => {
 			photo: "UovoBurg",
 			allergen: "Allergeni: glutine, uovo, latte, sesamo.",
 		},
-		{
-			name: "DOPPIO CHEDDAR",
-			ingredients:
-				"Hamburger di manzo, cipolle, bacon, doppio cheddar, salsa burger.",
-			ingredients_detailed: [
-				{ ingred: "Hamburger di manzo da 150 grammi" },
-				{ ingred: "Cipolle caramellate" },
-				{ ingred: "Bacon croccante" },
-				{ ingred: "Doppio cheddar" },
-				{ ingred: "Salsa burger" },
-			],
-			price: "12",
-			photo: "DoppioCheddar",
-			allergen: "Allergeni: glutine, uovo, latte, sesamo, senape.",
-		},
+
 		{
 			name: "POLLO",
 			ingredients:
@@ -111,22 +128,6 @@ const MenuItalian = () => {
 			price: "11",
 			photo: "Vegetariano",
 			allergen: "Allergeni: glutine, uovo, latte, sesamo, funghi.",
-		},
-		{
-			name: "MONTEBORE BURG",
-			ingredients:
-				"Hamburger di manzo, Montebore, cipolle, peperoni, bacon, salsa alcolica.",
-			ingredients_detailed: [
-				{ ingred: "Hamburger di manzo da 150 grammi" },
-				{ ingred: "Formaggio Montebore" },
-				{ ingred: "Cipolle caramellate" },
-				{ ingred: "Peperoni" },
-				{ ingred: "Bacon croccante" },
-				{ ingred: "Salsa alcolica" },
-			],
-			price: "14",
-			photo: "MonteboreBurg",
-			allergen: "Allergeni: glutine, uovo, latte, sesamo.",
 		},
 	]);
 

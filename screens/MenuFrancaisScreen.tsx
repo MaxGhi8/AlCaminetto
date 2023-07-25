@@ -21,6 +21,21 @@ const MenuFrancais = () => {
 
 	const [data, setData] = useState([
 		{
+			name: "DOPPIO CHEDDAR",
+			ingredients:
+				"Burger de boeuf, oignons, bacon, cheddar double, sauce burger.",
+			ingredients_detailed: [
+				{ ingred: "Burger de bœuf de 150 grammes" },
+				{ ingred: "Oignons caramélisés" },
+				{ ingred: "Bacon croustillant" },
+				{ ingred: "Cheddar double" },
+				{ ingred: "Sauce burger" },
+			],
+			price: "12",
+			photo: "DoppioCheddar",
+			allergen: "Allergènes: gluten, œuf, lait, sésame, moutarde.",
+		},
+		{
 			name: "PIGGY BURG",
 			ingredients:
 				"Porcelet déchiqueté, fromage fumé, oignons, bacon, sauce barbecue.",
@@ -54,6 +69,22 @@ const MenuFrancais = () => {
 			allergen: "Allergènes: gluten, œuf, lait, sésame.",
 		},
 		{
+			name: "MONTEBORE BURG",
+			ingredients:
+				"Burger de boeuf, Montebore, oignons, poivrons, bacon, sauce à l'alcool.",
+			ingredients_detailed: [
+				{ ingred: "Burger de bœuf de 150 grammes" },
+				{ ingred: "Fromage Montebore" },
+				{ ingred: "Oignons caramélisés" },
+				{ ingred: "Poivrons" },
+				{ ingred: "Bacon croustillant" },
+				{ ingred: "Sauce à l'alcool" },
+			],
+			price: "14",
+			photo: "MonteboreBurg",
+			allergen: "Allergènes: gluten, œuf, lait, sésame.",
+		},
+		{
 			name: "UOVO BURG",
 			ingredients: "Burger de boeuf, œuf, oignons, bacon, fromage.",
 			ingredients_detailed: [
@@ -67,21 +98,7 @@ const MenuFrancais = () => {
 			photo: "UovoBurg",
 			allergen: "Allergènes: gluten, œuf, lait, sésame.",
 		},
-		{
-			name: "DOPPIO CHEDDAR",
-			ingredients:
-				"Burger de boeuf, oignons, bacon, cheddar double, sauce burger.",
-			ingredients_detailed: [
-				{ ingred: "Burger de bœuf de 150 grammes" },
-				{ ingred: "Oignons caramélisés" },
-				{ ingred: "Bacon croustillant" },
-				{ ingred: "Cheddar double" },
-				{ ingred: "Sauce burger" },
-			],
-			price: "12",
-			photo: "DoppioCheddar",
-			allergen: "Allergènes: gluten, œuf, lait, sésame, moutarde.",
-		},
+
 		{
 			name: "POLLO",
 			ingredients:
@@ -111,22 +128,6 @@ const MenuFrancais = () => {
 			price: "11",
 			photo: "Vegetariano",
 			allergen: "Allergènes: gluten, œuf, lait, sésame, champignons.",
-		},
-		{
-			name: "MONTEBORE BURG",
-			ingredients:
-				"Burger de boeuf, Montebore, oignons, poivrons, bacon, sauce à l'alcool.",
-			ingredients_detailed: [
-				{ ingred: "Burger de bœuf de 150 grammes" },
-				{ ingred: "Fromage Montebore" },
-				{ ingred: "Oignons caramélisés" },
-				{ ingred: "Poivrons" },
-				{ ingred: "Bacon croustillant" },
-				{ ingred: "Sauce à l'alcool" },
-			],
-			price: "14",
-			photo: "MonteboreBurg",
-			allergen: "Allergènes: gluten, œuf, lait, sésame.",
 		},
 	]);
 

@@ -21,6 +21,21 @@ const MenuEnglish = () => {
 
 	const [data, setData] = useState([
 		{
+			name: "DOPPIO CHEDDAR",
+			ingredients:
+				"Beef burger, onions, bacon, double cheddar, burger sauce.",
+			ingredients_detailed: [
+				{ ingred: "150 gram beef burger" },
+				{ ingred: "Stewed onions" },
+				{ ingred: "Crispy bacon" },
+				{ ingred: "Double cheddar" },
+				{ ingred: "Burger sauce" },
+			],
+			price: "12",
+			photo: "DoppioCheddar",
+			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
+		},
+		{
 			name: "PIGGY BURG",
 			ingredients:
 				"Pulled pork, smoked cheese, onions, bacon, BBQ sauce.",
@@ -54,6 +69,22 @@ const MenuEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, sesame.",
 		},
 		{
+			name: "MONTEBORE BURG",
+			ingredients:
+				"Beef burger, Montebore, onions, peppers, bacon, alcohol sauce.",
+			ingredients_detailed: [
+				{ ingred: "150 gram beef burger" },
+				{ ingred: "Montebore cheese" },
+				{ ingred: "Stewed onions" },
+				{ ingred: "Peppers" },
+				{ ingred: "Crispy bacon" },
+				{ ingred: "Alcohol sauce" },
+			],
+			price: "14",
+			photo: "MonteboreBurg",
+			allergen: "Allergen: gluten, egg, milk, sesame.",
+		},
+		{
 			name: "UOVO BURG",
 			ingredients: "Beef burger, egg, onions, bacon, cheese.",
 			ingredients_detailed: [
@@ -67,21 +98,7 @@ const MenuEnglish = () => {
 			photo: "UovoBurg",
 			allergen: "Allergen: gluten, egg, milk, sesame.",
 		},
-		{
-			name: "DOPPIO CHEDDAR",
-			ingredients:
-				"Beef burger, onions, bacon, double cheddar, burger sauce.",
-			ingredients_detailed: [
-				{ ingred: "150 gram beef burger" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Double cheddar" },
-				{ ingred: "Burger sauce" },
-			],
-			price: "12",
-			photo: "DoppioCheddar",
-			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
-		},
+
 		{
 			name: "POLLO",
 			ingredients:
@@ -111,22 +128,6 @@ const MenuEnglish = () => {
 			price: "11",
 			photo: "Vegetariano",
 			allergen: "Allergen: gluten, egg, milk, sesame, mushroom.",
-		},
-		{
-			name: "MONTEBORE BURG",
-			ingredients:
-				"Beef burger, Montebore, onions, peppers, bacon, alcohol sauce.",
-			ingredients_detailed: [
-				{ ingred: "150 gram beef burger" },
-				{ ingred: "Montebore cheese" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Peppers" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Alcohol sauce" },
-			],
-			price: "14",
-			photo: "MonteboreBurg",
-			allergen: "Allergen: gluten, egg, milk, sesame.",
 		},
 	]);
 
