@@ -8,6 +8,8 @@ import MenuEnglish from "./screens/MenuEnglishScreen";
 import MenuDeutsch from "./screens/MenuDeutschScreen";
 import MenuFrancais from "./screens/MenuFrancaisScreen";
 import HamburgerScreen from "./screens/HamburgerScreen";
+import { StatusBar } from "react-native";
+import { color } from "react-native-reanimated";
 
 const Stack = createNativeStackNavigator();
 

@@ -15,9 +15,9 @@ const HomeCard = ({
 	const navigation = useNavigation();
 
 	return (
-		<View className="flex-1 py-2">
+		<View className="flex-1 w-4/5 py-2">
 			<TouchableOpacity
-				className="flex-1 w-full rounded-lg px-3 py-4 border-2 border-[#292929] bg-[#1A1A1A] shadow"
+				className="flex-1 rounded-lg px-3 py-4 border-2 border-[#292929] bg-[#1A1A1A] shadow"
 				onPress={() => navigation.navigate(destination)}
 			>
 				<View className="flex-row space-x-16 justify-center">
