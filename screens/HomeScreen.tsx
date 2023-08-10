@@ -7,7 +7,7 @@ import {
 	TouchableOpacity,
 	Image,
 } from "react-native";
-import { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HomeCard from "../components/HomeCard";
 import Carousel from "react-native-reanimated-carousel";
@@ -74,14 +74,14 @@ const HomeScreen = ({}) => {
 			<View className="items-center justify-center">
 				<Carousel
 					data={data}
-					// layout={"tinder"}
+					mode={"parallax"}
 					ref={useRef(null)}
 					renderItem={RenderItem}
 					loop
 					width={Dimensions.get("window").width}
 					height={Dimensions.get("window").width / 2}
 					autoPlay={true}
-					scrollAnimationDuration={2000}
+					scrollAnimationDuration={2500}
 					panGestureHandlerProps={{
 						activeOffsetX: [-10, 10],
 					}}
@@ -89,7 +89,7 @@ const HomeScreen = ({}) => {
 			</View>
 			{/* Menu */}
 			<ScrollView className="flex-1">
-				<View className="flex-1 pt-4">
+				<View className="flex-1 pt-3">
 					<View className="items-center pt-4">
 						<Text className="text-2xl font-bold text-white">
 							Menù:
@@ -161,7 +161,7 @@ const HomeScreen = ({}) => {
 				</View>
 
 				{/* Follow us */}
-				<View className="flex-row justify-around pb-4">
+				<View className="flex-row justify-around pb-4 items-center">
 					<TouchableOpacity
 						onPress={() => {
 							Linking.openURL(
@@ -169,7 +169,7 @@ const HomeScreen = ({}) => {
 							);
 						}}
 					>
-						<View className="flex-row space-x-1">
+						<View className="flex-row space-x-2 items-center justify-center">
 							<FontAwesome
 								name="instagram"
 								size={24}
@@ -188,7 +188,7 @@ const HomeScreen = ({}) => {
 							);
 						}}
 					>
-						<View className="flex-row space-x-1">
+						<View className="flex-row space-x-2 items-center justify-center">
 							<FontAwesome
 								name="facebook-f"
 								size={20}

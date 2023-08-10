@@ -1,5 +1,5 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
-import { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HamburgerCard from "../components/HamburgerCard";
 
@@ -23,13 +23,13 @@ const MenuDeutsch = () => {
 		{
 			name: "DOPPIO CHEDDAR",
 			ingredients:
-				"Rindfleischburger, Zwiebeln, Speck, doppelter Cheddar, Burgersauce.",
+				"Rindfleischburger, Zwiebeln, Speck, doppelter Cheddar, Burgersoße.",
 			ingredients_detailed: [
 				{ ingred: "150 Gramm Rindfleischburger" },
 				{ ingred: "Gedünstete Zwiebeln" },
 				{ ingred: "Knuspriger Speck" },
 				{ ingred: "doppelter Cheddar" },
-				{ ingred: "Burgersauce" },
+				{ ingred: "Burgersoße" },
 			],
 			price: "12",
 			photo: "DoppioCheddar",
@@ -38,9 +38,9 @@ const MenuDeutsch = () => {
 		{
 			name: "PIGGY BURG",
 			ingredients:
-				"Zerkleinertes Ferkel, geräucherter Käse, Zwiebeln, Speck, Grillsoße.",
+				"Klein geschnittenes Schweinefleisch, geräucherter Käse, Zwiebeln, Speck, Grillsoße.",
 			ingredients_detailed: [
-				{ ingred: "Zerkleinertes Ferkel" },
+				{ ingred: "Klein geschnittenes Schweinefleisch" },
 				{ ingred: "Geräucherter Käse" },
 				{ ingred: "Gedünstete Zwiebeln" },
 				{ ingred: "Knuspriger Speck" },
@@ -71,12 +71,12 @@ const MenuDeutsch = () => {
 		{
 			name: "MONTEBORE BURG",
 			ingredients:
-				"Rindfleischburger, Montebore, Zwiebeln, Pfeffer, Speck, Alkoholsoße.",
+				"Rindfleischburger, Montebore, Zwiebeln, Paprika, Speck, Alkoholsoße.",
 			ingredients_detailed: [
 				{ ingred: "150 Gramm Rindfleischburger" },
 				{ ingred: "Käse Montebore" },
 				{ ingred: "Gedünstete Zwiebeln" },
-				{ ingred: "Pfeffer" },
+				{ ingred: "Paprika" },
 				{ ingred: "Knuspriger Speck" },
 				{ ingred: "Alkoholsoße" },
 			],
@@ -86,7 +86,7 @@ const MenuDeutsch = () => {
 		},
 		{
 			name: "UOVO BURG",
-			ingredients: "Rindfleischburger, Ei, Zwiebeln, Speck, Käse.",
+			ingredients: "Rindfleischburger, Spiegelei, Zwiebeln, Speck, Käse.",
 			ingredients_detailed: [
 				{ ingred: "150 Gramm Rindfleischburger" },
 				{ ingred: "Spiegelei" },
@@ -102,9 +102,9 @@ const MenuDeutsch = () => {
 		{
 			name: "POLLO",
 			ingredients:
-				"Paniertes Hähnchen, Zwiebeln, Tomate, Salat, Speck, Käse.",
+				"Paniertes Hünchen, Zwiebeln, Tomate, Salat, Speck, Käse.",
 			ingredients_detailed: [
-				{ ingred: "Paniertes Hähnchen" },
+				{ ingred: "Paniertes Hünchen" },
 				{ ingred: "Gedünstete Zwiebeln" },
 				{ ingred: "Tomate und Salat" },
 				{ ingred: "Knuspriger Speck" },
