@@ -12,3 +12,4 @@ export { default as Photo3 } from "./photo3.png";
 export { default as Photo4 } from "./photo4.png";
 export { default as Photo5 } from "./photo5.png";
 export { default as Photo6 } from "./photo6.png";
+export { default as Photo7 } from "./photo7.png";

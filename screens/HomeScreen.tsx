@@ -11,7 +11,15 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HomeCard from "../components/HomeCard";
 import Carousel from "react-native-reanimated-carousel";
-import { Photo1, Photo2, Photo3, Photo4, Photo5, Photo6 } from "../assets";
+import {
+	Photo1,
+	Photo2,
+	Photo3,
+	Photo4,
+	Photo5,
+	Photo6,
+	Photo7,
+} from "../assets";
 import { Feather, FontAwesome } from "@expo/vector-icons";
 import { Linking } from "react-native";
 
@@ -59,19 +67,23 @@ const HomeScreen = ({}) => {
 		{
 			photo: Photo2,
 		},
+		{
+			photo: Photo7,
+		},
 	];
 
 	const RenderItem = ({ item }) => {
 		return (
-			<View className="flex-1 items-center justify-center">
-				<Image source={item.photo} className="w-60 h-60" />
+			<View className="items-center justify-center">
+				<Image source={item.photo} className="w-64 h-64" />
 			</View>
 		);
 	};
+
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1">
 			{/* Carousel */}
-			<View className="items-center justify-center">
+			<View className="flex items-center justify-center -mt-4">
 				<Carousel
 					data={data}
 					mode={"parallax"}
@@ -79,7 +91,7 @@ const HomeScreen = ({}) => {
 					renderItem={RenderItem}
 					loop
 					width={Dimensions.get("window").width}
-					height={Dimensions.get("window").width / 2}
+					height={Dimensions.get("window").height / 4}
 					autoPlay={true}
 					scrollAnimationDuration={2500}
 					panGestureHandlerProps={{
@@ -89,8 +101,8 @@ const HomeScreen = ({}) => {
 			</View>
 			{/* Menu */}
 			<ScrollView className="flex-1">
-				<View className="flex-1 pt-3">
-					<View className="items-center pt-4">
+				<View className="flex-1">
+					<View className="items-center pt-2">
 						<Text className="text-2xl font-bold text-white">
 							Menù:
 						</Text>
