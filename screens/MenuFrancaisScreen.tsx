@@ -1,5 +1,5 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
-import { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HamburgerCard from "../components/HamburgerCard";
 
@@ -147,6 +147,11 @@ const MenuFrancais = () => {
 						patate={"Pommes de terre cuites"}
 					/>
 				))}
+				<View className="pt-1 pb-2 items-center justify-center">
+					<Text className="text-white text-center">
+						Cliquez sur les onglets pour plus d'informations !
+					</Text>
+				</View>
 			</ScrollView>
 		</SafeAreaView>
 	);

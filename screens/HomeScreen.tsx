@@ -63,7 +63,7 @@ const HomeScreen = ({}) => {
 
 	const RenderItem = ({ item }) => {
 		return (
-			<View className="flex items-center justify-center">
+			<View className="flex-1 items-center justify-center">
 				<Image source={item.photo} className="w-60 h-60" />
 			</View>
 		);

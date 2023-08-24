@@ -1,5 +1,5 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
-import { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HamburgerCard from "../components/HamburgerCard";
 
@@ -133,7 +133,7 @@ const MenuItalian = () => {
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1">
-			<ScrollView className="flex-1 px-6 pb-6">
+			<ScrollView className="px-4">
 				{data.map((item, key = { item }) => (
 					<HamburgerCard
 						name={item.name}
@@ -147,6 +147,11 @@ const MenuItalian = () => {
 						patate={"Patate al forno"}
 					/>
 				))}
+				<View className="pt-1 pb-2 items-center justify-center">
+					<Text className="text-white text-center">
+						Cliccare sulle schede per maggiori informazioni!
+					</Text>
+				</View>
 			</ScrollView>
 		</SafeAreaView>
 	);

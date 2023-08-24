@@ -147,6 +147,12 @@ const MenuDeutsch = () => {
 						patate={"Gebackenen Kartoffeln"}
 					/>
 				))}
+				<View className="pt-1 pb-2 items-center justify-center">
+					<Text className="text-white text-center">
+						Klicken Sie auf die Registerkarten für weitere
+						Informationen!
+					</Text>
+				</View>
 			</ScrollView>
 		</SafeAreaView>
 	);

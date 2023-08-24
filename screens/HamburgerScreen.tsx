@@ -6,7 +6,7 @@ import {
 	FlatList,
 	Image,
 } from "react-native";
-import { useEffect, useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import {
 	DoppioCheddarImage,
