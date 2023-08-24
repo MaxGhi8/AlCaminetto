@@ -26,7 +26,7 @@ const HamburgerCard = ({
 	const navigation = useNavigation();
 
 	return (
-		<View className="flex-1 pt-2 pb-1">
+		<View className="flex-1 pt-2 pb-1  w-full max-w-screen-lg">
 			<TouchableOpacity
 				className="rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] shadow"
 				onPress={() => {

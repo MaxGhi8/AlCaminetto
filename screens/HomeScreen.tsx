@@ -81,7 +81,7 @@ const HomeScreen = ({}) => {
 	};
 
 	return (
-		<SafeAreaView className="bg-[#212121] flex-1">
+		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			{/* Carousel */}
 			<View className="flex items-center justify-center -mt-4">
 				<Carousel
@@ -100,7 +100,7 @@ const HomeScreen = ({}) => {
 				/>
 			</View>
 			{/* Menu */}
-			<ScrollView className="flex-1">
+			<ScrollView className="flex-1 w-full max-w-screen-lg">
 				<View className="flex-1">
 					<View className="items-center pt-2">
 						<Text className="text-2xl font-bold text-white">
@@ -108,7 +108,7 @@ const HomeScreen = ({}) => {
 						</Text>
 					</View>
 					{/* Sezione con scelte lingua */}
-					<View className="flex-1 w-full items-center">
+					<View className="flex-1 items-center">
 						{language.map((item) => (
 							<HomeCard
 								title={item.title}

@@ -73,7 +73,7 @@ function HamburgerScreen({ route }) {
 	};
 
 	return (
-		<SafeAreaView className="flex-1 bg-[#212121]">
+		<SafeAreaView className="flex-1 bg-[#212121] items-center justify-center">
 			{/* Nome */}
 			<View className="items-center justify-center pt-2">
 				<View className="items-center justify-center py-2 rounded-lg  border-2 border-[#292929] bg-[#1A1A1A] shadow-xl shadow-orange-400">

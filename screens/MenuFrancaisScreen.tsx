@@ -132,7 +132,7 @@ const MenuFrancais = () => {
 	]);
 
 	return (
-		<SafeAreaView className="bg-[#212121] flex-1">
+		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			<ScrollView className="px-4">
 				{data.map((item, index) => (
 					<HamburgerCard
