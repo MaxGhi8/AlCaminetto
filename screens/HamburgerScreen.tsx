@@ -16,6 +16,9 @@ import {
 	PolloImage,
 	UovoBurgImage,
 	VegetarianoImage,
+	RibsBurgImage,
+	HotDogClassicImage,
+	HotDogGourmetImage,
 } from "../assets";
 
 function HamburgerScreen({ route }) {
@@ -52,6 +55,9 @@ function HamburgerScreen({ route }) {
 		MonteboreBurg: MonteboreBurgImage,
 		PiggyBurg: PiggyBurgImage,
 		Pollo: PolloImage,
+		RibsBurg: RibsBurgImage,
+		HotDogClassic: HotDogClassicImage,
+		HotDogGourmet: HotDogGourmetImage,
 	};
 
 	const {
@@ -73,7 +79,7 @@ function HamburgerScreen({ route }) {
 	};
 
 	return (
-		<SafeAreaView className="flex-1 bg-[#212121] items-center justify-center">
+		<SafeAreaView className="flex-1 bg-[#212121] items-center py-8">
 			{/* Nome */}
 			<View className="items-center justify-center pt-2">
 				<View className="items-center justify-center py-2 rounded-lg  border-2 border-[#292929] bg-[#1A1A1A] shadow-xl shadow-orange-400">

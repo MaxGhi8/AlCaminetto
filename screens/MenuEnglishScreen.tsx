@@ -1,7 +1,6 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import HamburgerCard from "../components/HamburgerCard";
 
 const MenuEnglish = () => {
 	const navigation = useNavigation();
@@ -19,139 +18,97 @@ const MenuEnglish = () => {
 		});
 	}, []);
 
-	const [data, setData] = useState([
-		{
-			name: "DOPPIO CHEDDAR",
-			ingredients:
-				"Beef burger, onions, bacon, double cheddar, burger sauce.",
-			ingredients_detailed: [
-				{ ingred: "150 gram beef burger" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Double cheddar" },
-				{ ingred: "Burger sauce" },
-			],
-			price: "12",
-			photo: "DoppioCheddar",
-			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
-		},
-		{
-			name: "PIGGY BURG",
-			ingredients:
-				"Pulled pork, smoked cheese, onions, bacon, BBQ sauce.",
-			ingredients_detailed: [
-				{ ingred: "Pulled pork" },
-				{ ingred: "Smoked cheese" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "BBQ sauce" },
-			],
-			price: "13",
-			photo: "PiggyBurg",
-			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
-		},
-		{
-			name: "HOT BURG",
-			ingredients:
-				"Beef burger, onions, tomato, lettuce, bacon, cheese, 'nduja.",
-			ingredients_detailed: [
-				{
-					ingred: "150 gram beef burger",
-				},
-				{ ingred: "Stewed onions" },
-				{ ingred: "Tomato and lettuce" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Melted cheese" },
-				{ ingred: "'nduja" },
-			],
-			price: "12",
-			photo: "HotBurg",
-			allergen: "Allergen: gluten, egg, milk, sesame.",
-		},
-		{
-			name: "MONTEBORE BURG",
-			ingredients:
-				"Beef burger, Montebore, onions, peppers, bacon, alcohol sauce.",
-			ingredients_detailed: [
-				{ ingred: "150 gram beef burger" },
-				{ ingred: "Montebore cheese" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Peppers" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Alcohol sauce" },
-			],
-			price: "14",
-			photo: "MonteboreBurg",
-			allergen: "Allergen: gluten, egg, milk, sesame.",
-		},
-		{
-			name: "UOVO BURG",
-			ingredients: "Beef burger, egg, onions, bacon, cheese.",
-			ingredients_detailed: [
-				{ ingred: "150 gram beef burger" },
-				{ ingred: "Fried egg" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Melted cheese" },
-			],
-			price: "12",
-			photo: "UovoBurg",
-			allergen: "Allergen: gluten, egg, milk, sesame.",
-		},
+	const primi = [
+		{ title: "Risotto al timorasso", price: "8,00"},
+		{ title: "Agnolotti al brasato", price: "10,00"},
+		{ title: "Fettuccine coi funghi", price: "10,00"},
+		{ title: "Penne al pomodoro", price: "7,00"},
+	];
 
-		{
-			name: "POLLO",
-			ingredients:
-				"Fried chicken, onions, tomato, lettuce, bacon, cheese.",
-			ingredients_detailed: [
-				{ ingred: "Fried chicken" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Tomato and lettuce" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Melted cheese" },
-			],
-			price: "10",
-			photo: "Pollo",
-			allergen: "Allergen: gluten, egg, milk, sesame.",
-		},
-		{
-			name: "VEGETARIANO",
-			ingredients:
-				"Grilled vegetables, onions, brie, tomato, lettuce, mushroom sauce.",
-			ingredients_detailed: [
-				{ ingred: "Grilled vegetables" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Brie cheese" },
-				{ ingred: "Tomato and lettuce" },
-				{ ingred: "Mushroom sauce" },
-			],
-			price: "11",
-			photo: "Vegetariano",
-			allergen: "Allergen: gluten, egg, milk, sesame, mushroom.",
-		},
-	]);
+	const secondi = [
+		{ title: "Grigliata mista", price: "12,00"},
+		{ title: "Arrosto di vitello", price: "9,00"},
+		{ title: "Vitello tonnato", price: "9,00"},
+	];
+
+	const dessert = [
+		{ title: "Panna cotta", price: "5,00"},
+		{ title: "Tiramisù", price: "5,00"},
+		{ title: "Semifreddo al torroncino", price: "5,00"},
+	];
 
 	return (
-		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
-			<ScrollView className="px-4">
-				{data.map((item, index) => (
-					<HamburgerCard
-						name={item.name}
-						ingredients={item.ingredients}
-						ingredients_detailed={item.ingredients_detailed}
-						price={item.price}
-						photo={item.photo}
-						allergen={item.allergen}
-						ingredienti={"Ingredients"}
-						contorno={"Side dish"}
-						patate={"Baked potatoes"}
-					/>
-				))}
-				<View className="pt-1 pb-2 items-center justify-center">
-					<Text className="text-white text-center">
-						Click on the tabs for more information!
-					</Text>
-				</View>
+		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
+			<ScrollView className="w-full">
+
+					<View className="flex-1 items-center justify-center pb-3">
+						<Text className="text-white text-2xl font-bold mt-4">
+							ANTIPASTO
+						</Text>
+					</View>
+
+					<View className="flex-row px-5 pb-3">
+						<View className="flex-1 items-start justify-start">
+							<Text className="text-white text-base">Piatto misto con: salumi del Caminetto, insalata russa, tortino ai formagi, 
+							frittatina alle erbe, panissa, mini flan agli asparagi.
+							</Text>
+						</View>
+						<View className="justify-end">
+							<Text className="text-white text-base"> € 10,00</Text>
+						</View>
+					</View>
+
+					<View className="flex-1 items-center justify-center pb-3">
+						<Text className="text-white text-2xl font-bold mt-4">
+							PRIMI
+						</Text>
+					</View>
+					{/* Schema puntato per elencare i primi piatti*/}
+					{primi.map((item, key) => (
+							<View className="flex-row px-5 pb-3">
+							<View className="flex-1 items-start justify-start">
+								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
+							</View>
+							<View className="justify-end">
+								<Text className="text-white text-base"> € {item.price}</Text>
+							</View>
+						</View>
+						))}
+
+					<View className="flex-1 items-center justify-center pb-3">
+						<Text className="text-white text-2xl font-bold mt-4">
+							SECONDI
+						</Text>
+					</View>
+					{/* Schema puntato per elencare i secondi piatti*/}
+					{secondi.map((item, key) => (
+							<View className="flex-row px-5 pb-3">
+							<View className="flex-1 items-start justify-start">
+								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
+							</View>
+							<View className="justify-end">
+								<Text className="text-white text-base"> € {item.price}</Text>
+							</View>
+						</View>
+						))}
+
+					<View className="flex-1 items-center justify-center pb-3">
+						<Text className="text-white text-2xl font-bold mt-4">
+							DESSERT
+						</Text>
+					</View>
+					{/* Schema puntato per elencare i dolci*/}
+					{dessert.map((item, key) => (
+							<View className="flex-row px-5 pb-3">
+							<View className="flex-1 items-start justify-start">
+								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
+							</View>
+							<View className="justify-end">
+								<Text className="text-white text-base"> € {item.price}</Text>
+							</View>
+						</View>
+						))}
+
 			</ScrollView>
 		</SafeAreaView>
 	);

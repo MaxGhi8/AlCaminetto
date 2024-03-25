@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HamburgerCard from "../components/HamburgerCard";
 
-const MenuDeutsch = () => {
+const HamburgerDeutsch = () => {
 	const navigation = useNavigation();
 	useLayoutEffect(() => {
 		navigation.setOptions({
@@ -51,7 +51,7 @@ const MenuDeutsch = () => {
 			allergen: "Allergene: Gluten, Ei, Milch, Sesam, Senf.",
 		},
 		{
-			name: "HOT BURG",
+			name: "SPICY BURG",
 			ingredients:
 				"Rindfleischburger, Zwiebeln, Tomate, Salat, Speck, Käse, 'nduja.",
 			ingredients_detailed: [
@@ -134,7 +134,7 @@ const MenuDeutsch = () => {
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			<ScrollView className="px-4">
-				{data.map((item, index) => (
+				{data.map((item, key) => (
 					<HamburgerCard
 						name={item.name}
 						ingredients={item.ingredients}
@@ -158,4 +158,4 @@ const MenuDeutsch = () => {
 	);
 };
 
-export default MenuDeutsch;
+export default HamburgerDeutsch;
