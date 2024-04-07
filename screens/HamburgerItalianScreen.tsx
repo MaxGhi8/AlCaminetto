@@ -173,6 +173,7 @@ const HamburgerItalian = () => {
 			<ScrollView className="flex-1 px-4">
 				{data.map((item, key) => (
 					<HamburgerCard
+						key={key}
 						name={item.name}
 						ingredients={item.ingredients}
 						ingredients_detailed={item.ingredients_detailed}

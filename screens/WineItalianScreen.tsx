@@ -19,17 +19,19 @@ const WineItalian = () => {
 	}, []);
 
 	const vini_rossi = [
-		{ title: "Croatina 'Romba'", year:"2021", prod: "La Colombera", origin:"Terre 'Derthona'", price: "13,00"},
+		{ title: "Croatina 'Romba'", year:"2021", prod: "La Colombera", origin:"Terre Derthona", price: "13,00"},
 		{ title: "Dolcetto", year:"2021", prod: "La Colombera", origin:"Terre Derthona", price: "12,00"},
 		{ title: "Barbera 'Vegia Rampana'", year:"2021", prod: "La Colombera", origin:"Terre Derthona", price: "15,00"},
 
 		{ title: "Barbera 'Canvera'", year:"2021", prod: "Cascina Giambolino", origin:"Terre Derthona", price: "12,00"},
-		{ title: "Barbera 'Maior'", year:"2019", prod: "Cascina Giambolino", origin:"Terre Derthona", price: "16,00"},
+		{ title: "Barbera 'Maior'", year:"2019", prod: "Cascina Giambolino", origin:"Terre Derthona", price: "18,00"},
 
-		{ title: "Barbera 'Territorio'", year:"2020", prod: "Claudio Mariotto", origin:"Terre Derthona", price: "15,00"},
-		{ title: "Barbera 'Poggio del Rosso'", year:"2016", prod: "Claudio Mariotto", origin:"Terre Derthona", price: "20,00"},
+		{ title: "Barbera 'Territorio'", year:"2020", prod: "Claudio Mariotto", origin:"Terre Derthona", price: "18,00"},
+		{ title: "Barbera 'Poggio del Rosso'", year:"2016", prod: "Claudio Mariotto", origin:"Terre Derthona", price: "22,00"},
 
-		{ title: "Barbera frizzante", year:"2021", prod: "Az.Agricola Prago", origin:"Oltrepò pavese", price: "12,00"},
+		{title: "Barbera 'Poggio delle Amarene'", year:"2016", prod: "Boveri Luigi", origin:"Terre Derthona", price: "20,00"},
+
+		{ title: "Bonarda frizzante", year:"2021", prod: "Az.Agricola Prago", origin:"Oltrepò pavese", price: "12,00"},
 		{ title: "Croatina dolce frizzante", year:"2021", prod: "Az.Agricola Prago", origin:"Oltrepò pavese", price: "13,00"},
 
 		{ title: "Gutturnio frizzante", year:"2021", prod: "Az. Agricola Passerini", origin:"Colli piacentini", price: "13,00"},
@@ -38,19 +40,22 @@ const WineItalian = () => {
 	];
 
 	const vini_bianchi = [
-		{ title: "Timorasso 'Derthona'", year:"2021", prod: "La Colombera", origin:"Terre 'Derthona'", price: "18,00"},
-		{ title: "Cortese 'Bricco'", year:"2021", prod: "La Colombera", origin:"Terre 'Derthona'", price: "15,00"},
-		{ title: "Cortese 'Meo' frizzante", year:"2021", prod: "La Colombera", origin:"Terre 'Derthona'", price: "15,00"},
+		{ title: "Timorasso 'Derthona'", year:"2021", prod: "La Colombera", origin:"Terre Derthona", price: "18,00"},
+		{ title: "Cortese 'Bricco'", year:"2021", prod: "La Colombera", origin:"Terre Derthona", price: "15,00"},
+		{ title: "Cortese 'Meo' vivace", year:"2021", prod: "La Colombera", origin:"Terre Derthona", price: "15,00"},
 
-		{ title: "Timorasso 'Derthona' frizzante", year:"2020", prod: "Claudio Mariotto", origin:"Terre Derthona", price: "20,00"},
+		{ title: "Timorasso 'Derthona'", year:"2020", prod: "Claudio Mariotto", origin:"Terre Derthona", price: "20,00"},
 
+		{ title: "Cortese 'Terre del prete' (fermo o vivace)", year:"2022", prod: "Boveri Luigi", origin:"Terre Derthona", price: "15,00"},
+		
 		{ title: "Pinot nero frizzante", year:"2022", prod: "Az.Agricola Prago", origin:"Oltrepò pavese", price: "15,00"},
+		{title: "Chardonnay vivace", year:"2022", prod: "Az.Agricola Prago", origin:"Oltrepò pavese", price: "13,00"},
 
 		{ title: "Ortugo frizzante", year:"2022", prod: "Az. Agricola Passerini", origin:"Colli piacentini", price: "13,00"},
 	];
 
 	const prosecchi = [
-		{ title: "Prosecco 'Extra dri doc' millesimato", price: "22,00"},
+		{ title: "Prosecco 'Extra dry doc' millesimato", price: "22,00"},
 		{ title: "Prosecco 'Glera extra dry'", price: "18,00"},
 	];
 
@@ -74,7 +79,7 @@ const WineItalian = () => {
 
 					{/* Schema puntato per elencare i vini rossi*/}
 					<View className="px-5 pb-2">
-						<Text className="text-white font-bold text-xl underline">
+						<Text className="text-white font-bold text-2xl underline">
 							Vini Rossi:
 						</Text>
 					</View>
@@ -95,8 +100,8 @@ const WineItalian = () => {
 						))}
 
 					{/* Schema puntato per elencare i vini bianchi*/}
-					<View className="px-5 pb-2">
-						<Text className="text-white font-bold text-xl underline">
+					<View className="px-5 py-2">
+						<Text className="text-white font-bold text-2xl underline">
 							Vini Bianchi:
 						</Text>
 					</View>
@@ -127,8 +132,8 @@ const WineItalian = () => {
 						))}
 
 					{/* Schema puntato per elencare i vini sfusi*/}
-					<View className="px-5 pb-2">
-						<Text className="text-white font-bold text-xl underline">
+					<View className="px-5 py-2">
+						<Text className="text-white font-bold text-2xl underline">
 							Vini sfusi in caraffa:
 						</Text>
 					</View>

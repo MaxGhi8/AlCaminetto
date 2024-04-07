@@ -82,19 +82,19 @@ function HamburgerScreen({ route }) {
 		<SafeAreaView className="flex-1 bg-[#212121] items-center py-8">
 			{/* Nome */}
 			<View className="items-center justify-center pt-2">
-				<View className="items-center justify-center py-2 rounded-lg  border-2 border-[#292929] bg-[#1A1A1A] shadow-xl shadow-orange-400">
+				<View className="items-center justify-center py-2 rounded-lg  border-2 border-[#292929] bg-[#1A1A1A] drop-shadow-xl shadow-orange-400">
 					<Text className="text-white font-bold text-2xl px-5">
 						{name}
 					</Text>
 				</View>
 			</View>
 			{/* Colonna a sx */}
-			<View className="flex-row space-x-4 pt-4">
+			<View className="flex-row justify-between w-full space-x-4 pt-4">
 				<View className="w-1/3">
 					{/* <Image className="flex-1" source={require(`${photo}`)} /> */}
 					<Image source={images[photo]} className="h-96 w-32" />
 				</View>
-				<View className="flex-shrink pr-4">
+				<View className="flex-1 pr-4">
 					<Text className="underline underline-offset-2 font-semibold text-xl pt-5 text-white">
 						{ingredienti}:
 					</Text>

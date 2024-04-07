@@ -34,6 +34,16 @@ const DrinkEnglish = () => {
 		{ title: "Ceres beer 33cL", price: "4,00"},
 		{ title: "Moretti beer 33cL", price: "3,50"},
 		{ title: "Moretti beer 66cL", price: "6,00"},
+		{ title: "Bitter", price: "3,00"},
+	];
+
+	const caffe = [
+		{ title: "Coffee", price: "1,00"},
+		{ title: "Decaf coffee", price: "1,10"},
+		{ title: "Cappuccino", price: "1,30"},
+		{ title: "Ginseng coffee", price: "1,10"},
+		{ title: "Hot chocolate", price: "3,00"},
+		{ title: "Tea/infusion", price: "1,30"},
 	];
 
 
@@ -48,6 +58,23 @@ const DrinkEnglish = () => {
 					</View>
 					{/* Schema puntato per elencare i dolci*/}
 					{bevande.map((item, key) => (
+							<View className="flex-row px-5 pb-3" key={key}>
+							<View className="flex-1 items-start justify-start">
+								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
+							</View>
+							<View className="justify-end">
+								<Text className="text-white text-base"> € {item.price}</Text>
+							</View>
+						</View>
+						))}
+
+					<View className="flex-1 items-center justify-center pt-3">
+						<Text className="text-white text-2xl font-bold mt-4">
+							CAFFE
+						</Text>
+					</View>
+					{/* Schema puntato per elencare i caffe*/}
+					{caffe.map((item, key) => (
 							<View className="flex-row px-5 pb-3" key={key}>
 							<View className="flex-1 items-start justify-start">
 								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>

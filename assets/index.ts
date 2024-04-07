@@ -12,10 +12,17 @@ export { default as HotDogGourmetImage } from "./HotDogGourmet.png";
 export { default as Photo1 } from "./photo1.png";
 export { default as Photo2 } from "./photo2.png";
 export { default as Photo3 } from "./photo3.png";
+export { default as Photo3_bis } from "./photo3_bis.png";
 export { default as Photo4 } from "./photo4.png";
 export { default as Photo5 } from "./photo5.png";
 export { default as Photo6 } from "./photo6.png";
 export { default as Photo7 } from "./photo7.png";
+export { default as Photo8 } from "./photo8.png";
+export { default as Photo9 } from "./photo9.png";
+export { default as Photo10 } from "./photo10.png";
+export { default as Photo11 } from "./photo11.png";
+export { default as Photo12 } from "./photo12.png";
+export { default as Photo13 } from "./photo13.png";
 
 export {default as SfondoCantina} from "./SfondoCantina.png";
 export {default as SfondoDessert} from "./SfondoDessert.png";

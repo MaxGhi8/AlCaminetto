@@ -20,22 +20,23 @@ const MenuItalian = () => {
 
 	const primi = [
 		{ title: "Risotto al timorasso", price: "8,00"},
-		{ title: "Agnolotti al brasato", price: "10,00"},
-		{ title: "Fettuccine coi funghi", price: "10,00"},
-		{ title: "Penne al pomodoro", price: "7,00"},
+		{ title: "Pansoti di fonduta con crema al Montebore, noci e pere", price: "10,00"},
+		{ title: "Taglierini ai funghi", price: "10,00"},
 	];
 
 	const secondi = [
-		{ title: "Grigliata mista", price: "12,00"},
-		{ title: "Arrosto di vitello", price: "9,00"},
-		{ title: "Vitello tonnato", price: "9,00"},
+		{ title: "Grigliata mista di maiale (salamino, salsiccia e costina)", price: "12,00"},
+		{ title: "Tagliata di manzo, 300g", price: "15,00"},
+		{ title: "Guance di manzo brasate", price: "12,00"},
+		{ title: "Noce di vitello al forno", price: "9,00"},
+		{ title: "Roastbeef con formaggio Grattone", price: "9,00"},
 	];
 
-	const dessert = [
-		{ title: "Panna cotta", price: "5,00"},
-		{ title: "Tiramisù", price: "5,00"},
-		{ title: "Semifreddo al torroncino", price: "5,00"},
-	];
+	// const dessert = [
+	// 	{ title: "Panna cotta", price: "5,00"},
+	// 	{ title: "Tiramisù", price: "5,00"},
+	// 	{ title: "Semifreddo al torroncino", price: "5,00"},
+	// ];
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
@@ -49,8 +50,8 @@ const MenuItalian = () => {
 
 					<View className="flex-row px-5 pb-3">
 						<View className="flex-1 items-start justify-start">
-							<Text className="text-white text-base">Piatto misto con: salumi del Caminetto, insalata russa, tortino ai formagi, 
-							frittatina alle erbe, panissa, mini flan agli asparagi.
+							<Text className="text-white text-base">Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa, tortino ai formaggi, 
+							panissa, tartar con Montebore e melanzane al basilico.
 							</Text>
 						</View>
 						<View className="justify-end">
@@ -65,7 +66,7 @@ const MenuItalian = () => {
 					</View>
 					{/* Schema puntato per elencare i primi piatti*/}
 					{primi.map((item, key) => (
-							<View className="flex-row px-5 pb-3">
+							<View className="flex-row px-5 pb-3" key={key}>
 							<View className="flex-1 items-start justify-start">
 								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
 							</View>
@@ -82,7 +83,7 @@ const MenuItalian = () => {
 					</View>
 					{/* Schema puntato per elencare i secondi piatti*/}
 					{secondi.map((item, key) => (
-							<View className="flex-row px-5 pb-3">
+							<View className="flex-row px-5 pb-3" key={key}>
 							<View className="flex-1 items-start justify-start">
 								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
 							</View>
@@ -92,14 +93,13 @@ const MenuItalian = () => {
 						</View>
 						))}
 
-					<View className="flex-1 items-center justify-center pb-3">
+					{/* <View className="flex-1 items-center justify-center pb-3">
 						<Text className="text-white text-2xl font-bold mt-4">
 							DESSERT
 						</Text>
 					</View>
-					{/* Schema puntato per elencare i dolci*/}
 					{dessert.map((item, key) => (
-							<View className="flex-row px-5 pb-3">
+							<View className="flex-row px-5 pb-3" key={key}>
 							<View className="flex-1 items-start justify-start">
 								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
 							</View>
@@ -108,7 +108,7 @@ const MenuItalian = () => {
 							</View>
 						</View>
 						))}
-
+ */}
 			</ScrollView>
 		</SafeAreaView>
 	);

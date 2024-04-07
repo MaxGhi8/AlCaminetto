@@ -19,14 +19,15 @@ const DessertEnglish = () => {
 	}, []);
 
 	const dessert = [
-		{ title: "Panna cotta", price: "5,00"},
-		{ title: "Tiramisù al caffè", price: "5,00"},
-		{ title: "Semifreddo al torroncino", price: "5,00"},
-		{ title: "Millefoglie", price: "5,00"},
-		{ title: "Crème caramel", price: "5,00"},
-		{ title: "Cheesecake al pistacchio", price: "5,00"},
-		{ title: "Torta al cioccolato", price: "5,00"},
-		{ title: "Bonet amaretti e cioccolato", price: "5,00"},
+		// { title: "Panna cotta", price: "5,00"},
+		{ title: "Coffee tiramisu", price: "5,00"},
+		// { title: "Semifreddo al torroncino", price: "5,00"},
+		// { title: "Millefoglie", price: "5,00"},
+		// { title: "Crème caramel", price: "5,00"},
+		{ title: "Pistachio cheesecake", price: "5,00"},
+		// { title: "Torta al cioccolato", price: "5,00"},
+		{ title: "Amaretti and chocolate bunet", price: "5,00"},
+		{ title: "Strawberry bavarian cream", price: "5,00"},
 	];
 
 
