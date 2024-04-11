@@ -19,17 +19,12 @@ const DessertEnglish = () => {
 	}, []);
 
 	const dessert = [
-		// { title: "Panna cotta", price: "5,00"},
 		{ title: "Coffee tiramisu", price: "5,00"},
-		// { title: "Semifreddo al torroncino", price: "5,00"},
-		// { title: "Millefoglie", price: "5,00"},
-		// { title: "Crème caramel", price: "5,00"},
 		{ title: "Pistachio cheesecake", price: "5,00"},
-		// { title: "Torta al cioccolato", price: "5,00"},
 		{ title: "Amaretti and chocolate bunet", price: "5,00"},
-		{ title: "Strawberry bavarian cream", price: "5,00"},
+		// { title: "Strawberry bavarian cream", price: "5,00"},
+		{title: "Meringue filled with ice cream, cream and strawberries", price: "5,00"},
 	];
-
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">

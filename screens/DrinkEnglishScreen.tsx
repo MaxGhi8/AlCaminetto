@@ -24,6 +24,7 @@ const DrinkEnglish = () => {
 		{ title: "Coca cola", price: "2,50"},
 		{ title: "Coca cola zero", price: "2,50"},
 		{ title: "Fanta", price: "2,50"},
+		{ title: "Sprite", price: "2,50"},
 		{ title: "Schweppes lemon", price: "2,50"},
 		{ title: "Schweppes tonic", price: "2,50"},
 		{ title: "Estathè (peach/lemon)", price: "1,00"},
@@ -34,7 +35,8 @@ const DrinkEnglish = () => {
 		{ title: "Ceres beer 33cL", price: "4,00"},
 		{ title: "Moretti beer 33cL", price: "3,50"},
 		{ title: "Moretti beer 66cL", price: "6,00"},
-		{ title: "Bitter", price: "3,00"},
+		{ title: "Original amber beer 'kardinal' 50cL", price: "6,00"},
+		{ title: "Bitter", price: "3,00"},	
 	];
 
 	const caffe = [

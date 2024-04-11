@@ -19,17 +19,12 @@ const DessertItalian = () => {
 	}, []);
 
 	const dessert = [
-		// { title: "Panna cotta", price: "5,00"},
 		{ title: "Tiramisù al caffè", price: "5,00"},
-		// { title: "Semifreddo al torroncino", price: "5,00"},
-		// { title: "Millefoglie", price: "5,00"},
-		// { title: "Crème caramel", price: "5,00"},
 		{ title: "Cheesecake al pistacchio", price: "5,00"},
-		// { title: "Torta al cioccolato", price: "5,00"},
 		{ title: "Bunet amaretti e cioccolato", price: "5,00"},
-		{ title: "Bavarese alle fragole", price: "5,00"},
+		// { title: "Bavarese alle fragole", price: "5,00"},
+		{ title: "Meringa ripiena di gelato, panna e fragole", price: "5,00"},
 	];
-
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
@@ -50,7 +45,6 @@ const DessertItalian = () => {
 							</View>
 						</View>
 						))}
-
 			</ScrollView>
 		</SafeAreaView>
 	);

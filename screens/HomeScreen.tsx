@@ -55,13 +55,13 @@ const HomeScreen = ({}) => {
 		// { title: "Français", flag: "fr", destination: "Francais" },
 	];
 
-	const data = d.getDay() === 4 ? 
+	const data = d.getDay() === 5 ? 
 		[
 		{photo: Photo4,}, {photo: Photo5,}, {photo: Photo3_bis,}, {photo: Photo1,}, 
 		{photo: Photo6,}, {photo: Photo2,},	{photo: Photo13,}, {photo: Photo7,},
 		] : 
 		[
-		{photo: Photo4,}, {photo: Photo8,}, {photo: Photo3_bis,}, {Photo: Photo9,},
+		{photo: Photo4,}, {photo: Photo8,}, {photo: Photo3_bis,}, {photo: Photo9,},
 		{photo: Photo6,}, {photo: Photo10,}, {photo: Photo13,}, {photo: Photo11,}, {photo: Photo7,}, {photo: Photo12,},
 		];
 
