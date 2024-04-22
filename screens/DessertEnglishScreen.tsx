@@ -1,6 +1,7 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
 import React, { useLayoutEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
+import DessertCard from "../components/DessertCard";
 
 const DessertEnglish = () => {
 	const navigation = useNavigation();
@@ -18,34 +19,46 @@ const DessertEnglish = () => {
 		});
 	}, []);
 
+
 	const dessert = [
-		{ title: "Coffee tiramisu", price: "5,00"},
-		{ title: "Pistachio cheesecake", price: "5,00"},
-		{ title: "Amaretti and chocolate bunet", price: "5,00"},
-		// { title: "Strawberry bavarian cream", price: "5,00"},
-		{title: "Meringue filled with ice cream, cream and strawberries", price: "5,00"},
+		{ photo: "Tiramisu", title: "Tiramisu", description: "Tiramisu with coffee and Savoiardi", price: "5,00"},
+		//{ photo: "CheesecakePistacchio", title: "Cheesecake", description: "Pistachio cheesecake with pistachio grains", price: "5,00"},
+		{ photo: "CheesecakeMandorle", title: "Cheesecake", description: "Cheesecake with white chocolate, almonds and hazelnut crumbs", price: "5,00"},
+		{ photo: "Bunet", title: "Bunet", description: "Bunet with macaroons and chocolate", price: "5,00"},
+		{ photo: "Meringa", title: "Meringaue", description: "Meringue filled with ice cream, cream and strawberries", price: "5,00"},
+		{ photo: "GelatoFragole", title: "Ice cream", description: "Cup of ice cream with strawberries", price: "5,00"},		
 	];
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
-			<ScrollView className="w-full">
-					<View className="flex-1 items-center justify-center pb-3">
-						<Text className="text-white text-2xl font-bold mt-4">
-							DESSERTS
-						</Text>
+			<View className="items-center pb-3">
+				<Text className="text-white text-2xl font-bold mt-4">
+					DESSERTS
+				</Text>
+			</View>
+			{/* Schema puntato per elencare i dolci*/}
+			{ /* {dessert.map((item, key) => (
+					<View className="flex-row px-5 pb-3" key={key}>
+					<View className="flex-1 items-start justify-start">
+						<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
 					</View>
-					{/* Schema puntato per elencare i dolci*/}
-					{dessert.map((item, key) => (
-							<View className="flex-row px-5 pb-3" key={key}>
-							<View className="flex-1 items-start justify-start">
-								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
-							</View>
-							<View className="justify-end">
-								<Text className="text-white text-base"> € {item.price}</Text>
-							</View>
-						</View>
-						))}
-
+					<View className="justify-end">
+						<Text className="text-white text-base"> € {item.price}</Text>
+					</View>
+				</View>
+				))} */}
+			
+			{/* Dolci con foto */}
+			<ScrollView className="flex-1 px-3">
+				{dessert.map((item, key) => (
+					<DessertCard
+						key={key}
+						photo={item.photo}
+						title={item.title}
+						description={item.description}
+						price={item.price}
+					/>
+				))}
 			</ScrollView>
 		</SafeAreaView>
 	);

@@ -19,17 +19,18 @@ const MenuItalian = () => {
 	}, []);
 
 	const primi = [
-		{ title: "Risotto al timorasso", price: "8,00"},
-		{ title: "Pansoti di fonduta con crema al Montebore, noci e pere", price: "10,00"},
+		{ title: "Risotto alle erbette primaverili, speck e gorgonzola", price: "8,00"},
+		{ title: "Agnolotti al brasato", price: "10,00"},
 		{ title: "Taglierini ai funghi", price: "10,00"},
 	];
 
 	const secondi = [
-		{ title: "Grigliata mista di maiale (salamino, salsiccia e costina)", price: "12,00"},
+		{ title: "Grigliata mista di maiale (salamino, salsiccia, costina e spiedini)", price: "12,00"},
 		{ title: "Tagliata di manzo, 300g", price: "15,00"},
-		{ title: "Guance di manzo brasate", price: "12,00"},
-		{ title: "Noce di vitello al forno", price: "9,00"},
-		{ title: "Roastbeef con formaggio Grattone", price: "9,00"},
+		//{ title: "Vitello tonnato", price: "10,00"},
+		{ title: "Guance di vitello brasate", price: "12,00"},
+		{ title: "Noce di vitello arrosto", price: "9,00"},
+		{ title: "Carpaccio con Montebore", price: "9,00"},
 	];
 
 	// const dessert = [
@@ -50,8 +51,8 @@ const MenuItalian = () => {
 
 					<View className="flex-row px-5 pb-3">
 						<View className="flex-1 items-start justify-start">
-							<Text className="text-white text-base">Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa, tortino ai formaggi, 
-							panissa, tartar con Montebore e melanzane al basilico.
+							<Text className="text-white text-base">Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
+							panissa, frittatina, melanzane al basilico e tortino al formaggio. 
 							</Text>
 						</View>
 						<View className="justify-end">

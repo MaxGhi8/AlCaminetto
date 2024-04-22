@@ -29,3 +29,10 @@ export {default as SfondoDessert} from "./SfondoDessert.png";
 export {default as SfondoDrink} from "./SfondoDrink.png";
 export {default as SfondoHamburger} from "./SfondoHamburger.png";
 export {default as SfondoMenu} from "./SfondoMenu.png";
+
+export {default as CheesecakeMandorleImage} from "./CheesecakeMandorle.png";
+export {default as CheesecakePistacchioImage} from "./CheesecakePistacchio.png";
+export {default as BunetImage} from "./Bunet.png";
+export {default as MeringaImage} from "./Meringa.png";
+export {default as GelatoFragoleImage} from "./GelatoFragole.png";
+export {default as TiramisuImage} from "./Tiramisu.png";

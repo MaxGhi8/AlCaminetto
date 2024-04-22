@@ -19,17 +19,18 @@ const MenuEnglish = () => {
 	}, []);
 
 	const primi = [
-		{ title: "Timorasso risotto", price: "8.00"},
-		{ title: "Pansoti with Montebore cheese cream, walnuts, and pears", price: "10.00"},
+		{ title: "Risotto with spring herbs, bacon and gorgonzola cheese", price: "8.00"},
+		{ title: "Agnolotti with braised meat", price: "10.00"},
 		{ title: "Taglierini with mushrooms", price: "10.00"},
 	];
 	
 	const secondi = [
-		{ title: "Mixed pork grill (salamella, sausage, and ribs)", price: "12.00"},
-		{ title: "Beef sliced, 300g", price: "15.00"},
-		{ title: "Braised beef cheeks", price: "12.00"},
-		{ title: "Baked veal nut", price: "9.00"},
-		{ title: "Roast beef with Grattone cheese", price: "9.00"},
+		{ title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)", price: "12,00"},
+		{ title: "Beef sliced, 300g", price: "15,00"},
+		//{ title: "Veal tonnato", price: "10,00"},
+		{ title: "Braised veal cheeks", price: "12,00"},
+		{ title: "Roast veal nut", price: "9,00"},
+		{ title: "Carpaccio with Montebore cheese", price: "9,00"},
 	];	
 
 	// const dessert = [
@@ -51,7 +52,7 @@ const MenuEnglish = () => {
 					<View className="flex-row px-5 pb-3">
 						<View className="flex-1 items-start justify-start">
 							<Text className="text-white text-base">Mixed platter with:{`\n`}Salumi del Caminetto, Russian salad, 
-							cheese pie, panissa, tartar with Montebore and aubergines with basil.
+							panissa, omelette, aubergines with basil and cheese flan.
 							</Text>
 						</View>
 						<View className="justify-end">

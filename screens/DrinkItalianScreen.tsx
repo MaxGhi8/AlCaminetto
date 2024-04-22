@@ -30,6 +30,7 @@ const DrinkItalian = () => {
 		{ title: "Estathè (pesca/limone)", price: "1,00"},
 		{ title: "Succo di frutta (pera/pesca/albicocca/ananas)", price: "2,50"},
 		{ title: "Crodino", price: "2,50"},
+		{ title: "Chinotto", price: "2,50"},
 		{ title: "Birra alla spina Menabrea chiara piccola 0,2L", price: "3,00"},
 		{ title: "Birra alla spina Menabrea chiara grande 0,4L", price: "4,00"},
 		{ title: "Birra Ceres 33cL", price: "4,00"},

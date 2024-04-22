@@ -30,6 +30,7 @@ const DrinkEnglish = () => {
 		{ title: "Estathè (peach/lemon)", price: "1,00"},
 		{ title: "Fruit juice (pear/peach/albicocca/ananas)", price: "2,50"},
 		{ title: "Crodino", price: "2,50"},
+		{ title: "Chinotto", price: "2,50"},
 		{ title: "Small light draft beer Menabrea 0,2L", price: "3,00"},
 		{ title: "Big light draft beer Menabrea 0,4L", price: "4,00"},
 		{ title: "Ceres beer 33cL", price: "4,00"},
