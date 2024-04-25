@@ -83,19 +83,17 @@ function HamburgerScreen({ route }) {
 			{/* Nome */}
 			<View className="items-center justify-center pt-2">
 				<View className="items-center justify-center py-2 rounded-lg  border-2 border-[#292929] bg-[#1A1A1A] drop-shadow-xl shadow-orange-400">
-					<Text className="text-white font-bold text-2xl px-5">
-						{name}
-					</Text>
+					<Text className="px-5 text-2xl font-bold text-white">{name}</Text>
 				</View>
 			</View>
 			{/* Colonna a sx */}
-			<View className="flex-row justify-between w-full space-x-4 pt-4">
+			<View className="flex-row justify-between w-full pt-4 space-x-4">
 				<View className="w-1/3">
 					{/* <Image className="flex-1" source={require(`${photo}`)} /> */}
-					<Image source={images[photo]} className="h-96 w-32" />
+					<Image source={images[photo]} className="w-32 h-96" />
 				</View>
 				<View className="flex-1 pr-4">
-					<Text className="underline underline-offset-2 font-semibold text-xl pt-5 text-white">
+					<Text className="pt-5 text-xl font-semibold text-white underline underline-offset-2">
 						{ingredienti}:
 					</Text>
 					<View className="pt-6">
@@ -105,7 +103,7 @@ function HamburgerScreen({ route }) {
 							renderItem={({ item }) => {
 								return (
 									<View className="pb-6">
-										<Text className="text-white text-lg">
+										<Text className="text-lg text-white">
 											{`\u2022 ${item.ingred}`}
 										</Text>
 									</View>
@@ -116,18 +114,18 @@ function HamburgerScreen({ route }) {
 				</View>
 			</View>
 			{/* Contorno */}
-			<View className="flex-row space-x-4 inline-block align-text-top pl-4 pt-6">
+			<View className="flex-row inline-block pt-6 pl-4 space-x-4 align-text-top">
 				<View className="">
-					<Text className="underline underline-offset-2 font-semibold text-xl text-white">
+					<Text className="text-xl font-semibold text-white underline underline-offset-2">
 						{contorno}:
 					</Text>
 				</View>
 				<View className="flex-shrink">
-					<Text className="text-white text-lg">{patate}</Text>
+					<Text className="text-lg text-white">{patate}</Text>
 				</View>
 			</View>
 			{/* Allergeni */}
-			<View className="pl-4 pt-10">
+			<View className="pt-10 pl-4">
 				<Text className="text-white">{allergen}</Text>
 			</View>
 		</SafeAreaView>

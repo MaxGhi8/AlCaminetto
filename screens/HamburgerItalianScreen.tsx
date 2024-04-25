@@ -185,8 +185,8 @@ const HamburgerItalian = () => {
 						patate={"Patate al forno"}
 					/>
 				))}
-				<View className="pt-1 pb-2 items-center justify-center">
-					<Text className="text-white text-center">
+				<View className="items-center justify-center pt-1 pb-2">
+					<Text className="text-center text-white">
 						Cliccare sulle schede per maggiori informazioni!
 					</Text>
 				</View>

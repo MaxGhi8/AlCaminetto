@@ -101,8 +101,7 @@ const HamburgerDeutsch = () => {
 
 		{
 			name: "POLLO",
-			ingredients:
-				"Paniertes Hünchen, Zwiebeln, Tomate, Salat, Speck, Käse.",
+			ingredients: "Paniertes Hünchen, Zwiebeln, Tomate, Salat, Speck, Käse.",
 			ingredients_detailed: [
 				{ ingred: "Paniertes Hünchen" },
 				{ ingred: "Gedünstete Zwiebeln" },
@@ -147,10 +146,9 @@ const HamburgerDeutsch = () => {
 						patate={"Gebackenen Kartoffeln"}
 					/>
 				))}
-				<View className="pt-1 pb-2 items-center justify-center">
-					<Text className="text-white text-center">
-						Klicken Sie auf die Registerkarten für weitere
-						Informationen!
+				<View className="items-center justify-center pt-1 pb-2">
+					<Text className="text-center text-white">
+						Klicken Sie auf die Registerkarten für weitere Informationen!
 					</Text>
 				</View>
 			</ScrollView>

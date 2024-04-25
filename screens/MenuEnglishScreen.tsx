@@ -19,19 +19,25 @@ const MenuEnglish = () => {
 	}, []);
 
 	const primi = [
-		{ title: "Risotto with spring herbs, bacon and gorgonzola cheese", price: "8.00"},
-		{ title: "Agnolotti with braised meat", price: "10.00"},
-		{ title: "Taglierini with mushrooms", price: "10.00"},
+		{
+			title: "Risotto with spring herbs, bacon and gorgonzola cheese",
+			price: "8.00",
+		},
+		{ title: "Pansoti di magro with walnut sauce", price: "10.00" },
+		{ title: "Taglierini with mushrooms", price: "10.00" },
 	];
-	
+
 	const secondi = [
-		{ title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)", price: "12,00"},
-		{ title: "Beef sliced, 300g", price: "15,00"},
-		//{ title: "Veal tonnato", price: "10,00"},
-		{ title: "Braised veal cheeks", price: "12,00"},
-		{ title: "Roast veal nut", price: "9,00"},
-		{ title: "Carpaccio with Montebore cheese", price: "9,00"},
-	];	
+		{
+			title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)",
+			price: "12,00",
+		},
+		{ title: "Beef sliced, 300g", price: "15,00" },
+		{ title: "Veal tonnato", price: "10,00" },
+		//{ title: "Braised veal cheeks", price: "12,00"},
+		{ title: "Baked veal nut", price: "9,00" },
+		{ title: "Carpaccio with Montebore cheese", price: "9,00" },
+	];
 
 	// const dessert = [
 	// 	{ title: "Panna cotta", price: "5,00"},
@@ -42,74 +48,74 @@ const MenuEnglish = () => {
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
 			<ScrollView className="w-full">
+				<View className="items-center justify-center flex-1 pb-3">
+					<Text className="mt-4 text-2xl font-bold text-white">Starter</Text>
+				</View>
 
-					<View className="flex-1 items-center justify-center pb-3">
-						<Text className="text-white text-2xl font-bold mt-4">
-							Starter
+				<View className="flex-row px-5 pb-3">
+					<View className="items-start justify-start flex-1">
+						<Text className="text-base text-white">
+							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
+							panissa, herbomelette, aubergines with basil and savoury baked
+							pie.
 						</Text>
 					</View>
+					<View className="justify-end">
+						<Text className="text-base text-white"> € 10,00</Text>
+					</View>
+				</View>
 
-					<View className="flex-row px-5 pb-3">
-						<View className="flex-1 items-start justify-start">
-							<Text className="text-white text-base">Mixed platter with:{`\n`}Salumi del Caminetto, Russian salad, 
-							panissa, omelette, aubergines with basil and cheese flan.
+				<View className="items-center justify-center flex-1 pb-3">
+					<Text className="mt-4 text-2xl font-bold text-white">FIRST DISH</Text>
+				</View>
+				{/* Schema puntato per elencare i primi piatti*/}
+				{primi.map((item, key) => (
+					<View className="flex-row px-5 pb-3" key={key}>
+						<View className="items-start justify-start flex-1">
+							<Text className="text-base text-white">
+								{"\u2022"} {item.title}
 							</Text>
 						</View>
 						<View className="justify-end">
-							<Text className="text-white text-base"> € 10,00</Text>
+							<Text className="text-base text-white"> € {item.price}</Text>
 						</View>
 					</View>
+				))}
 
-					<View className="flex-1 items-center justify-center pb-3">
-						<Text className="text-white text-2xl font-bold mt-4">
-							FIRST DISH
-						</Text>
-					</View>
-					{/* Schema puntato per elencare i primi piatti*/}
-					{primi.map((item, key) => (
-							<View className="flex-row px-5 pb-3" key={key}>
-							<View className="flex-1 items-start justify-start">
-								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
-							</View>
-							<View className="justify-end">
-								<Text className="text-white text-base"> € {item.price}</Text>
-							</View>
+				<View className="items-center justify-center flex-1 pb-3">
+					<Text className="mt-4 text-2xl font-bold text-white">
+						SECOND DISH
+					</Text>
+				</View>
+				{/* Schema puntato per elencare i secondi piatti*/}
+				{secondi.map((item, key) => (
+					<View className="flex-row px-5 pb-3" key={key}>
+						<View className="items-start justify-start flex-1">
+							<Text className="text-base text-white">
+								{"\u2022"} {item.title}
+							</Text>
 						</View>
-						))}
-
-					<View className="flex-1 items-center justify-center pb-3">
-						<Text className="text-white text-2xl font-bold mt-4">
-							SECOND DISH
-						</Text>
-					</View>
-					{/* Schema puntato per elencare i secondi piatti*/}
-					{secondi.map((item, key) => (
-							<View className="flex-row px-5 pb-3" key={key}>
-							<View className="flex-1 items-start justify-start">
-								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
-							</View>
-							<View className="justify-end">
-								<Text className="text-white text-base"> € {item.price}</Text>
-							</View>
+						<View className="justify-end">
+							<Text className="text-base text-white"> € {item.price}</Text>
 						</View>
-						))}
+					</View>
+				))}
 
-					{/* <View className="flex-1 items-center justify-center pb-3">
-						<Text className="text-white text-2xl font-bold mt-4">
+				{/* <View className="items-center justify-center flex-1 pb-3">
+						<Text className="mt-4 text-2xl font-bold text-white">
 							DESSERT
 						</Text>
 					</View>
 					{dessert.map((item, key) => (
 							<View className="flex-row px-5 pb-3" key={key}>
-							<View className="flex-1 items-start justify-start">
-								<Text className="text-white text-base">{'\u2022'} {item.title}</Text>
+							<View className="items-start justify-start flex-1">
+								<Text className="text-base text-white">{'\u2022'} {item.title}</Text>
 							</View>
 							<View className="justify-end">
-								<Text className="text-white text-base"> € {item.price}</Text>
+								<Text className="text-base text-white"> € {item.price}</Text>
 							</View>
 						</View>
 						))} */}
-
 			</ScrollView>
 		</SafeAreaView>
 	);

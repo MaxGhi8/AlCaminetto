@@ -18,13 +18,10 @@ const Deutsch = () => {
 		});
 	}, []);
 
-
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			<ScrollView className="px-4">
-				<Text>
-					SIUM
-				</Text>
+				<Text>SIUM</Text>
 			</ScrollView>
 		</SafeAreaView>
 	);

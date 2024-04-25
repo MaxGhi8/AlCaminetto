@@ -22,8 +22,7 @@ const HamburgerEnglish = () => {
 	const [data, setData] = useState([
 		{
 			name: "DOPPIO CHEDDAR",
-			ingredients:
-				"Beef burger, onions, bacon, double cheddar, burger sauce.",
+			ingredients: "Beef burger, onions, bacon, double cheddar, burger sauce.",
 			ingredients_detailed: [
 				{ ingred: "150 gram beef burger" },
 				{ ingred: "Stewed onions" },
@@ -37,8 +36,7 @@ const HamburgerEnglish = () => {
 		},
 		{
 			name: "PIGGY BURG",
-			ingredients:
-				"Pulled pork, smoked cheese, onions, bacon, BBQ sauce.",
+			ingredients: "Pulled pork, smoked cheese, onions, bacon, BBQ sauce.",
 			ingredients_detailed: [
 				{ ingred: "Pulled pork" },
 				{ ingred: "Smoked cheese" },
@@ -138,8 +136,7 @@ const HamburgerEnglish = () => {
 		},
 		{
 			name: "POLLO",
-			ingredients:
-				"Fried chicken, onions, tomato, lettuce, bacon, cheese.",
+			ingredients: "Fried chicken, onions, tomato, lettuce, bacon, cheese.",
 			ingredients_detailed: [
 				{ ingred: "Fried chicken" },
 				{ ingred: "Stewed onions" },
@@ -185,8 +182,8 @@ const HamburgerEnglish = () => {
 						patate={"Baked potatoes"}
 					/>
 				))}
-				<View className="pt-1 pb-2 items-center justify-center">
-					<Text className="text-white text-center">
+				<View className="items-center justify-center pt-1 pb-2">
+					<Text className="text-center text-white">
 						Click on the tabs for more information!
 					</Text>
 				</View>

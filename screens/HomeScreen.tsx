@@ -65,13 +65,13 @@ const HomeScreen = ({}) => {
 		{photo: Photo6,}, {photo: Photo10,}, {photo: Photo13,}, {photo: Photo11,}, {photo: Photo7,}, {photo: Photo12,},
 		];
 
-		const RenderItem = ({ item }) => {
-		return (
-			<View className="items-center justify-center -mt-4">
-				<Image source={item.photo} className="w-80 h-96"/>
-			</View>
-		);
-	};
+		const RenderItem = ({ item }: { item: any }) => {
+			return (
+				<View className="items-center justify-center -mt-4">
+					<Image source={item.photo} className="w-80 h-96"/>
+				</View>
+			);
+		};
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">

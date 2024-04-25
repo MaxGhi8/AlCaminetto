@@ -101,8 +101,7 @@ const HamburgerFrancais = () => {
 
 		{
 			name: "POLLO",
-			ingredients:
-				"Poulet frit, oignons, tomate, salade, bacon, fromage.",
+			ingredients: "Poulet frit, oignons, tomate, salade, bacon, fromage.",
 			ingredients_detailed: [
 				{ ingred: "Poulet frit" },
 				{ ingred: "Oignons caramélisés" },
@@ -147,8 +146,8 @@ const HamburgerFrancais = () => {
 						patate={"Pommes de terre cuites"}
 					/>
 				))}
-				<View className="pt-1 pb-2 items-center justify-center">
-					<Text className="text-white text-center">
+				<View className="items-center justify-center pt-1 pb-2">
+					<Text className="text-center text-white">
 						Cliquez sur les onglets pour plus d'informations !
 					</Text>
 				</View>
