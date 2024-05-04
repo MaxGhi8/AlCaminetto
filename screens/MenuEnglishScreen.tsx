@@ -32,11 +32,12 @@ const MenuEnglish = () => {
 			title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)",
 			price: "12,00",
 		},
-		{ title: "Beef sliced, 300g", price: "15,00" },
+		//{ title: "Beef sliced, 300g", price: "15,00" },
 		//{ title: "Veal tonnato", price: "10,00" },
 		{ title: "Braised veal cheeks", price: "12,00" },
 		{ title: "Baked veal nut", price: "9,00" },
-		{ title: "Roastbeef with Montebore cheese", price: "10,00" },
+		//{ title: "Roastbeef with Montebore cheese", price: "10,00" },
+		{ title: "Veal with tuna sauce", price: "9,00"},
 	];
 
 	// const dessert = [
@@ -56,7 +57,7 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							panissa, mini asparagus flan, aubergines with basil, cheese pie
+							panissa, herb omelette, aubergines with basil, cheese pie
 							and puff pastry with onions.
 						</Text>
 					</View>

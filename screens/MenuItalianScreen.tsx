@@ -33,11 +33,12 @@ const MenuItalian = () => {
 				"Grigliata mista di maiale (salamino, salsiccia, costina e spiedini)",
 			price: "12,00",
 		},
-		{ title: "Tagliata di manzo, 300g", price: "15,00" },
+		//{ title: "Tagliata di manzo, 300g", price: "15,00" },
 		//{ title: "Vitello tonnato", price: "10,00" },
 		{ title: "Guance di vitello brasate", price: "12,00" },
 		{ title: "Noce di vitello al forno", price: "9,00" },
-		{ title: "Roastbeef con formaggio Montebore", price: "10,00" },
+		//{ title: "Roastbeef con formaggio Montebore", price: "10,00" },
+		{ title: "Vitello tonnato", price: "9,00"},
 	];
 
 	// const dessert = [
@@ -57,7 +58,7 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							panissa, mini flan agli asparagi, melanzane al basilico, torta
+							panissa, frittatina alle erbe, melanzane al basilico, torta
 							salata ai formaggi e sfogliatina con cipolle caramellate.
 						</Text>
 					</View>
