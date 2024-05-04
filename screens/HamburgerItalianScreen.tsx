@@ -71,14 +71,14 @@ const HamburgerItalian = () => {
 		{
 			name: "MONTEBORE BURG",
 			ingredients:
-				"Hamburger di manzo, Montebore, cipolle, peperoni, bacon, salsa alcolica.",
+				"Hamburger di manzo, Montebore, cipolle, peperoni, bacon, crema alcolica al Montebore.",
 			ingredients_detailed: [
 				{ ingred: "Hamburger di manzo da 150 grammi" },
 				{ ingred: "Formaggio Montebore" },
 				{ ingred: "Cipolle caramellate" },
 				{ ingred: "Peperoni" },
 				{ ingred: "Bacon croccante" },
-				{ ingred: "Salsa alcolica" },
+				{ ingred: "Crema alcolica al Montebore" },
 			],
 			price: "14",
 			photo: "MonteboreBurg",

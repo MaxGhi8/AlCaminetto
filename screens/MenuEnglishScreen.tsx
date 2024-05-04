@@ -1,5 +1,5 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 const MenuEnglish = () => {
@@ -20,11 +20,11 @@ const MenuEnglish = () => {
 
 	const primi = [
 		{
-			title: "Risotto with spring herbs, bacon and gorgonzola cheese",
-			price: "8.00",
+			title: "Risotto with Timorasso",
+			price: "8,00",
 		},
-		{ title: "Pansoti di magro with walnut sauce", price: "10.00" },
-		{ title: "Taglierini with mushrooms", price: "10.00" },
+		{ title: "Agnolotti with braised meat", price: "10,00" },
+		{ title: "Taglierini with mushrooms", price: "10,00" },
 	];
 
 	const secondi = [
@@ -33,10 +33,10 @@ const MenuEnglish = () => {
 			price: "12,00",
 		},
 		{ title: "Beef sliced, 300g", price: "15,00" },
-		{ title: "Veal tonnato", price: "10,00" },
-		//{ title: "Braised veal cheeks", price: "12,00"},
+		//{ title: "Veal tonnato", price: "10,00" },
+		{ title: "Braised veal cheeks", price: "12,00" },
 		{ title: "Baked veal nut", price: "9,00" },
-		{ title: "Carpaccio with Montebore cheese", price: "9,00" },
+		{ title: "Roastbeef with Montebore cheese", price: "10,00" },
 	];
 
 	// const dessert = [
@@ -56,8 +56,8 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							panissa, herbomelette, aubergines with basil and savoury baked
-							pie.
+							panissa, mini asparagus flan, aubergines with basil, cheese pie
+							and puff pastry with onions.
 						</Text>
 					</View>
 					<View className="justify-end">

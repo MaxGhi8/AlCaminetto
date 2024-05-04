@@ -40,7 +40,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "15,00",
 		},
-
 		{
 			title: "Barbera 'Canvera'",
 			year: "2021",
@@ -55,7 +54,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "18,00",
 		},
-
 		{
 			title: "Barbera 'Territorio'",
 			year: "2020",
@@ -63,14 +61,13 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "18,00",
 		},
-		{
-			title: "Barbera 'Poggio del Rosso'",
-			year: "2016",
-			prod: "Claudio Mariotto",
-			origin: "Terre Derthona",
-			price: "22,00",
-		},
-
+		//{
+		//title: "Barbera 'Poggio del Rosso'",
+		//year: "2016",
+		//prod: "Claudio Mariotto",
+		//origin: "Terre Derthona",
+		//price: "22,00",
+		//},
 		{
 			title: "Barbera 'Poggio delle Amarene'",
 			year: "2016",
@@ -93,7 +90,6 @@ const WineEnglish = () => {
 			origin: "Oltrepò pavese",
 			price: "13,00",
 		},
-
 		{
 			title: "Gutturnio frizzante",
 			year: "2021",

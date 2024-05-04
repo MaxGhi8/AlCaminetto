@@ -69,14 +69,14 @@ const HamburgerEnglish = () => {
 		{
 			name: "MONTEBORE BURG",
 			ingredients:
-				"Beef burger, Montebore, onions, peppers, bacon, alcohol sauce.",
+				"Beef burger, Montebore, onions, peppers, bacon, alcoholic cream with montebore.",
 			ingredients_detailed: [
 				{ ingred: "150 gram beef burger" },
 				{ ingred: "Montebore cheese" },
 				{ ingred: "Stewed onions" },
 				{ ingred: "Peppers" },
 				{ ingred: "Crispy bacon" },
-				{ ingred: "Alcohol sauce" },
+				{ ingred: "Alcoholic cream with montebore" },
 			],
 			price: "14",
 			photo: "MonteboreBurg",

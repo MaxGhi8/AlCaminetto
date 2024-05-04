@@ -26,7 +26,7 @@ const HamburgerCard = ({
 	const navigation = useNavigation();
 
 	return (
-		<View className="flex-1 pt-2 pb-1 w-full">
+		<View className="w-full py-1">
 			<TouchableOpacity
 				className="rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] drop-shadow-xl"
 				onPress={() => {
@@ -39,18 +39,13 @@ const HamburgerCard = ({
 						contorno: contorno,
 						patate: patate,
 					});
-				}}
-			>
+				}}>
 				<View className="flex-col">
-					<View className="justify-center items-center">
-						<Text className="text-xl font-bold text-white">
-							{name}
-						</Text>
+					<View className="items-center justify-center">
+						<Text className="text-xl font-bold text-white">{name}</Text>
 					</View>
 					<View className="items-start">
-						<Text className="text-white text-md">
-							{ingredients}
-						</Text>
+						<Text className="text-white text-md">{ingredients}</Text>
 					</View>
 					<View className="items-end">
 						<Text className="text-white text-md">{price} €</Text>

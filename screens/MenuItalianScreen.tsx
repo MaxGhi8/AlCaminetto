@@ -20,11 +20,11 @@ const MenuItalian = () => {
 
 	const primi = [
 		{
-			title: "Risotto alle erbette primaverili, speck e gorgonzola",
+			title: "Risotto al Timorasso",
 			price: "8,00",
 		},
-		{ title: "Pansoti di magro al sugo di noci", price: "10,00" },
-		{ title: "Taglierini ai funghi", price: "10,00" },
+		{ title: "Agnolotti al brasato", price: "10,00" },
+		{ title: "Taglierini al sugo di funghi", price: "10,00" },
 	];
 
 	const secondi = [
@@ -34,10 +34,10 @@ const MenuItalian = () => {
 			price: "12,00",
 		},
 		{ title: "Tagliata di manzo, 300g", price: "15,00" },
-		{ title: "Vitello tonnato", price: "10,00" },
-		//{ title: "Guance di vitello brasate", price: "12,00"},
+		//{ title: "Vitello tonnato", price: "10,00" },
+		{ title: "Guance di vitello brasate", price: "12,00" },
 		{ title: "Noce di vitello al forno", price: "9,00" },
-		{ title: "Carpaccio con Montebore", price: "9,00" },
+		{ title: "Roastbeef con formaggio Montebore", price: "10,00" },
 	];
 
 	// const dessert = [
@@ -57,8 +57,8 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							panissa, frittatina alle erbe, melanzane al basilico e torta
-							salata calda.
+							panissa, mini flan agli asparagi, melanzane al basilico, torta
+							salata ai formaggi e sfogliatina con cipolle caramellate.
 						</Text>
 					</View>
 					<View className="justify-end">
