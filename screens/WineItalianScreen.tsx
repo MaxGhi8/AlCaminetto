@@ -62,6 +62,13 @@ const WineItalian = () => {
 			origin: "Terre Derthona",
 			price: "18,00",
 		},
+		{
+			title: "Freisa 'Braghè'",
+			year: "2020",
+			prod: "Claudio Mariotto",
+			origin: "Terre Derthona",
+			price: "15,00",
+		},
 		//{
 		//title: "Barbera 'Poggio del Rosso'",
 		//year: "2016",

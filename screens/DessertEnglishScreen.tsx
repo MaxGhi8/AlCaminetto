@@ -26,12 +26,29 @@ const DessertEnglish = () => {
 			description: "Tiramisu with coffee and Savoiardi",
 			price: "5,00",
 		},
-		//{ photo: "CheesecakePistacchio", title: "Cheesecake", description: "Pistachio cheesecake with pistachio grains", price: "5,00"},
 		{
-			photo: "CheesecakeMandorle",
+			photo: "CheesecakePistacchio",
 			title: "Cheesecake",
-			description:
-				"Cheesecake with white chocolate, almonds and hazelnut crumbs",
+			description: "Pistachio cheesecake with pistachio grains",
+			price: "5,00",
+		},
+		//{
+		//photo: "CheesecakeMandorle",
+		//title: "Cheesecake",
+		//description:
+		//"Cheesecake with white chocolate, almonds and hazelnut crumbs",
+		//price: "5,00",
+		//},
+		// {
+		// photo: "BavareseCaffe",
+		// title: "Bavarese",
+		// description: "Coffee Bavarian cream",
+		// price: "5,00",
+		// },
+		{
+			photo: "BavareseCiliegie",
+			title: "Bavarese",
+			description: "Bavarian cream with cherries",
 			price: "5,00",
 		},
 		{
@@ -46,12 +63,12 @@ const DessertEnglish = () => {
 			description: "Meringue filled with ice cream, cream and strawberries",
 			price: "5,00",
 		},
-		{
-			photo: "GelatoFragole",
-			title: "Ice cream",
-			description: "Cup of ice cream with strawberries",
-			price: "5,00",
-		},
+		//{
+		//photo: "GelatoFragole",
+		//title: "Ice cream",
+		//description: "Cup of ice cream with strawberries",
+		//price: "5,00",
+		//},
 	];
 
 	return (

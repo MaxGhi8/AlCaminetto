@@ -26,12 +26,29 @@ const DessertItalian = () => {
 			description: "Tiramisu al caffè con Savoiardi",
 			price: "5,00",
 		},
-		//{ photo: "CheesecakePistacchio", title: "Cheesecake", description: "Cheesecake al pistacchio con granella di pistacchio", price: "5,00"},
 		{
-			photo: "CheesecakeMandorle",
+			photo: "CheesecakePistacchio",
 			title: "Cheesecake",
-			description:
-				"Cheesecake con cioccolato bianco, mandorle e granella di nocciole",
+			description: "Cheesecake al pistacchio con granella di pistacchio",
+			price: "5,00",
+		},
+		//{
+		//photo: "CheesecakeMandorle",
+		//title: "Cheesecake",
+		//description:
+		//"Cheesecake con cioccolato bianco, mandorle e granella di nocciole",
+		//price: "5,00",
+		//},
+		// {
+		// 	photo: "BavareseCaffe",
+		// 	title: "Bavarese",
+		// 	description: "Bavarese al caffè",
+		// 	price: "5,00",
+		// },
+		{
+			photo: "BavareseCiliegie",
+			title: "Bavarese",
+			description: "Bavarese alle ciliegie",
 			price: "5,00",
 		},
 		{
@@ -46,12 +63,12 @@ const DessertItalian = () => {
 			description: "Meringa ripiena di gelato, panna e fragole",
 			price: "5,00",
 		},
-		{
-			photo: "GelatoFragole",
-			title: "Gelato",
-			description: "Coppa di gelato con fragole",
-			price: "5,00",
-		},
+		//{
+		//photo: "GelatoFragole",
+		//title: "Gelato",
+		//description: "Coppa di gelato con fragole",
+		//price: "5,00",
+		//},
 	];
 
 	return (

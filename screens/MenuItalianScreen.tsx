@@ -23,8 +23,9 @@ const MenuItalian = () => {
 			title: "Risotto al Timorasso",
 			price: "8,00",
 		},
+		{ title: "Fettuccine coi funghi", price: "10,00" },
 		{ title: "Agnolotti al brasato", price: "10,00" },
-		{ title: "Taglierini al sugo di funghi", price: "10,00" },
+		// { title: "Gnocchi con ragù di coniglio e carciofi", price: "10,00" },
 	];
 
 	const secondi = [
@@ -33,12 +34,11 @@ const MenuItalian = () => {
 				"Grigliata mista di maiale (salamino, salsiccia, costina e spiedini)",
 			price: "12,00",
 		},
-		//{ title: "Tagliata di manzo, 300g", price: "15,00" },
-		//{ title: "Vitello tonnato", price: "10,00" },
-		{ title: "Guance di vitello brasate", price: "12,00" },
+		{ title: "Tagliata di manzo, 300g", price: "15,00" },
+		{ title: "Guance di manzo brasate", price: "12,00" },
 		{ title: "Noce di vitello al forno", price: "9,00" },
 		//{ title: "Roastbeef con formaggio Montebore", price: "10,00" },
-		{ title: "Vitello tonnato", price: "9,00"},
+		{ title: "Vitello tonnato", price: "9,00" },
 	];
 
 	// const dessert = [
@@ -58,8 +58,9 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							panissa, frittatina alle erbe, melanzane al basilico, torta
-							salata ai formaggi e sfogliatina con cipolle caramellate.
+							tartar con Montebore, frittatina alle erbe, panissa, foglia di
+							salvia in pastella, miniflan agli asparagi, torta salata calda ai
+							formaggi.
 						</Text>
 					</View>
 					<View className="justify-end">
