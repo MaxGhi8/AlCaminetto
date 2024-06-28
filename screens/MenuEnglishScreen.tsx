@@ -26,6 +26,7 @@ const MenuEnglish = () => {
 		},
 		//{ title: "Gnocchi with Montebore cream", price: "8,00" },
 		{ title: "Agnolotti with braised meat", price: "10,00" },
+		// { title: "Cherry lasagne", price: "9,00" },
 		// { title: "Gnocchi with rabbit ragu and artichokes", price: "10,00" },
 	];
 
@@ -35,7 +36,7 @@ const MenuEnglish = () => {
 			price: "12,00",
 		},
 		{ title: "Beef sliced, 300g", price: "15,00" },
-		{ title: "Braised veal cheeks", price: "12,00" },
+		// { title: "Braised veal cheeks", price: "12,00" },
 		{ title: "Baked veal nut", price: "9,00" },
 		//{ title: "Roastbeef with Montebore cheese", price: "10,00" },
 		{ title: "Veal with tuna sauce", price: "9,00" },
@@ -58,8 +59,8 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							tartar with Montebore cheese, herb omelette, panissa, battered
-							sage leaf, asparagus miniflan and hot savoury pie with cheese.
+							aubergines with basil, mini asparagus flan, spinach homelet,
+							panissa, hot savoury pie
 						</Text>
 					</View>
 					<View className="justify-end">

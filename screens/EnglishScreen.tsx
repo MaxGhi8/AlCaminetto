@@ -42,7 +42,7 @@ const English = () => {
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			<ScrollView className="flex flex-col w-full max-w-screen-lg px-4 space-y-5">
-				{d.getDay() === 5 ? (
+				{/* {d.getDay() === 5 ? (
 					// Hambureger
 					<View className="flex-1 w-full">
 						<TouchableOpacity
@@ -61,34 +61,34 @@ const English = () => {
 						</TouchableOpacity>
 					</View>
 				) : (
-					// Menu
-					<View className="flex-1 w-full">
-						<TouchableOpacity
-							className="w-full rounded-3xl"
+					// Menu */}
+				<View className="flex-1 w-full">
+					<TouchableOpacity
+						className="w-full rounded-3xl"
+						style={{
+							backgroundColor: "#1A1A1A",
+							height: 180,
+							position: "relative",
+						}}
+						onPress={() => navigation.navigate("MenuEnglish" as never)}>
+						<ImageBackground
+							className="w-full"
+							source={SfondoMenu}
+							imageStyle={{ borderRadius: 24 }}
 							style={{
-								backgroundColor: "#1A1A1A",
 								height: 180,
-								position: "relative",
+								opacity: 0.35,
+								position: "absolute",
 							}}
-							onPress={() => navigation.navigate("MenuEnglish" as never)}>
-							<ImageBackground
-								className="w-full"
-								source={SfondoMenu}
-								imageStyle={{ borderRadius: 24 }}
-								style={{
-									height: 180,
-									opacity: 0.35,
-									position: "absolute",
-								}}
-							/>
-							<View className="items-center justify-center flex-1 w-full rounded-3xl">
-								<Text className="text-4xl font-bold tracking-widest text-white">
-									Menu
-								</Text>
-							</View>
-						</TouchableOpacity>
-					</View>
-				)}
+						/>
+						<View className="items-center justify-center flex-1 w-full rounded-3xl">
+							<Text className="text-4xl font-bold tracking-widest text-white">
+								Menu
+							</Text>
+						</View>
+					</TouchableOpacity>
+				</View>
+				{/* )} */}
 
 				{/* Dolci */}
 				<View className="flex-1 w-full">

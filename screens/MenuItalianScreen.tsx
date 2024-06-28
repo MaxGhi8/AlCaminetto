@@ -23,8 +23,9 @@ const MenuItalian = () => {
 			title: "Risotto al Timorasso",
 			price: "8,00",
 		},
-		{ title: "Fettuccine coi funghi", price: "10,00" },
+		{ title: "Fettuccine con sugo di funghi", price: "10,00" },
 		{ title: "Agnolotti al brasato", price: "10,00" },
+		// { title: "Lasagne alle ciliegie", price: "9,00" },
 		// { title: "Gnocchi con ragù di coniglio e carciofi", price: "10,00" },
 	];
 
@@ -34,18 +35,12 @@ const MenuItalian = () => {
 				"Grigliata mista di maiale (salamino, salsiccia, costina e spiedini)",
 			price: "12,00",
 		},
-		{ title: "Tagliata di manzo, 300g", price: "15,00" },
+		// { title: "Tagliata di manzo, 300g", price: "15,00" },
 		{ title: "Guance di manzo brasate", price: "12,00" },
 		{ title: "Noce di vitello al forno", price: "9,00" },
 		//{ title: "Roastbeef con formaggio Montebore", price: "10,00" },
 		{ title: "Vitello tonnato", price: "9,00" },
 	];
-
-	// const dessert = [
-	// 	{ title: "Panna cotta", price: "5,00"},
-	// 	{ title: "Tiramisù", price: "5,00"},
-	// 	{ title: "Semifreddo al torroncino", price: "5,00"},
-	// ];
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
@@ -58,9 +53,8 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							tartar con Montebore, frittatina alle erbe, panissa, foglia di
-							salvia in pastella, miniflan agli asparagi, torta salata calda ai
-							formaggi.
+							melanzane al basilico, mini flan agli asparagi, frittatina alle
+							erbe, panissa, torta salata calda
 						</Text>
 					</View>
 					<View className="justify-end">

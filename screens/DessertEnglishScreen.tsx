@@ -27,11 +27,17 @@ const DessertEnglish = () => {
 			price: "5,00",
 		},
 		{
-			photo: "CheesecakePistacchio",
-			title: "Cheesecake",
-			description: "Pistachio cheesecake with pistachio grains",
+			photo: "CrostataFrutta",
+			title: "Fruit tart",
+			description: "Fruit tart with pastry cream",
 			price: "5,00",
 		},
+		// {
+		// 	photo: "CheesecakePistacchio",
+		// 	title: "Cheesecake",
+		// 	description: "Pistachio cheesecake with pistachio grains",
+		// 	price: "5,00",
+		// },
 		//{
 		//photo: "CheesecakeMandorle",
 		//title: "Cheesecake",
@@ -45,12 +51,12 @@ const DessertEnglish = () => {
 		// description: "Coffee Bavarian cream",
 		// price: "5,00",
 		// },
-		{
-			photo: "BavareseCiliegie",
-			title: "Bavarese",
-			description: "Bavarian cream with cherries",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "BavareseCiliegie",
+		// 	title: "Bavarese",
+		// 	description: "Bavarian cream with cherries",
+		// 	price: "5,00",
+		// },
 		{
 			photo: "Bunet",
 			title: "Bunet",

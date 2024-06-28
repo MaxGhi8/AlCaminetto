@@ -11,6 +11,7 @@ import {
 	GelatoFragoleImage,
 	BavareseCaffeImage,
 	BavareseCiliegieImage,
+	CrostataFruttaImage,
 } from "../assets";
 
 const DessertCard = ({
@@ -35,6 +36,7 @@ const DessertCard = ({
 		GelatoFragole: GelatoFragoleImage,
 		BavareseCaffe: BavareseCaffeImage,
 		BavareseCiliegie: BavareseCiliegieImage,
+		CrostataFrutta: CrostataFruttaImage,
 	};
 
 	const windowWidth = Dimensions.get("window").width / 4;

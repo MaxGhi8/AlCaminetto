@@ -38,3 +38,4 @@ export { default as GelatoFragoleImage } from "./GelatoFragole.png";
 export { default as TiramisuImage } from "./Tiramisu.png";
 export { default as BavareseCaffeImage } from "./BavareseCaffe.png";
 export { default as BavareseCiliegieImage } from "./BavareseCiliegie.png";
+export { default as CrostataFruttaImage } from "./CrostataDiFrutta.png";

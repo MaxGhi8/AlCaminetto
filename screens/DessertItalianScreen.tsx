@@ -27,11 +27,17 @@ const DessertItalian = () => {
 			price: "5,00",
 		},
 		{
-			photo: "CheesecakePistacchio",
-			title: "Cheesecake",
-			description: "Cheesecake al pistacchio con granella di pistacchio",
+			photo: "CrostataFrutta",
+			title: "Crostata di frutta",
+			description: "Crostata di frutta con crema pasticcera",
 			price: "5,00",
 		},
+		// {
+		// 	photo: "CheesecakePistacchio",
+		// 	title: "Cheesecake",
+		// 	description: "Cheesecake al pistacchio con granella di pistacchio",
+		// 	price: "5,00",
+		// },
 		//{
 		//photo: "CheesecakeMandorle",
 		//title: "Cheesecake",
@@ -45,12 +51,12 @@ const DessertItalian = () => {
 		// 	description: "Bavarese al caffè",
 		// 	price: "5,00",
 		// },
-		{
-			photo: "BavareseCiliegie",
-			title: "Bavarese",
-			description: "Bavarese alle ciliegie",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "BavareseCiliegie",
+		// 	title: "Bavarese",
+		// 	description: "Bavarese alle ciliegie",
+		// 	price: "5,00",
+		// },
 		{
 			photo: "Bunet",
 			title: "Bunet",
