@@ -26,10 +26,22 @@ const DessertItalian = () => {
 			description: "Tiramisu al caffè con Savoiardi",
 			price: "5,00",
 		},
+		// {
+		// 	photo: "Sfogliata",
+		// 	title: "Sfogliata",
+		// 	description: "Sfogliata con crema pasticcera",
+		// 	price: "5,00",
+		// },
+		// {
+		// 	photo: "CrostataFrutta",
+		// 	title: "Crostata di frutta",
+		// 	description: "Crostata di frutta con crema pasticcera",
+		// 	price: "5,00",
+		// },
 		{
-			photo: "CrostataFrutta",
-			title: "Crostata di frutta",
-			description: "Crostata di frutta con crema pasticcera",
+			photo: "CheesecakeGianduiaLamponi",
+			title: "Cheesecake",
+			description: "Cheesecake con cioccolato gianduia",
 			price: "5,00",
 		},
 		// {
@@ -66,7 +78,7 @@ const DessertItalian = () => {
 		{
 			photo: "Meringa",
 			title: "Meringa",
-			description: "Meringa ripiena di gelato, panna e fragole",
+			description: "Meringa ripiena di gelato, panna e frutta fresca",
 			price: "5,00",
 		},
 		//{
@@ -75,6 +87,12 @@ const DessertItalian = () => {
 		//description: "Coppa di gelato con fragole",
 		//price: "5,00",
 		//},
+		{
+			photo: "ZuppaInglese",
+			title: "Zuppa Inglese",
+			description: "Zuppa inglese con crema pasticciera e cioccolato",
+			price: "5,00",
+		},
 	];
 
 	return (

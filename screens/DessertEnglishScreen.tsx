@@ -26,10 +26,22 @@ const DessertEnglish = () => {
 			description: "Tiramisu with coffee and Savoiardi",
 			price: "5,00",
 		},
+		// {
+		// 	photo: "Sfogliata",
+		// 	title: "Sfogliata",
+		// 	description: "Sfogliata with pastry cream",
+		// 	price: "5,00",
+		// },
+		// {
+		// 	photo: "CrostataFrutta",
+		// 	title: "Fruit tart",
+		// 	description: "Fruit tart with pastry cream",
+		// 	price: "5,00",
+		// },
 		{
-			photo: "CrostataFrutta",
-			title: "Fruit tart",
-			description: "Fruit tart with pastry cream",
+			photo: "CheesecakeGianduiaLamponi",
+			title: "Cheesecake",
+			description: "Cheesecake with gianduia chocolate",
 			price: "5,00",
 		},
 		// {
@@ -66,7 +78,7 @@ const DessertEnglish = () => {
 		{
 			photo: "Meringa",
 			title: "Meringaue",
-			description: "Meringue filled with ice cream, cream and strawberries",
+			description: "Meringue filled with ice cream, cream and fresh fruits",
 			price: "5,00",
 		},
 		//{
@@ -75,6 +87,12 @@ const DessertEnglish = () => {
 		//description: "Cup of ice cream with strawberries",
 		//price: "5,00",
 		//},
+		{
+			photo: "ZuppaInglese",
+			title: "Zuppa Inglese",
+			description: "Zuppa Inglese with chocolate and custard",
+			price: "5,00",
+		},
 	];
 
 	return (

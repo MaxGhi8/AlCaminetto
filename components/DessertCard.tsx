@@ -12,6 +12,9 @@ import {
 	BavareseCaffeImage,
 	BavareseCiliegieImage,
 	CrostataFruttaImage,
+	CheesecakeGianduiaLamponiImage,
+	SfogliataImage,
+	ZuppaIngleseImage,
 } from "../assets";
 
 const DessertCard = ({
@@ -37,6 +40,9 @@ const DessertCard = ({
 		BavareseCaffe: BavareseCaffeImage,
 		BavareseCiliegie: BavareseCiliegieImage,
 		CrostataFrutta: CrostataFruttaImage,
+		CheesecakeGianduiaLamponi: CheesecakeGianduiaLamponiImage,
+		Sfogliata: SfogliataImage,
+		ZuppaInglese: ZuppaIngleseImage,
 	};
 
 	const windowWidth = Dimensions.get("window").width / 4;

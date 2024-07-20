@@ -39,3 +39,6 @@ export { default as TiramisuImage } from "./Tiramisu.png";
 export { default as BavareseCaffeImage } from "./BavareseCaffe.png";
 export { default as BavareseCiliegieImage } from "./BavareseCiliegie.png";
 export { default as CrostataFruttaImage } from "./CrostataDiFrutta.png";
+export { default as CheesecakeGianduiaLamponiImage } from "./CheesecakeGianduiaLamponi.png";
+export { default as SfogliataImage } from "./Sfogliata.png";
+export { default as ZuppaIngleseImage } from "./ZuppaInglese.png";

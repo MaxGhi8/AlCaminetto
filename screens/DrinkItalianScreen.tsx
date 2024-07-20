@@ -37,7 +37,7 @@ const DrinkItalian = () => {
 		{ title: "Birra Moretti 33cL", price: "3,50" },
 		{ title: "Birra Moretti 66cL", price: "6,00" },
 		{ title: "Paulaner Weissbier 50cL", price: "5,00" },
-		{ title: "Birra 'kardinal' ambrata originale 50cL", price: "6,00" },
+		// { title: "Birra 'kardinal' ambrata originale 50cL", price: "6,00" },
 		{ title: "Amaro", price: "3,00" },
 	];
 
