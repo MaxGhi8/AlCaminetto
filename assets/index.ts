@@ -42,3 +42,4 @@ export { default as CrostataFruttaImage } from "./CrostataDiFrutta.png";
 export { default as CheesecakeGianduiaLamponiImage } from "./CheesecakeGianduiaLamponi.png";
 export { default as SfogliataImage } from "./Sfogliata.png";
 export { default as ZuppaIngleseImage } from "./ZuppaInglese.png";
+export { default as TortaMeleImage } from "./TortaMele.png";

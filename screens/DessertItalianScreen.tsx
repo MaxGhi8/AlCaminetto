@@ -26,6 +26,12 @@ const DessertItalian = () => {
 			description: "Tiramisu al caffè con Savoiardi",
 			price: "5,00",
 		},
+		{
+			photo: "TortaMele",
+			title: "Torta di mele",
+			description: "Torta di pasta frolla con mele",
+			price: "5,00",
+		},
 		// {
 		// 	photo: "Sfogliata",
 		// 	title: "Sfogliata",
@@ -38,12 +44,12 @@ const DessertItalian = () => {
 		// 	description: "Crostata di frutta con crema pasticcera",
 		// 	price: "5,00",
 		// },
-		{
-			photo: "CheesecakeGianduiaLamponi",
-			title: "Cheesecake",
-			description: "Cheesecake con cioccolato gianduia",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "CheesecakeGianduiaLamponi",
+		// 	title: "Cheesecake",
+		// 	description: "Cheesecake con cioccolato gianduia",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "CheesecakePistacchio",
 		// 	title: "Cheesecake",

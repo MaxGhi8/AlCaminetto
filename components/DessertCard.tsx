@@ -15,6 +15,7 @@ import {
 	CheesecakeGianduiaLamponiImage,
 	SfogliataImage,
 	ZuppaIngleseImage,
+	TortaMeleImage,
 } from "../assets";
 
 const DessertCard = ({
@@ -43,6 +44,7 @@ const DessertCard = ({
 		CheesecakeGianduiaLamponi: CheesecakeGianduiaLamponiImage,
 		Sfogliata: SfogliataImage,
 		ZuppaInglese: ZuppaIngleseImage,
+		TortaMele: TortaMeleImage,
 	};
 
 	const windowWidth = Dimensions.get("window").width / 4;

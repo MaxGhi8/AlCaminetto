@@ -20,13 +20,13 @@ const MenuItalian = () => {
 
 	const primi = [
 		{
-			title: "Risotto con zucchine, pancetta affumicata e pecorino",
+			title: "Risotto con Timorasso",
 			price: "8,00",
 		},
 		{ title: "Fettuccine con sugo di funghi", price: "10,00" },
 		// { title: "Agnolotti al brasato", price: "10,00" },
 		{
-			title: "Ravioloni di grano saraceno al pomodoro e basilico",
+			title: "Ravioloni di fonduta con crema al limone",
 			price: "10,00",
 		},
 		// { title: "Lasagne alle ciliegie", price: "9,00" },
@@ -41,8 +41,8 @@ const MenuItalian = () => {
 			price: "12,00",
 		},
 		// { title: "Tagliata di manzo, 300g", price: "15,00" },
-		// { title: "Carpaccio con formaggio Grattone", price: "10,00" },
-		{ title: "Guance di manzo brasate", price: "12,00" },
+		{ title: "Carpaccio con formaggio Montebore", price: "9,00" },
+		// { title: "Guance di manzo brasate", price: "12,00" },
 		{ title: "Noce di vitello al forno", price: "9,00" },
 	];
 
@@ -57,8 +57,8 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							panissa, melanzane al basilico, mini flan agli asparagi, zucchine
-							in carpione e torta salata calda.
+							tartar con Montebore, melanzane al basilico, zucchine in carpione,
+							baccalà in pastella, tortino di spinaci e panissa
 						</Text>
 					</View>
 					<View className="justify-end">

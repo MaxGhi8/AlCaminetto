@@ -20,7 +20,7 @@ const MenuEnglish = () => {
 
 	const primi = [
 		{
-			title: "Risotto with courgettes, smoked bacon and pecorino cheese",
+			title: "Timorasso risotto",
 			price: "8,00",
 		},
 		{
@@ -29,7 +29,7 @@ const MenuEnglish = () => {
 		},
 		// { title: "Fondue and cherry pansoti with butter and sage", price: "10,00" },
 		//{ title: "Gnocchi with Montebore cream", price: "8,00" },
-		{ title: "Buckwheat ravioli with tomato and basil", price: "10,00" },
+		{ title: "Fondue ravioli with lemon cream", price: "10,00" },
 		// { title: "Cherry lasagne", price: "9,00" },
 		// { title: "Gnocchi with rabbit ragu and artichokes", price: "10,00" },
 	];
@@ -40,10 +40,10 @@ const MenuEnglish = () => {
 			title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)",
 			price: "12,00",
 		},
-		// { title: "Carpaccio with Grattone cheese", price: "10,00" },
+		{ title: "Carpaccio with Montebore cheese", price: "9,00" },
 		// { title: "Beef sliced, 300g", price: "15,00" },
 		{ title: "Braised veal cheeks", price: "12,00" },
-		{ title: "Baked veal nut", price: "9,00" },
+		// { title: "Baked veal nut", price: "9,00" },
 	];
 
 	// const dessert = [
@@ -63,8 +63,8 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							aubergines with basil, panissa, mini asparagus flan, courgette in
-							carpione and hot savoury pie.
+							tartar with Montebore, aubergines with basil, soused courgettes,
+							battered salt cod, spinach pie and panissa
 						</Text>
 					</View>
 					<View className="justify-end">
