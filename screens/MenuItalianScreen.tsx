@@ -26,7 +26,7 @@ const MenuItalian = () => {
 		{ title: "Fettuccine con sugo di funghi", price: "10,00" },
 		// { title: "Agnolotti al brasato", price: "10,00" },
 		{
-			title: "Ravioloni di fonduta con crema al limone",
+			title: "Ravioloni di grano saraceno con crema di zucchini e speck",
 			price: "10,00",
 		},
 		// { title: "Lasagne alle ciliegie", price: "9,00" },

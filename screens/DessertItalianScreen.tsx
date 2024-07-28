@@ -29,7 +29,7 @@ const DessertItalian = () => {
 		{
 			photo: "TortaMele",
 			title: "Torta di mele",
-			description: "Torta di pasta frolla con mele",
+			description: "Torta di mele con gelato",
 			price: "5,00",
 		},
 		// {
@@ -93,12 +93,12 @@ const DessertItalian = () => {
 		//description: "Coppa di gelato con fragole",
 		//price: "5,00",
 		//},
-		{
-			photo: "ZuppaInglese",
-			title: "Zuppa Inglese",
-			description: "Zuppa inglese con crema pasticciera e cioccolato",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "ZuppaInglese",
+		// 	title: "Zuppa Inglese",
+		// 	description: "Zuppa inglese con crema pasticciera e cioccolato",
+		// 	price: "5,00",
+		// },
 	];
 
 	return (

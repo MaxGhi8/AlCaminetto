@@ -29,7 +29,10 @@ const MenuEnglish = () => {
 		},
 		// { title: "Fondue and cherry pansoti with butter and sage", price: "10,00" },
 		//{ title: "Gnocchi with Montebore cream", price: "8,00" },
-		{ title: "Fondue ravioli with lemon cream", price: "10,00" },
+		{
+			title: "Buckwheat ravioli with cream of zucchini and bacon",
+			price: "10,00",
+		},
 		// { title: "Cherry lasagne", price: "9,00" },
 		// { title: "Gnocchi with rabbit ragu and artichokes", price: "10,00" },
 	];
@@ -42,8 +45,8 @@ const MenuEnglish = () => {
 		},
 		{ title: "Carpaccio with Montebore cheese", price: "9,00" },
 		// { title: "Beef sliced, 300g", price: "15,00" },
-		{ title: "Braised veal cheeks", price: "12,00" },
-		// { title: "Baked veal nut", price: "9,00" },
+		// { title: "Braised veal cheeks", price: "12,00" },
+		{ title: "Baked veal nut", price: "9,00" },
 	];
 
 	// const dessert = [

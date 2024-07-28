@@ -29,7 +29,7 @@ const DessertEnglish = () => {
 		{
 			photo: "TortaMele",
 			title: "Apple pie",
-			description: "Shortcrust pastry cake with apples",
+			description: "Apple pie with ice cream",
 			price: "5,00",
 		},
 		// {
@@ -93,12 +93,12 @@ const DessertEnglish = () => {
 		//description: "Cup of ice cream with strawberries",
 		//price: "5,00",
 		//},
-		{
-			photo: "ZuppaInglese",
-			title: "Zuppa Inglese",
-			description: "Zuppa Inglese with chocolate and custard",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "ZuppaInglese",
+		// 	title: "Zuppa Inglese",
+		// 	description: "Zuppa Inglese with chocolate and custard",
+		// 	price: "5,00",
+		// },
 	];
 
 	return (
