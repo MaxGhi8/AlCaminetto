@@ -32,6 +32,8 @@ export { default as SfondoMenu } from "./SfondoMenu.png";
 
 export { default as CheesecakeMandorleImage } from "./CheesecakeMandorle.png";
 export { default as CheesecakePistacchioImage } from "./CheesecakePistacchio.png";
+export { default as CheesecakeGianduiaLamponiImage } from "./CheesecakeGianduiaLamponi.png";
+export { default as CheesecakeLimoneImage } from "./CheesecakeLimone.png";
 export { default as BunetImage } from "./Bunet.png";
 export { default as MeringaImage } from "./Meringa.png";
 export { default as GelatoFragoleImage } from "./GelatoFragole.png";
@@ -39,7 +41,6 @@ export { default as TiramisuImage } from "./Tiramisu.png";
 export { default as BavareseCaffeImage } from "./BavareseCaffe.png";
 export { default as BavareseCiliegieImage } from "./BavareseCiliegie.png";
 export { default as CrostataFruttaImage } from "./CrostataDiFrutta.png";
-export { default as CheesecakeGianduiaLamponiImage } from "./CheesecakeGianduiaLamponi.png";
 export { default as SfogliataImage } from "./Sfogliata.png";
 export { default as ZuppaIngleseImage } from "./ZuppaInglese.png";
 export { default as TortaMeleImage } from "./TortaMele.png";

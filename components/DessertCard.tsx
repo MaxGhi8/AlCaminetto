@@ -16,6 +16,7 @@ import {
 	SfogliataImage,
 	ZuppaIngleseImage,
 	TortaMeleImage,
+	CheesecakeLimoneImage,
 } from "../assets";
 
 const DessertCard = ({
@@ -35,13 +36,14 @@ const DessertCard = ({
 		Bunet: BunetImage,
 		CheesecakeMandorle: CheesecakeMandorleImage,
 		CheesecakePistacchio: CheesecakePistacchioImage,
+		CheesecakeGianduiaLamponi: CheesecakeGianduiaLamponiImage,
+		CheesecakeLimone: CheesecakeLimoneImage,
 		Meringa: MeringaImage,
 		Tiramisu: TiramisuImage,
 		GelatoFragole: GelatoFragoleImage,
 		BavareseCaffe: BavareseCaffeImage,
 		BavareseCiliegie: BavareseCiliegieImage,
 		CrostataFrutta: CrostataFruttaImage,
-		CheesecakeGianduiaLamponi: CheesecakeGianduiaLamponiImage,
 		Sfogliata: SfogliataImage,
 		ZuppaInglese: ZuppaIngleseImage,
 		TortaMele: TortaMeleImage,

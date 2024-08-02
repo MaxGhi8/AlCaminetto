@@ -26,12 +26,12 @@ const DessertEnglish = () => {
 			description: "Tiramisu with coffee and Savoiardi",
 			price: "5,00",
 		},
-		{
-			photo: "TortaMele",
-			title: "Apple pie",
-			description: "Apple pie with ice cream",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "TortaMele",
+		// 	title: "Apple pie",
+		// 	description: "Apple pie with ice cream",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "Sfogliata",
 		// 	title: "Sfogliata",
@@ -44,6 +44,12 @@ const DessertEnglish = () => {
 		// 	description: "Fruit tart with pastry cream",
 		// 	price: "5,00",
 		// },
+		{
+			photo: "CheesecakeLimone",
+			title: "Cheesecake",
+			description: "Lemon cheesecake",
+			price: "5,00",
+		},
 		// {
 		// 	photo: "CheesecakeGianduiaLamponi",
 		// 	title: "Cheesecake",
