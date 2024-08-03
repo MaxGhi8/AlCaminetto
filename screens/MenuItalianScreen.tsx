@@ -20,7 +20,7 @@ const MenuItalian = () => {
 
 	const primi = [
 		{
-			title: "Risotto con Timorasso",
+			title: "Risotto al Timorasso con cipolla rossa di Tropea e lavanda",
 			price: "8,00",
 		},
 		{ title: "Fettuccine con sugo di funghi", price: "10,00" },
@@ -41,7 +41,7 @@ const MenuItalian = () => {
 			price: "12,00",
 		},
 		// { title: "Tagliata di manzo, 300g", price: "15,00" },
-		{ title: "Carpaccio con formaggio Montebore", price: "9,00" },
+		{ title: "Roastbeef all'inglese con tartufo nero", price: "13,00" },
 		// { title: "Guance di manzo brasate", price: "12,00" },
 		{ title: "Noce di vitello al forno", price: "9,00" },
 	];
@@ -58,7 +58,7 @@ const MenuItalian = () => {
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
 							tartar con Montebore, melanzane al basilico, zucchine in carpione,
-							baccalà in pastella, tortino di spinaci e panissa
+							tortino ai formaggi e panissa
 						</Text>
 					</View>
 					<View className="justify-end">

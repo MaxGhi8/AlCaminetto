@@ -20,7 +20,7 @@ const MenuEnglish = () => {
 
 	const primi = [
 		{
-			title: "Timorasso risotto",
+			title: "Timorasso risotto with Tropea red onion and lavender",
 			price: "8,00",
 		},
 		{
@@ -43,7 +43,7 @@ const MenuEnglish = () => {
 			title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)",
 			price: "12,00",
 		},
-		{ title: "Carpaccio with Montebore cheese", price: "9,00" },
+		{ title: "English-style roast beef with black truffle", price: "13,00" },
 		// { title: "Beef sliced, 300g", price: "15,00" },
 		// { title: "Braised veal cheeks", price: "12,00" },
 		{ title: "Baked veal nut", price: "9,00" },
@@ -66,8 +66,8 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							tartar with Montebore, aubergines with basil, soused courgettes,
-							battered salt cod, spinach pie and panissa
+							tartar with Montebore, aubergines with basil, soused zucchinis,
+							cheese pie and panissa
 						</Text>
 					</View>
 					<View className="justify-end">
