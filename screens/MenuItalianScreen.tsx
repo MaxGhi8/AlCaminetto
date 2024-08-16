@@ -57,8 +57,9 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							tartar con Montebore, melanzane al basilico, zucchine in carpione,
-							tortino ai formaggi e panissa
+							tartar con Montebore, sfoglia con cipolle rosse, zucchine in
+							carpione, tortino ai formaggi, baccalà in pastella e sformato di
+							verdure.
 						</Text>
 					</View>
 					<View className="justify-end">

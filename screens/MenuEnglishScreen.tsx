@@ -66,8 +66,8 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							tartar with Montebore, aubergines with basil, soused zucchinis,
-							cheese pie and panissa
+							tartar with Montebore, puff pastry with red onions, soused
+							zucchinis, cheese pie, battered cod and vegetable flan.
 						</Text>
 					</View>
 					<View className="justify-end">
