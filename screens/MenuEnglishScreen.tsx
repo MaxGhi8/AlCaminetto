@@ -20,17 +20,17 @@ const MenuEnglish = () => {
 
 	const primi = [
 		{
-			title: "Timorasso risotto with Tropea red onion and lavender",
+			title: "Timorasso risotto with Tropea red onion and cheeck lard",
 			price: "8,00",
 		},
 		{
-			title: "Fettuccine with mushrooms",
-			price: "10,00",
+			title: "Fettuccine with ragù",
+			price: "9,00",
 		},
 		// { title: "Fondue and cherry pansoti with butter and sage", price: "10,00" },
 		//{ title: "Gnocchi with Montebore cream", price: "8,00" },
 		{
-			title: "Buckwheat ravioli with cream of zucchini and bacon",
+			title: "Buckwheat ravioli with lemon cream",
 			price: "10,00",
 		},
 		// { title: "Cherry lasagne", price: "9,00" },
@@ -39,10 +39,10 @@ const MenuEnglish = () => {
 
 	const secondi = [
 		{ title: "Veal with tuna sauce", price: "10,00" },
-		{
-			title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)",
-			price: "12,00",
-		},
+		// {
+		// 	title: "Mixed pork grill (salamella, sausage, ribs and meat skewer)",
+		// 	price: "12,00",
+		// },
 		{ title: "English-style roast beef with black truffle", price: "13,00" },
 		// { title: "Beef sliced, 300g", price: "15,00" },
 		// { title: "Braised veal cheeks", price: "12,00" },
@@ -66,8 +66,8 @@ const MenuEnglish = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Mixed platter with:{`\n`}Caminetto's cold cuts, Russian salad,
-							tartar with Montebore, puff pastry with red onions, soused
-							zucchinis, cheese pie, battered cod and vegetable flan.
+							tartar with Montebore, soused zucchinis, savoury pie, prawns in
+							pink sauce and aubergine with basil
 						</Text>
 					</View>
 					<View className="justify-end">

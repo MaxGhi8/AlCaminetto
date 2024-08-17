@@ -29,7 +29,7 @@ const DessertEnglish = () => {
 		{
 			photo: "Zuccotto",
 			title: "Zuccotto",
-			description: "Zuccotto with Volpedo peaches and ice cream",
+			description: "Zuccotto with Volpedo peaches and milk-flavored ice cream",
 			price: "5,00",
 		},
 		// {
@@ -59,7 +59,7 @@ const DessertEnglish = () => {
 		{
 			photo: "CheesecakeGianduiaLamponi",
 			title: "Cheesecake",
-			description: "Cheesecake with gianduia chocolate",
+			description: "Cheesecake with gianduia chocolate and Volpedo peaches",
 			price: "5,00",
 		},
 		// {

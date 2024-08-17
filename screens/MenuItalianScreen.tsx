@@ -20,13 +20,13 @@ const MenuItalian = () => {
 
 	const primi = [
 		{
-			title: "Risotto al Timorasso con cipolla rossa di Tropea e lavanda",
+			title: "Risotto al Timorasso con cipolla rossa di Tropea e guanciale",
 			price: "8,00",
 		},
-		{ title: "Fettuccine con sugo di funghi", price: "10,00" },
+		{ title: "Fettuccine con il ragù", price: "9,00" },
 		// { title: "Agnolotti al brasato", price: "10,00" },
 		{
-			title: "Ravioloni di grano saraceno con crema di zucchini e speck",
+			title: "Ravioloni di grano saraceno con salsa al limone",
 			price: "10,00",
 		},
 		// { title: "Lasagne alle ciliegie", price: "9,00" },
@@ -35,11 +35,11 @@ const MenuItalian = () => {
 
 	const secondi = [
 		{ title: "Vitello tonnato", price: "10,00" },
-		{
-			title:
-				"Grigliata mista di maiale (salamino, salsiccia, costina e spiedino)",
-			price: "12,00",
-		},
+		// {
+		// 	title:
+		// 		"Grigliata mista di maiale (salamino, salsiccia, costina e spiedino)",
+		// 	price: "12,00",
+		// },
 		// { title: "Tagliata di manzo, 300g", price: "15,00" },
 		{ title: "Roastbeef all'inglese con tartufo nero", price: "13,00" },
 		// { title: "Guance di manzo brasate", price: "12,00" },
@@ -57,9 +57,8 @@ const MenuItalian = () => {
 					<View className="items-start justify-start flex-1">
 						<Text className="text-base text-white">
 							Piatto misto con:{`\n`}Salumi del Caminetto, insalata russa,
-							tartar con Montebore, sfoglia con cipolle rosse, zucchine in
-							carpione, tortino ai formaggi, baccalà in pastella e sformato di
-							verdure.
+							tartar con Montebore, zucchine in carpione, tortino salato,
+							gamberetti in salsa rosa e melanzane al basilico
 						</Text>
 					</View>
 					<View className="justify-end">
