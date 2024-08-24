@@ -56,12 +56,12 @@ const DessertEnglish = () => {
 		// 	description: "Lemon cheesecake",
 		// 	price: "5,00",
 		// },
-		{
-			photo: "CheesecakeGianduiaLamponi",
-			title: "Cheesecake",
-			description: "Cheesecake with gianduia chocolate and Volpedo peaches",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "CheesecakeGianduiaLamponi",
+		// 	title: "Cheesecake",
+		// 	description: "Cheesecake with gianduia chocolate and Volpedo peaches",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "CheesecakePistacchio",
 		// 	title: "Cheesecake",
@@ -95,7 +95,7 @@ const DessertEnglish = () => {
 		},
 		{
 			photo: "Meringa",
-			title: "Meringaue",
+			title: "Meringue",
 			description: "Meringue filled with ice cream, cream and fresh fruits",
 			price: "5,00",
 		},
