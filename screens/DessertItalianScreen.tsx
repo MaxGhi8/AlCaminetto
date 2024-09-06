@@ -29,7 +29,7 @@ const DessertItalian = () => {
 		{
 			photo: "Zuccotto",
 			title: "Zuccotto",
-			description: "Zuccotto con pesche di Volpedo e gelato al fiordilatte",
+			description: "Zuccotto con gelato al limone",
 			price: "5,00",
 		},
 		// {
@@ -50,12 +50,12 @@ const DessertItalian = () => {
 		// 	description: "Crostata di frutta con crema pasticcera",
 		// 	price: "5,00",
 		// },
-		// {
-		// 	photo: "CheesecakeGianduiaLamponi",
-		// 	title: "Cheesecake",
-		// 	description: "Cheesecake con cioccolato gianduia e pesche di Volpedo",
-		// 	price: "5,00",
-		// },
+		{
+			photo: "CheesecakeGianduiaLamponi",
+			title: "Cheesecake",
+			description: "Cheesecake con cioccolato gianduia e pesche di Volpedo",
+			price: "5,00",
+		},
 		// {
 		// 	photo: "CheesecakeLimone",
 		// 	title: "Cheesecake",

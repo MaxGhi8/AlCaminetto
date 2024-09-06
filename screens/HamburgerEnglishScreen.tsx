@@ -21,7 +21,7 @@ const HamburgerEnglish = () => {
 
 	const [data, setData] = useState([
 		{
-			name: "DOPPIO CHEDDAR",
+			name: "DOPPIO-CHEDDAR",
 			ingredients: "Beef burger, onions, bacon, double cheddar, burger sauce.",
 			ingredients_detailed: [
 				{ ingred: "150 gram beef burger" },
@@ -35,7 +35,7 @@ const HamburgerEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
 		},
 		{
-			name: "PIGGY BURG",
+			name: "PIGGY-BURG",
 			ingredients: "Pulled pork, smoked cheese, onions, bacon, BBQ sauce.",
 			ingredients_detailed: [
 				{ ingred: "Pulled pork" },
@@ -49,7 +49,7 @@ const HamburgerEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
 		},
 		{
-			name: "SPICY BURG",
+			name: "SPICY-BURG",
 			ingredients:
 				"Beef burger, onions, tomato, lettuce, bacon, cheese, 'nduja.",
 			ingredients_detailed: [
@@ -67,7 +67,7 @@ const HamburgerEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, sesame.",
 		},
 		{
-			name: "MONTEBORE BURG",
+			name: "MONTEBORE-BURG",
 			ingredients:
 				"Beef burger, Montebore, onions, peppers, bacon, alcoholic cream with montebore.",
 			ingredients_detailed: [
@@ -83,7 +83,7 @@ const HamburgerEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, sesame.",
 		},
 		{
-			name: "UOVO BURG",
+			name: "UOVO-BURG",
 			ingredients: "Beef burger, egg, onions, bacon, cheese.",
 			ingredients_detailed: [
 				{ ingred: "150 gram beef burger" },
@@ -96,22 +96,22 @@ const HamburgerEnglish = () => {
 			photo: "UovoBurg",
 			allergen: "Allergen: gluten, egg, milk, sesame.",
 		},
+		// {
+		// 	name: "RIBS-BURG",
+		// 	ingredients: "Shredded ribs, onion rings, bacon, cheddar, BBQ sauce.",
+		// 	ingredients_detailed: [
+		// 		{ ingred: "Shredded pork ribs" },
+		// 		{ ingred: "Fried onion rings" },
+		// 		{ ingred: "Crispy bacon" },
+		// 		{ ingred: "Melted Cheddar" },
+		// 		{ ingred: "BBQ sauce" },
+		// 	],
+		// 	price: "13",
+		// 	photo: "RibsBurg",
+		// 	allergen: "Allergen: gluten, milk, sesame.",
+		// },
 		{
-			name: "RIBS BURG",
-			ingredients: "Shredded ribs, onion rings, bacon, cheddar, BBQ sauce.",
-			ingredients_detailed: [
-				{ ingred: "Shredded pork ribs" },
-				{ ingred: "Fried onion rings" },
-				{ ingred: "Crispy bacon" },
-				{ ingred: "Melted Cheddar" },
-				{ ingred: "BBQ sauce" },
-			],
-			price: "13",
-			photo: "RibsBurg",
-			allergen: "Allergen: gluten, milk, sesame.",
-		},
-		{
-			name: "HOT DOG GOURMET",
+			name: "HOT-DOG-GOURMET",
 			ingredients: "Sausage, onions, brie, sauce of your choice.",
 			ingredients_detailed: [
 				{ ingred: "Pork sausage" },
@@ -124,7 +124,7 @@ const HamburgerEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, musterd.",
 		},
 		{
-			name: "CLASSIC HOT DOG",
+			name: "CLASSIC-HOT-DOG",
 			ingredients: "Wurstel, sauce of your choice.",
 			ingredients_detailed: [
 				{ ingred: "Pork Wurstel" },
