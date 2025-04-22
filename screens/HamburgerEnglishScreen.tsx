@@ -110,19 +110,19 @@ const HamburgerEnglish = () => {
 		// 	photo: "RibsBurg",
 		// 	allergen: "Allergen: gluten, milk, sesame.",
 		// },
-		{
-			name: "HOT-DOG-GOURMET",
-			ingredients: "Sausage, onions, brie, sauce of your choice.",
-			ingredients_detailed: [
-				{ ingred: "Pork sausage" },
-				{ ingred: "Stewed onions" },
-				{ ingred: "Melted Brie" },
-				{ ingred: "Sauce of your choice (mayonnaise, ketchup, mustard, BBQ)" },
-			],
-			price: "11",
-			photo: "HotDogGourmet",
-			allergen: "Allergen: gluten, egg, milk, musterd.",
-		},
+		// {
+		// 	name: "HOT-DOG-GOURMET",
+		// 	ingredients: "Sausage, onions, brie, sauce of your choice.",
+		// 	ingredients_detailed: [
+		// 		{ ingred: "Pork sausage" },
+		// 		{ ingred: "Stewed onions" },
+		// 		{ ingred: "Melted Brie" },
+		// 		{ ingred: "Sauce of your choice (mayonnaise, ketchup, mustard, BBQ)" },
+		// 	],
+		// 	price: "11",
+		// 	photo: "HotDogGourmet",
+		// 	allergen: "Allergen: gluten, egg, milk, musterd.",
+		// },
 		{
 			name: "CLASSIC-HOT-DOG",
 			ingredients: "Wurstel, sauce of your choice.",

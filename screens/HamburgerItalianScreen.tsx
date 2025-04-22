@@ -112,19 +112,19 @@ const HamburgerItalian = () => {
 		// 	photo: "RibsBurg",
 		// 	allergen: "Allergeni: glutine, latte, sesamo.",
 		// },
-		{
-			name: "HOT-DOG-GOURMET",
-			ingredients: "Salamella, cipolle, brie, salsa a scelta.",
-			ingredients_detailed: [
-				{ ingred: "Salamella di maiale" },
-				{ ingred: "Cipolle caramellate" },
-				{ ingred: "Formaggio Brie filante" },
-				{ ingred: "Salsa a scelta (maionese, ketchup, senape, BBQ)" },
-			],
-			price: "11",
-			photo: "HotDogGourmet",
-			allergen: "Allergeni: glutine, uovo, latte, senape.",
-		},
+		// {
+		// 	name: "HOT-DOG-GOURMET",
+		// 	ingredients: "Salamella, cipolle, brie, salsa a scelta.",
+		// 	ingredients_detailed: [
+		// 		{ ingred: "Salamella di maiale" },
+		// 		{ ingred: "Cipolle caramellate" },
+		// 		{ ingred: "Formaggio Brie filante" },
+		// 		{ ingred: "Salsa a scelta (maionese, ketchup, senape, BBQ)" },
+		// 	],
+		// 	price: "11",
+		// 	photo: "HotDogGourmet",
+		// 	allergen: "Allergeni: glutine, uovo, latte, senape.",
+		// },
 		{
 			name: "CLASSIC-HOT-DOG",
 			ingredients: "Wurstel, salsa a scelta.",

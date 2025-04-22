@@ -8,11 +8,6 @@ import {
 } from "react-native";
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
-import HamburgerEnglish from "./HamburgerEnglishScreen";
-import MenuEnglish from "./MenuEnglishScreen";
-import DessertEnglish from "./DessertEnglishScreen";
-import WineEnglish from "./WineEnglishScreen";
-import DrinkEnglish from "./DrinkEnglishScreen";
 import {
 	SfondoMenu,
 	SfondoHamburger,

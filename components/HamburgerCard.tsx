@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 const HamburgerCard = ({
 	name,
@@ -23,7 +24,20 @@ const HamburgerCard = ({
 	contorno: string;
 	patate: string;
 }) => {
-	const navigation = useNavigation();
+	type RootStackParamList = {
+		Hamburger: {
+			name: string;
+			ingredients_detailed: { ingred: string }[];
+			photo: string;
+			allergen: string;
+			ingredienti: string;
+			contorno: string;
+			patate: string;
+		};
+	};
+
+	const navigation =
+		useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
 	return (
 		<View className="w-full py-1">

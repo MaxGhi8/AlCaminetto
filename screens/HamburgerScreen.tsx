@@ -16,9 +16,9 @@ import {
 	PolloImage,
 	UovoBurgImage,
 	VegetarianoImage,
-	RibsBurgImage,
+	// RibsBurgImage,
 	HotDogClassicImage,
-	HotDogGourmetImage,
+	// HotDogGourmetImage,
 } from "../assets";
 
 function HamburgerScreen({ route }) {
@@ -55,9 +55,9 @@ function HamburgerScreen({ route }) {
 		MonteboreBurg: MonteboreBurgImage,
 		PiggyBurg: PiggyBurgImage,
 		Pollo: PolloImage,
-		RibsBurg: RibsBurgImage,
+		// RibsBurg: RibsBurgImage,
 		HotDogClassic: HotDogClassicImage,
-		HotDogGourmet: HotDogGourmetImage,
+		// HotDogGourmet: HotDogGourmetImage,
 	};
 
 	const {
