@@ -51,6 +51,20 @@ const HamburgerItalian = () => {
 			allergen: "Allergeni: glutine, uovo, latte, sesamo, senape.",
 		},
 		{
+			name: "PISTACCHIOTTO-BURG",
+			ingredients:
+				"Hamburger di manzo, mortadella, stracciatella, pesto di pistacchi.",
+			ingredients_detailed: [
+				{ ingred: "Hamburger di manzo da 150 grammi" },
+				{ ingred: "Mortadella alla piastra" },
+				{ ingred: "Stracciatella" },
+				{ ingred: "Pesto di pistacchi" },
+			],
+			price: "13",
+			photo: "Pistacchiotto",
+			allergen: "Allergeni: glutine, latte, sesamo, senape, pistacchio.",
+		},
+		{
 			name: "SPICY-BURG",
 			ingredients:
 				"Hamburger di manzo, cipolle, pomodoro, insalata, bacon, formaggio, 'nduja.",
@@ -126,17 +140,6 @@ const HamburgerItalian = () => {
 		// 	allergen: "Allergeni: glutine, uovo, latte, senape.",
 		// },
 		{
-			name: "CLASSIC-HOT-DOG",
-			ingredients: "Wurstel, salsa a scelta.",
-			ingredients_detailed: [
-				{ ingred: "Wurstel di maiale" },
-				{ ingred: "Salsa a scelta (maionese, ketchup, senape, BBQ)" },
-			],
-			price: "8",
-			photo: "HotDogClassic",
-			allergen: "Allergeni: glutine, uovo, senape.",
-		},
-		{
 			name: "POLLO",
 			ingredients:
 				"Pollo impanato, cipolle, pomodoro, insalata, bacon, formaggio.",
@@ -165,6 +168,17 @@ const HamburgerItalian = () => {
 			price: "11",
 			photo: "Vegetariano",
 			allergen: "Allergeni: glutine, uovo, latte, sesamo, funghi.",
+		},
+		{
+			name: "CLASSIC-HOT-DOG",
+			ingredients: "Wurstel, salsa a scelta.",
+			ingredients_detailed: [
+				{ ingred: "Wurstel di maiale" },
+				{ ingred: "Salsa a scelta (maionese, ketchup, senape, BBQ)" },
+			],
+			price: "8",
+			photo: "HotDogClassic",
+			allergen: "Allergeni: glutine, uovo, senape.",
 		},
 	]);
 

@@ -56,41 +56,30 @@ const HomeScreen = ({}) => {
 	];
 
 	const data =
-		d.getDay() === 5
-			? [
-					{ photo: Photo4 },
-					{ photo: Photo5 },
-					{ photo: Photo3_bis },
-					{ photo: Photo1 },
-					{ photo: Photo6 },
-					{ photo: Photo2 },
-					{ photo: Photo13 },
-					{ photo: Photo7 },
-			  ]
-			: [
-					{ photo: Photo4 },
-					{ photo: Photo8 },
-					{ photo: Photo3_bis },
-					{ photo: Photo9 },
-					{ photo: Photo6 },
-					{ photo: Photo10 },
-					{ photo: Photo13 },
-					{ photo: Photo11 },
-					{ photo: Photo7 },
-					{ photo: Photo12 },
-			  ];
-	// const data = [
-	// 	{ photo: Photo4 },
-	// 	{ photo: Photo8 },
-	// 	{ photo: Photo3_bis },
-	// 	{ photo: Photo9 },
-	// 	{ photo: Photo6 },
-	// 	{ photo: Photo10 },
-	// 	{ photo: Photo13 },
-	// 	{ photo: Photo11 },
-	// 	{ photo: Photo7 },
-	// 	{ photo: Photo12 },
-	// ];
+		// d.getDay() === 5
+		// 	? [
+		[
+			{ photo: Photo4 },
+			{ photo: Photo5 },
+			{ photo: Photo3_bis },
+			{ photo: Photo1 },
+			{ photo: Photo6 },
+			{ photo: Photo2 },
+			{ photo: Photo13 },
+			{ photo: Photo7 },
+		];
+	// : [
+	// 		{ photo: Photo4 },
+	// 		{ photo: Photo8 },
+	// 		{ photo: Photo3_bis },
+	// 		{ photo: Photo9 },
+	// 		{ photo: Photo6 },
+	// 		{ photo: Photo10 },
+	// 		{ photo: Photo13 },
+	// 		{ photo: Photo11 },
+	// 		{ photo: Photo7 },
+	// 		{ photo: Photo12 },
+	//   ];
 
 	const RenderItem = ({ item }: { item: any }) => {
 		return (

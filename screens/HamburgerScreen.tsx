@@ -18,6 +18,7 @@ import {
 	VegetarianoImage,
 	// RibsBurgImage,
 	HotDogClassicImage,
+	PistacchiottoImage,
 	// HotDogGourmetImage,
 } from "../assets";
 
@@ -57,6 +58,7 @@ function HamburgerScreen({ route }) {
 		Pollo: PolloImage,
 		// RibsBurg: RibsBurgImage,
 		HotDogClassic: HotDogClassicImage,
+		Pistacchiotto: PistacchiottoImage,
 		// HotDogGourmet: HotDogGourmetImage,
 	};
 

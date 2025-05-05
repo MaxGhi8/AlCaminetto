@@ -49,6 +49,19 @@ const HamburgerEnglish = () => {
 			allergen: "Allergen: gluten, egg, milk, sesame, mustard.",
 		},
 		{
+			name: "PISTACCHIOTTO-BURG",
+			ingredients: "Beef burger, mortadella, stracciatella, pistachio pesto.",
+			ingredients_detailed: [
+				{ ingred: "150 gram beef burger" },
+				{ ingred: "Grilled mortadella" },
+				{ ingred: "Stracciatella cheese" },
+				{ ingred: "Pistachio pesto" },
+			],
+			price: "13",
+			photo: "Pistacchiotto",
+			allergen: "Allergeni: gluten, milk, sesame, mustard, pistachio.",
+		},
+		{
 			name: "SPICY-BURG",
 			ingredients:
 				"Beef burger, onions, tomato, lettuce, bacon, cheese, 'nduja.",
@@ -124,17 +137,6 @@ const HamburgerEnglish = () => {
 		// 	allergen: "Allergen: gluten, egg, milk, musterd.",
 		// },
 		{
-			name: "CLASSIC-HOT-DOG",
-			ingredients: "Wurstel, sauce of your choice.",
-			ingredients_detailed: [
-				{ ingred: "Pork Wurstel" },
-				{ ingred: "Sauce of your choice (mayonnaese, ketchup, mustard, BBQ)" },
-			],
-			price: "8",
-			photo: "HotDogClassic",
-			allergen: "Allergen: gluten, egg, mustard.",
-		},
-		{
 			name: "POLLO",
 			ingredients: "Fried chicken, onions, tomato, lettuce, bacon, cheese.",
 			ingredients_detailed: [
@@ -162,6 +164,17 @@ const HamburgerEnglish = () => {
 			price: "11",
 			photo: "Vegetariano",
 			allergen: "Allergen: gluten, egg, milk, sesame, mushroom.",
+		},
+		{
+			name: "CLASSIC-HOT-DOG",
+			ingredients: "Wurstel, sauce of your choice.",
+			ingredients_detailed: [
+				{ ingred: "Pork Wurstel" },
+				{ ingred: "Sauce of your choice (mayonnaese, ketchup, mustard, BBQ)" },
+			],
+			price: "8",
+			photo: "HotDogClassic",
+			allergen: "Allergen: gluten, egg, mustard.",
 		},
 	]);
 
