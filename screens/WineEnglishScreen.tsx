@@ -24,7 +24,7 @@ const WineEnglish = () => {
 			year: "2021",
 			prod: "La Colombera",
 			origin: "Terre Derthona",
-			price: "13,00",
+			price: "16,00",
 		},
 		{
 			title: "Dolcetto",
@@ -45,15 +45,15 @@ const WineEnglish = () => {
 			year: "2021",
 			prod: "Cascina Giambolino",
 			origin: "Terre Derthona",
-			price: "12,00",
+			price: "13,00",
 		},
-		{
-			title: "Barbera 'Maior'",
-			year: "2019",
-			prod: "Cascina Giambolino",
-			origin: "Terre Derthona",
-			price: "18,00",
-		},
+		// {
+		// 	title: "Barbera 'Maior'",
+		// 	year: "2019",
+		// 	prod: "Cascina Giambolino",
+		// 	origin: "Terre Derthona",
+		// 	price: "18,00",
+		// },
 		{
 			title: "Barbera 'Territorio'",
 			year: "2020",
@@ -62,11 +62,18 @@ const WineEnglish = () => {
 			price: "18,00",
 		},
 		{
+			title: "Barbera 'Pra Dü Riva'",
+			year: "2021",
+			prod: "Az. Agricola Le Praie",
+			origin: "Terre Derthona",
+			price: "15,00",
+		},
+		{
 			title: "Freisa 'Braghè'",
 			year: "2020",
 			prod: "Claudio Mariotto",
 			origin: "Terre Derthona",
-			price: "15,00",
+			price: "17,00",
 		},
 		//{
 		//title: "Barbera 'Poggio del Rosso'",
@@ -75,20 +82,19 @@ const WineEnglish = () => {
 		//origin: "Terre Derthona",
 		//price: "22,00",
 		//},
-		{
-			title: "Barbera 'Poggio delle Amarene'",
-			year: "2016",
-			prod: "Boveri Luigi",
-			origin: "Terre Derthona",
-			price: "20,00",
-		},
-
+		// {
+		// 	title: "Barbera 'Poggio delle Amarene'",
+		// 	year: "2016",
+		// 	prod: "Boveri Luigi",
+		// 	origin: "Terre Derthona",
+		// 	price: "20,00",
+		// },
 		{
 			title: "Bonarda frizzante",
 			year: "2021",
 			prod: "Az.Agricola Prago",
 			origin: "Oltrepò pavese",
-			price: "12,00",
+			price: "15,00",
 		},
 		{
 			title: "Croatina dolce frizzante",
@@ -102,15 +108,15 @@ const WineEnglish = () => {
 			year: "2021",
 			prod: "Az. Agricola Passerini",
 			origin: "Colli piacentini",
-			price: "13,00",
+			price: "15,00",
 		},
-		{
-			title: "Bonarda frizzante",
-			year: "2021",
-			prod: "Az. Agricola Passerini",
-			origin: "Colli piacentini",
-			price: "11,00",
-		},
+		// {
+		// 	title: "Bonarda frizzante",
+		// 	year: "2021",
+		// 	prod: "Az. Agricola Passerini",
+		// 	origin: "Colli piacentini",
+		// 	price: "11,00",
+		// },
 	];
 
 	const vini_bianchi = [
@@ -119,7 +125,7 @@ const WineEnglish = () => {
 			year: "2021",
 			prod: "La Colombera",
 			origin: "Terre Derthona",
-			price: "18,00",
+			price: "20,00",
 		},
 		{
 			title: "Cortese 'Bricco'",
@@ -129,29 +135,33 @@ const WineEnglish = () => {
 			price: "15,00",
 		},
 		{
-			title: "Cortese 'Meo' vivace",
-			year: "2021",
-			prod: "La Colombera",
+			title: "Cortese frizzante 'DonGion'",
+			year: "2020",
+			prod: "Cascina Giambolino",
 			origin: "Terre Derthona",
 			price: "15,00",
 		},
-
+		// {
+		// 	title: "Cortese 'Meo' vivace",
+		// 	year: "2021",
+		// 	prod: "La Colombera",
+		// 	origin: "Terre Derthona",
+		// 	price: "15,00",
+		// },
 		{
-			title: "Timorasso 'Derthona' frizzante",
+			title: "Timorasso 'Derthona'",
 			year: "2020",
 			prod: "Claudio Mariotto",
 			origin: "Terre Derthona",
-			price: "20,00",
+			price: "25,00",
 		},
-
-		{
-			title: "Cortese 'Terre del prete' (fermo o vivace)",
-			year: "2022",
-			prod: "Boveri Luigi",
-			origin: "Terre Derthona",
-			price: "15,00",
-		},
-
+		// {
+		// 	title: "Cortese 'Terre del prete' (fermo o vivace)",
+		// 	year: "2022",
+		// 	prod: "Boveri Luigi",
+		// 	origin: "Terre Derthona",
+		// 	price: "15,00",
+		// },
 		{
 			title: "Pinot nero frizzante",
 			year: "2022",
@@ -160,13 +170,19 @@ const WineEnglish = () => {
 			price: "15,00",
 		},
 		{
-			title: "Chardonnay vivace",
+			title: "Pinot vino spumante extra dry",
+			year: "2022",
+			prod: "Az.Agricola Prago",
+			origin: "Oltrepò pavese",
+			price: "16,00",
+		},
+		{
+			title: "Chardonnay frizzante",
 			year: "2022",
 			prod: "Az.Agricola Prago",
 			origin: "Oltrepò pavese",
 			price: "13,00",
 		},
-
 		{
 			title: "Ortugo frizzante",
 			year: "2022",
@@ -177,7 +193,7 @@ const WineEnglish = () => {
 	];
 
 	const prosecchi = [
-		{ title: "Prosecco 'Extra dry doc' millesimato", price: "22,00" },
+		// { title: "Prosecco 'Extra dry doc' millesimato", price: "22,00" },
 		{ title: "Prosecco 'Glera extra dry'", price: "18,00" },
 	];
 

@@ -38,7 +38,7 @@ const Italian = () => {
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			<ScrollView className="flex flex-col w-full max-w-screen-lg px-4 space-y-5">
 				{/* {d.getDay() === 5 ? ( */}
-				// Hambureger
+				{/* // Hamburger */}
 				<View className="flex-1 w-full">
 					<TouchableOpacity
 						className="relative w-full rounded-3xl h-44 bg-[#1A1A1A]"

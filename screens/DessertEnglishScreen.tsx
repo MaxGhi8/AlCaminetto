@@ -26,12 +26,12 @@ const DessertEnglish = () => {
 			description: "Tiramisu with coffee and Savoiardi",
 			price: "5,00",
 		},
-		{
-			photo: "Zuccotto",
-			title: "Zuccotto",
-			description: "Zuccotto with lemon ice cream",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "Zuccotto",
+		// 	title: "Zuccotto",
+		// 	description: "Zuccotto with lemon ice cream",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "TortaMele",
 		// 	title: "Apple pie",
@@ -56,12 +56,12 @@ const DessertEnglish = () => {
 		// 	description: "Lemon cheesecake",
 		// 	price: "5,00",
 		// },
-		{
-			photo: "CheesecakeGianduiaLamponi",
-			title: "Cheesecake",
-			description: "Cheesecake with gianduia chocolate and Volpedo peaches",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "CheesecakeGianduiaLamponi",
+		// 	title: "Cheesecake",
+		// 	description: "Cheesecake with gianduia chocolate and Volpedo peaches",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "CheesecakePistacchio",
 		// 	title: "Cheesecake",
@@ -99,18 +99,18 @@ const DessertEnglish = () => {
 			description: "Meringue filled with ice cream, cream and fresh fruits",
 			price: "5,00",
 		},
-		//{
-		//photo: "GelatoFragole",
-		//title: "Ice cream",
-		//description: "Cup of ice cream with strawberries",
-		//price: "5,00",
-		//},
-		// {
-		// 	photo: "ZuppaInglese",
-		// 	title: "Zuppa Inglese",
-		// 	description: "Zuppa Inglese with chocolate and custard",
-		// 	price: "5,00",
-		// },
+		{
+			photo: "GelatoFragole",
+			title: "Ice cream",
+			description: "Cup of ice cream with strawberries",
+			price: "5,00",
+		},
+		{
+			photo: "ZuppaInglese",
+			title: "Zuppa Inglese",
+			description: "Zuppa Inglese with chocolate and custard",
+			price: "5,00",
+		},
 	];
 
 	return (

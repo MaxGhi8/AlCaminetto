@@ -26,12 +26,12 @@ const DessertItalian = () => {
 			description: "Tiramisu al caffè con Savoiardi",
 			price: "5,00",
 		},
-		{
-			photo: "Zuccotto",
-			title: "Zuccotto",
-			description: "Zuccotto con gelato al limone",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "Zuccotto",
+		// 	title: "Zuccotto",
+		// 	description: "Zuccotto con gelato al limone",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "TortaMele",
 		// 	title: "Torta di mele",
@@ -50,12 +50,12 @@ const DessertItalian = () => {
 		// 	description: "Crostata di frutta con crema pasticcera",
 		// 	price: "5,00",
 		// },
-		{
-			photo: "CheesecakeGianduiaLamponi",
-			title: "Cheesecake",
-			description: "Cheesecake con cioccolato gianduia e pesche di Volpedo",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "CheesecakeGianduiaLamponi",
+		// 	title: "Cheesecake",
+		// 	description: "Cheesecake con cioccolato gianduia e pesche di Volpedo",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "CheesecakeLimone",
 		// 	title: "Cheesecake",
@@ -99,18 +99,18 @@ const DessertItalian = () => {
 			description: "Meringa ripiena di gelato, panna e frutta fresca",
 			price: "5,00",
 		},
-		//{
-		//photo: "GelatoFragole",
-		//title: "Gelato",
-		//description: "Coppa di gelato con fragole",
-		//price: "5,00",
-		//},
-		// {
-		// 	photo: "ZuppaInglese",
-		// 	title: "Zuppa Inglese",
-		// 	description: "Zuppa inglese con crema pasticciera e cioccolato",
-		// 	price: "5,00",
-		// },
+		{
+			photo: "GelatoFragole",
+			title: "Gelato",
+			description: "Coppa di gelato con fragole",
+			price: "5,00",
+		},
+		{
+			photo: "ZuppaInglese",
+			title: "Zuppa Inglese",
+			description: "Zuppa inglese con crema pasticciera e cioccolato",
+			price: "5,00",
+		},
 	];
 
 	return (

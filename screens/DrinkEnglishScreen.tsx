@@ -34,9 +34,11 @@ const DrinkEnglish = () => {
 		{ title: "Small light draft beer Menabrea 0,2L", price: "3,00" },
 		{ title: "Big light draft beer Menabrea 0,4L", price: "4,00" },
 		{ title: "Ceres beer 33cL", price: "4,00" },
+		{ title: "Ceres beer Red Erik 33cL", price: "4,50" },
 		{ title: "Moretti beer 33cL", price: "3,50" },
 		{ title: "Moretti beer 66cL", price: "6,00" },
 		{ title: "Paulaner Weissbier 50cL", price: "5,00" },
+		{ title: "Beck's 33cL", price: "3,00" },
 		// { title: "Original amber beer 'kardinal' 50cL", price: "6,00" },
 		{ title: "Bitter", price: "3,00" },
 	];
