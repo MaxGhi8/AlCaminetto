@@ -99,18 +99,30 @@ const DessertEnglish = () => {
 			description: "Meringue filled with ice cream, cream and fresh fruits",
 			price: "5,00",
 		},
+		// {
+		// 	photo: "GelatoFragole",
+		// 	title: "Ice cream",
+		// 	description: "Cup of ice cream with strawberries",
+		// 	price: "5,00",
+		// },
+		// {
+		// 	photo: "PannacottaCaramello",
+		// 	title: "Panna cotta",
+		// 	description: "Caramel Panna Cotta",
+		// 	price: "5,00",
+		// },
 		{
-			photo: "GelatoFragole",
-			title: "Ice cream",
-			description: "Cup of ice cream with strawberries",
+			photo: "PannacottaFruttiBosco",
+			title: "Panna cotta",
+			description: "Panna cotta with mixed berry topping",
 			price: "5,00",
 		},
-		{
-			photo: "ZuppaInglese",
-			title: "Zuppa Inglese",
-			description: "Zuppa Inglese with chocolate and custard",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "ZuppaInglese",
+		// 	title: "Zuppa Inglese",
+		// 	description: "Zuppa Inglese with chocolate and custard",
+		// 	price: "5,00",
+		// },
 	];
 
 	return (

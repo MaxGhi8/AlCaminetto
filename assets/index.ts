@@ -16,7 +16,7 @@ export { default as MonteboreBurgImage } from "./new_hamburger/MonteboreBurg.png
 export { default as PiggyBurgImage } from "./new_hamburger/PiggyBurg.png";
 export { default as UovoBurgImage } from "./new_hamburger/UovoBurg.png";
 export { default as HotDogClassicImage } from "./new_hamburger/HotDogClassic.png";
-export { default as PistacchiottoImage} from "./new_hamburger/Pistacchiotto.png";
+export { default as PistacchiottoImage } from "./new_hamburger/Pistacchiotto.png";
 
 export { default as Photo1 } from "./carousel/photo1.png";
 export { default as Photo2 } from "./carousel/photo2.png";
@@ -54,3 +54,5 @@ export { default as SfogliataImage } from "./menu/Sfogliata.png";
 export { default as ZuppaIngleseImage } from "./menu/ZuppaInglese.png";
 export { default as TortaMeleImage } from "./menu/TortaMele.png";
 export { default as ZuccottoImage } from "./menu/Zuccotto.png";
+export { default as PannacottaCaramelloImage } from "./menu/PannacottaCaramello.png";
+export { default as PannacottaFruttiBoscoImage } from "./menu/PannacottaFruttiBosco.png";

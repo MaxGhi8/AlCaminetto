@@ -47,7 +47,7 @@ const DessertItalian = () => {
 		// {
 		// 	photo: "CrostataFrutta",
 		// 	title: "Crostata di frutta",
-		// 	description: "Crostata di frutta con crema pasticcera",
+		// 	description: "Crostata di frutta con gelato",
 		// 	price: "5,00",
 		// },
 		// {
@@ -99,18 +99,30 @@ const DessertItalian = () => {
 			description: "Meringa ripiena di gelato, panna e frutta fresca",
 			price: "5,00",
 		},
+		// {
+		// 	photo: "GelatoFragole",
+		// 	title: "Gelato",
+		// 	description: "Coppa di gelato con fragole",
+		// 	price: "5,00",
+		// },
+		// {
+		// 	photo: "PannacottaCaramello",
+		// 	title: "Panna cotta",
+		// 	description: "Panna cotta al caramello",
+		// 	price: "5,00",
+		// },
 		{
-			photo: "GelatoFragole",
-			title: "Gelato",
-			description: "Coppa di gelato con fragole",
+			photo: "PannacottaFruttiBosco",
+			title: "Panna cotta",
+			description: "Panna cotta con topping ai frutti di bosco",
 			price: "5,00",
 		},
-		{
-			photo: "ZuppaInglese",
-			title: "Zuppa Inglese",
-			description: "Zuppa inglese con crema pasticciera e cioccolato",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "ZuppaInglese",
+		// 	title: "Zuppa Inglese",
+		// 	description: "Zuppa inglese con crema pasticciera e cioccolato",
+		// 	price: "5,00",
+		// },
 	];
 
 	return (

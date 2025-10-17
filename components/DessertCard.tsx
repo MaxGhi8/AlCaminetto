@@ -18,6 +18,8 @@ import {
 	TortaMeleImage,
 	CheesecakeLimoneImage,
 	ZuccottoImage,
+	PannacottaCaramelloImage,
+	PannacottaFruttiBoscoImage,
 } from "../assets";
 
 const DessertCard = ({
@@ -49,6 +51,8 @@ const DessertCard = ({
 		ZuppaInglese: ZuppaIngleseImage,
 		TortaMele: TortaMeleImage,
 		Zuccotto: ZuccottoImage,
+		PannacottaCaramello: PannacottaCaramelloImage,
+		PannacottaFruttiBosco: PannacottaFruttiBoscoImage,
 	};
 
 	const windowWidth = Dimensions.get("window").width / 4;
