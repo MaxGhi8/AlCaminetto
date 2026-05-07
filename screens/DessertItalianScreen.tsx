@@ -26,12 +26,12 @@ const DessertItalian = () => {
 			description: "Tiramisu al caffè con Savoiardi",
 			price: "5,00",
 		},
-		{
-			photo: "Zuccotto",
-			title: "Zuccotto",
-			description: "Zuccotto con gelato al fiordilatte",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "Zuccotto",
+		// 	title: "Zuccotto",
+		// 	description: "Zuccotto con gelato al fiordilatte",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "TortaMele",
 		// 	title: "Torta di mele",
@@ -93,18 +93,18 @@ const DessertItalian = () => {
 			description: "Bunet con amaretti e cioccolato",
 			price: "5,00",
 		},
-		// {
-		// 	photo: "Meringa",
-		// 	title: "Meringa",
-		// 	description: "Meringa ripiena di gelato, panna e frutta fresca",
-		// 	price: "5,00",
-		// },
-		// {
-		// 	photo: "GelatoFragole",
-		// 	title: "Gelato",
-		// 	description: "Coppa di gelato con fragole",
-		// 	price: "5,00",
-		// },
+		{
+			photo: "Meringa",
+			title: "Meringa",
+			description: "Meringa ripiena di gelato, panna e frutta fresca",
+			price: "5,00",
+		},
+		{
+			photo: "GelatoFragole",
+			title: "Gelato",
+			description: "Coppa di gelato con fragole",
+			price: "5,00",
+		},
 		// {
 		// 	photo: "PannacottaCaramello",
 		// 	title: "Panna cotta",
