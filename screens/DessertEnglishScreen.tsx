@@ -26,12 +26,12 @@ const DessertEnglish = () => {
 			description: "Tiramisu with coffee and Savoiardi",
 			price: "5,00",
 		},
-		// {
-		// 	photo: "Zuccotto",
-		// 	title: "Zuccotto",
-		// 	description: "Zuccotto with lemon ice cream",
-		// 	price: "5,00",
-		// },
+		{
+			photo: "Zuccotto",
+			title: "Zuccotto",
+			description: "Zuccotto with fiordilatte ice cream",
+			price: "5,00",
+		},
 		// {
 		// 	photo: "TortaMele",
 		// 	title: "Apple pie",
@@ -93,12 +93,12 @@ const DessertEnglish = () => {
 			description: "Bunet with macaroons and chocolate",
 			price: "5,00",
 		},
-		{
-			photo: "Meringa",
-			title: "Meringue",
-			description: "Meringue filled with ice cream, cream and fresh fruits",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "Meringa",
+		// 	title: "Meringue",
+		// 	description: "Meringue filled with ice cream, cream and fresh fruits",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "GelatoFragole",
 		// 	title: "Ice cream",
@@ -111,12 +111,12 @@ const DessertEnglish = () => {
 		// 	description: "Caramel Panna Cotta",
 		// 	price: "5,00",
 		// },
-		{
-			photo: "PannacottaFruttiBosco",
-			title: "Panna cotta",
-			description: "Panna cotta with mixed berry topping",
-			price: "5,00",
-		},
+		// {
+		// 	photo: "PannacottaFruttiBosco",
+		// 	title: "Panna cotta",
+		// 	description: "Panna cotta with mixed berry topping",
+		// 	price: "5,00",
+		// },
 		// {
 		// 	photo: "ZuppaInglese",
 		// 	title: "Zuppa Inglese",
