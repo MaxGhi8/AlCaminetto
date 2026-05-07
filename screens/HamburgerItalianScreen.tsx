@@ -50,20 +50,20 @@ const HamburgerItalian = () => {
 			photo: "PiggyBurg",
 			allergen: "Allergeni: glutine, uovo, latte, sesamo, senape.",
 		},
-		{
-			name: "PISTACCHIOTTO-BURG",
-			ingredients:
-				"Hamburger di manzo, mortadella, stracciatella, pesto di pistacchi.",
-			ingredients_detailed: [
-				{ ingred: "Hamburger di manzo da 150 grammi" },
-				{ ingred: "Mortadella alla piastra" },
-				{ ingred: "Stracciatella" },
-				{ ingred: "Pesto di pistacchi" },
-			],
-			price: "14",
-			photo: "Pistacchiotto",
-			allergen: "Allergeni: glutine, latte, sesamo, senape, pistacchio.",
-		},
+		// {
+		// 	name: "PISTACCHIOTTO-BURG",
+		// 	ingredients:
+		// 		"Hamburger di manzo, mortadella, stracciatella, pesto di pistacchi.",
+		// 	ingredients_detailed: [
+		// 		{ ingred: "Hamburger di manzo da 150 grammi" },
+		// 		{ ingred: "Mortadella alla piastra" },
+		// 		{ ingred: "Stracciatella" },
+		// 		{ ingred: "Pesto di pistacchi" },
+		// 	],
+		// 	price: "14",
+		// 	photo: "Pistacchiotto",
+		// 	allergen: "Allergeni: glutine, latte, sesamo, senape, pistacchio.",
+		// },
 		{
 			name: "SPICY-BURG",
 			ingredients:
@@ -80,6 +80,21 @@ const HamburgerItalian = () => {
 			],
 			price: "13",
 			photo: "HotBurg",
+			allergen: "Allergeni: glutine, uovo, latte, sesamo.",
+		},
+		{
+			name: "U-DUPPIO",
+			ingredients:
+				"Doppio hamburger di manzo, cipolle fritte, bacon, doppio formaggio, pomodoro, insalata.",
+			ingredients_detailed: [
+				{ ingred: "Doppio hamburger di manzo da 150 grammi" },
+				{ ingred: 'Doppio formaggio filante "Mollanina"' },
+				{ ingred: "Anelli di cipolla fritti" },
+				{ ingred: "Bacon croccante" },
+				{ ingred: "Pomodoro e insalata" },
+			],
+			price: "18",
+			photo: "UDuppio2",
 			allergen: "Allergeni: glutine, uovo, latte, sesamo.",
 		},
 		{
