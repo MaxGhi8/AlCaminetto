@@ -13,6 +13,7 @@ export { default as HotBurgImage } from "./new_hamburger/HotBurg.png";
 export { default as PolloImage } from "./new_hamburger/Pollo.png";
 export { default as VegetarianoImage } from "./new_hamburger/Vegetariano.png";
 export { default as MonteboreBurgImage } from "./new_hamburger/MonteboreBurg.png";
+export { default as UDuppio2Image } from "./new_hamburger/UDuppio2.png";
 export { default as PiggyBurgImage } from "./new_hamburger/PiggyBurg.png";
 export { default as UovoBurgImage } from "./new_hamburger/UovoBurg.png";
 export { default as HotDogClassicImage } from "./new_hamburger/HotDogClassic.png";
