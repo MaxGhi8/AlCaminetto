@@ -1,6 +1,5 @@
-import { View, Text, Dimensions, Image } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
-import { useNavigation } from "@react-navigation/native";
 
 import {
 	BunetImage,
@@ -22,68 +21,64 @@ import {
 	PannacottaFruttiBoscoImage,
 } from "../assets";
 
-const DessertCard = ({
-	photo,
-	title,
-	description,
-	price,
-}: {
+const images: { [key: string]: any } = {
+	Bunet: BunetImage,
+	CheesecakeMandorle: CheesecakeMandorleImage,
+	CheesecakePistacchio: CheesecakePistacchioImage,
+	CheesecakeGianduiaLamponi: CheesecakeGianduiaLamponiImage,
+	CheesecakeLimone: CheesecakeLimoneImage,
+	Meringa: MeringaImage,
+	Tiramisu: TiramisuImage,
+	GelatoFragole: GelatoFragoleImage,
+	BavareseCaffe: BavareseCaffeImage,
+	BavareseCiliegie: BavareseCiliegieImage,
+	CrostataFrutta: CrostataFruttaImage,
+	Sfogliata: SfogliataImage,
+	ZuppaInglese: ZuppaIngleseImage,
+	TortaMele: TortaMeleImage,
+	Zuccotto: ZuccottoImage,
+	PannacottaCaramello: PannacottaCaramelloImage,
+	PannacottaFruttiBosco: PannacottaFruttiBoscoImage,
+};
+
+interface DessertCardProps {
 	photo: string;
 	title: string;
 	description: string;
 	price: string;
-}) => {
-	const navigation = useNavigation();
+}
 
-	const images = {
-		Bunet: BunetImage,
-		CheesecakeMandorle: CheesecakeMandorleImage,
-		CheesecakePistacchio: CheesecakePistacchioImage,
-		CheesecakeGianduiaLamponi: CheesecakeGianduiaLamponiImage,
-		CheesecakeLimone: CheesecakeLimoneImage,
-		Meringa: MeringaImage,
-		Tiramisu: TiramisuImage,
-		GelatoFragole: GelatoFragoleImage,
-		BavareseCaffe: BavareseCaffeImage,
-		BavareseCiliegie: BavareseCiliegieImage,
-		CrostataFrutta: CrostataFruttaImage,
-		Sfogliata: SfogliataImage,
-		ZuppaInglese: ZuppaIngleseImage,
-		TortaMele: TortaMeleImage,
-		Zuccotto: ZuccottoImage,
-		PannacottaCaramello: PannacottaCaramelloImage,
-		PannacottaFruttiBosco: PannacottaFruttiBoscoImage,
-	};
-
-	const windowWidth = Dimensions.get("window").width / 4;
-
-	return (
-		<View className="mt-3 flex-1 w-full rounded-lg px-3 border-2 border-[#292929] bg-[#1A1A1A] drop-shadow-xl">
-			<View className="flex-row flex-1 pt-2">
-				<Image
-					source={images[photo]}
-					className="items-center justify-center"
-					style={{
-						width: windowWidth,
-						height: windowWidth,
-						borderRadius: 10,
-						maxWidth: 200,
-					}}
-				/>
-				<View className="flex-col flex-1 pl-5">
-					<View className="items-center justify-center pt-1">
-						<Text className="text-xl font-bold text-white">{title}</Text>
+const DessertCard = React.memo(
+	({ photo, title, description, price }: DessertCardProps) => {
+		return (
+			<View
+				className="mb-4 w-full rounded-2xl overflow-hidden border-[0.5px] border-[#333] bg-[#1A1A1A]"
+				accessible={true}
+				accessibilityLabel={`${title}, price: ${price} Euro`}
+				accessibilityHint="Displays dessert details">
+				<View className="flex-row">
+					<View className="w-1/3 aspect-square">
+						<Image
+							source={images[photo]}
+							className="w-full h-full"
+							resizeMode="cover"
+						/>
 					</View>
-					<View className="items-start justify-center flex-1 pt-1">
-						<Text className="flex-1 text-white">{description}</Text>
-					</View>
-					<View className="items-end justify-end pb-1">
-						<Text className="text-white">€ {price}</Text>
+					<View className="flex-1 p-4 justify-between">
+						<View>
+							<Text className="text-lg font-bold text-white mb-1">{title}</Text>
+							<Text
+								className="text-gray-400 text-xs leading-4"
+								numberOfLines={3}>
+								{description}
+							</Text>
+						</View>
+						<Text className="text-white font-semibold self-end">€ {price}</Text>
 					</View>
 				</View>
 			</View>
-		</View>
-	);
-};
+		);
+	},
+);
 
 export default DessertCard;

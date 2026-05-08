@@ -198,8 +198,10 @@ const HamburgerItalian = () => {
 	]);
 
 	return (
-		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
-			<ScrollView className="flex-1 px-4">
+		<SafeAreaView className="bg-[#212121] flex-1">
+			<ScrollView
+				className="flex-1"
+				contentContainerStyle={{ paddingHorizontal: 16, paddingVertical: 20 }}>
 				{data.map((item, key) => (
 					<HamburgerCard
 						key={key}
@@ -214,9 +216,9 @@ const HamburgerItalian = () => {
 						patate={"Patate al forno"}
 					/>
 				))}
-				<View className="items-center justify-center pt-1 pb-2">
-					<Text className="text-center text-white">
-						Cliccare sulle schede per maggiori informazioni!
+				<View className="items-center justify-center pt-4 pb-10">
+					<Text className="text-center text-gray-500 text-xs tracking-widest uppercase">
+						Tocca una scheda per i dettagli
 					</Text>
 				</View>
 			</ScrollView>

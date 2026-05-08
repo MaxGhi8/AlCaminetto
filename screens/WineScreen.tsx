@@ -1,9 +1,12 @@
 import { Text, SafeAreaView, ScrollView, View } from "react-native";
-import React, { useLayoutEffect, useState } from "react";
-import { useNavigation } from "@react-navigation/native";
+import React, { useLayoutEffect } from "react";
+import { useNavigation, useRoute } from "@react-navigation/native";
 
-const WineEnglish = () => {
+const WineScreen = () => {
 	const navigation = useNavigation();
+	const route = useRoute();
+	const isItalian = route.name === "WineItalian";
+
 	useLayoutEffect(() => {
 		navigation.setOptions({
 			headerTitleAlign: "center",
@@ -16,7 +19,14 @@ const WineEnglish = () => {
 			headerTintColor: "white",
 			headerShadowVisible: false,
 		});
-	}, []);
+	}, [navigation]);
+
+	const labels = {
+		mainTitle: isItalian ? "LA NOSTRA CANTINA" : "Winery",
+		redTitle: isItalian ? "Vini Rossi:" : "Red wine:",
+		whiteTitle: isItalian ? "Vini Bianchi:" : "White wine:",
+		bulkTitle: isItalian ? "Vini sfusi in caraffa:" : "Bulk wine:",
+	};
 
 	const vini_rossi = [
 		{
@@ -33,13 +43,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "15,00",
 		},
-		// {
-		// 	title: "Barbera 'Vegia Rampana'",
-		// 	year: "2021",
-		// 	prod: "La Colombera",
-		// 	origin: "Terre Derthona",
-		// 	price: "15,00",
-		// },
 		{
 			title: "Barbera 'Canvera'",
 			year: "2021",
@@ -47,13 +50,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "13,00",
 		},
-		// {
-		// 	title: "Barbera 'Maior'",
-		// 	year: "2019",
-		// 	prod: "Cascina Giambolino",
-		// 	origin: "Terre Derthona",
-		// 	price: "18,00",
-		// },
 		{
 			title: "Barbera 'Territorio'",
 			year: "2020",
@@ -75,20 +71,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "17,00",
 		},
-		//{
-		//title: "Barbera 'Poggio del Rosso'",
-		//year: "2016",
-		//prod: "Claudio Mariotto",
-		//origin: "Terre Derthona",
-		//price: "22,00",
-		//},
-		// {
-		// 	title: "Barbera 'Poggio delle Amarene'",
-		// 	year: "2016",
-		// 	prod: "Boveri Luigi",
-		// 	origin: "Terre Derthona",
-		// 	price: "20,00",
-		// },
 		{
 			title: "Bonarda frizzante",
 			year: "2021",
@@ -96,13 +78,6 @@ const WineEnglish = () => {
 			origin: "Oltrepò pavese",
 			price: "15,00",
 		},
-		// {
-		// 	title: "Croatina dolce frizzante",
-		// 	year: "2021",
-		// 	prod: "Az. Agricola Prago",
-		// 	origin: "Oltrepò pavese",
-		// 	price: "13,00",
-		// },
 		{
 			title: "Barbera",
 			year: "2021",
@@ -117,13 +92,6 @@ const WineEnglish = () => {
 			origin: "Colli piacentini",
 			price: "15,00",
 		},
-		// {
-		// 	title: "Bonarda frizzante",
-		// 	year: "2021",
-		// 	prod: "Az. Agricola Passerini",
-		// 	origin: "Colli piacentini",
-		// 	price: "11,00",
-		// },
 	];
 
 	const vini_bianchi = [
@@ -141,13 +109,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "15,00",
 		},
-		// {
-		// 	title: "Cortese frizzante 'DonGion'",
-		// 	year: "2020",
-		// 	prod: "Cascina Giambolino",
-		// 	origin: "Terre Derthona",
-		// 	price: "15,00",
-		// },
 		{
 			title: "Cortese 'Meo' frizzante",
 			year: "2021",
@@ -169,13 +130,6 @@ const WineEnglish = () => {
 			origin: "Terre Derthona",
 			price: "25,00",
 		},
-		// {
-		// 	title: "Cortese 'Terre del prete' (fermo o vivace)",
-		// 	year: "2022",
-		// 	prod: "Boveri Luigi",
-		// 	origin: "Terre Derthona",
-		// 	price: "15,00",
-		// },
 		{
 			title: "Pinot nero frizzante",
 			year: "2022",
@@ -190,13 +144,6 @@ const WineEnglish = () => {
 			origin: "Oltrepò pavese",
 			price: "16,00",
 		},
-		// {
-		// 	title: "Chardonnay frizzante",
-		// 	year: "2022",
-		// 	prod: "Az. Agricola Prago",
-		// 	origin: "Oltrepò pavese",
-		// 	price: "13,00",
-		// },
 		{
 			title: "Riesling",
 			year: "2022",
@@ -213,46 +160,53 @@ const WineEnglish = () => {
 		},
 	];
 
-	const prosecchi = [
-		// { title: "Prosecco 'Extra dry doc' millesimato", price: "22,00" },
-		{ title: "Prosecco 'Glera extra dry'", price: "18,00" },
-	];
+	const prosecchi = [{ title: "Prosecco 'Glera extra dry'", price: "18,00" }];
 
-	const vini_sfusi = [
-		{ title: "Red Barbera 0,25L", price: "3,00" },
-		{ title: "Red Barbera 0,5L", price: "6,00" },
-		{ title: "White Cortese 0,25L", price: "4,00" },
-		{ title: "White Cortese 0,5L", price: "7,00" },
-		{ title: "Wine glass", price: "4,00" },
-	];
+	const vini_sfusi = isItalian
+		? [
+				{ title: "Rosso Barbera 0,25L", price: "3,00" },
+				{ title: "Rosso Barbera 0,5L", price: "6,00" },
+				{ title: "Bianco Cortese 0,25L", price: "4,00" },
+				{ title: "Bianco Cortese 0,5L", price: "7,00" },
+				{ title: "Calice di vino", price: "4,00" },
+			]
+		: [
+				{ title: "Red Barbera 0,25L", price: "3,00" },
+				{ title: "Red Barbera 0,5L", price: "6,00" },
+				{ title: "White Cortese 0,25L", price: "4,00" },
+				{ title: "White Cortese 0,5L", price: "7,00" },
+				{ title: "Wine glass", price: "4,00" },
+			];
 
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
 			<ScrollView className="w-full">
 				<View className="items-center justify-center flex-1 pb-3">
-					<Text className="mt-4 text-2xl font-bold text-white">Winery</Text>
+					<Text className="mt-6 mb-8 text-3xl font-bold text-center text-white">
+						{labels.mainTitle}
+					</Text>
 				</View>
 
 				{/* Schema puntato per elencare i vini rossi*/}
-				<View className="px-5 pb-2">
-					<Text className="text-2xl font-bold text-white underline">
-						Red wine:
+				<View className="px-5">
+					<Text className="mb-4 text-xs font-bold tracking-widest text-gray-400 uppercase">
+						{labels.redTitle}
 					</Text>
 				</View>
 				{vini_rossi.map((item, key) => (
-					<View className="flex-col w-full px-5 pb-3" key={key}>
-						<View className="flex-row items-start justify-start">
+					<View className="flex-col w-full px-5 mb-6" key={key}>
+						<View className="flex-row items-start justify-between">
 							<View className="flex-1">
-								<Text className="text-base text-white">
-									{"\u2022"} {item.title}
+								<Text className="text-base font-medium text-white">
+									{item.title}
 								</Text>
 							</View>
 							<View className="justify-end">
-								<Text className="text-base text-white"> € {item.price}</Text>
+								<Text className="text-base text-white">€ {item.price}</Text>
 							</View>
 						</View>
-						<View className="flex-col pl-5">
-							<Text className="text-sm text-white">
+						<View className="flex-col">
+							<Text className="text-sm text-gray-500">
 								{item.prod}, {item.origin}
 							</Text>
 						</View>
@@ -260,58 +214,58 @@ const WineEnglish = () => {
 				))}
 
 				{/* Schema puntato per elencare i vini bianchi*/}
-				<View className="px-5 py-2">
-					<Text className="text-2xl font-bold text-white underline">
-						White wine:
+				<View className="px-5 mt-4">
+					<Text className="mb-4 text-xs font-bold tracking-widest text-gray-400 uppercase">
+						{labels.whiteTitle}
 					</Text>
 				</View>
 				{vini_bianchi.map((item, key) => (
-					<View className="flex-col w-full px-5 pb-3" key={key}>
-						<View className="flex-row items-start justify-start">
+					<View className="flex-col w-full px-5 mb-6" key={key}>
+						<View className="flex-row items-start justify-between">
 							<View className="flex-1">
-								<Text className="text-base text-white">
-									{"\u2022"} {item.title}
+								<Text className="text-base font-medium text-white">
+									{item.title}
 								</Text>
 							</View>
 							<View className="justify-end">
-								<Text className="text-base text-white"> € {item.price}</Text>
+								<Text className="text-base text-white">€ {item.price}</Text>
 							</View>
 						</View>
-						<View className="flex-col pl-5">
-							<Text className="text-sm text-white">
+						<View className="flex-col">
+							<Text className="text-sm text-gray-500">
 								{item.prod}, {item.origin}
 							</Text>
 						</View>
 					</View>
 				))}
 				{prosecchi.map((item, key) => (
-					<View className="flex-row px-5 pb-3" key={key}>
+					<View className="flex-row px-5 mb-6" key={key}>
 						<View className="items-start justify-start flex-1">
-							<Text className="text-base text-white">
-								{"\u2022"} {item.title}
+							<Text className="text-base font-medium text-white">
+								{item.title}
 							</Text>
 						</View>
 						<View className="justify-end">
-							<Text className="text-base text-white"> € {item.price}</Text>
+							<Text className="text-base text-white">€ {item.price}</Text>
 						</View>
 					</View>
 				))}
 
 				{/* Schema puntato per elencare i vini sfusi*/}
-				<View className="px-5 py-2">
-					<Text className="text-2xl font-bold text-white underline">
-						Bulk wine:
+				<View className="px-5 mt-4">
+					<Text className="mb-4 text-xs font-bold tracking-widest text-gray-400 uppercase">
+						{labels.bulkTitle}
 					</Text>
 				</View>
 				{vini_sfusi.map((item, key) => (
-					<View className="flex-row px-5 pb-3" key={key}>
+					<View className="flex-row px-5 mb-6" key={key}>
 						<View className="items-start justify-start flex-1">
-							<Text className="text-base text-white">
-								{"\u2022"} {item.title}
+							<Text className="text-base font-medium text-white">
+								{item.title}
 							</Text>
 						</View>
 						<View className="justify-end">
-							<Text className="text-base text-white"> € {item.price}</Text>
+							<Text className="text-base text-white">€ {item.price}</Text>
 						</View>
 					</View>
 				))}
@@ -320,4 +274,4 @@ const WineEnglish = () => {
 	);
 };
 
-export default WineEnglish;
+export default WineScreen;

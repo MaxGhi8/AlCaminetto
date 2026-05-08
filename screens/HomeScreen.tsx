@@ -5,8 +5,9 @@ import {
 	Dimensions,
 	TouchableOpacity,
 	Image,
+	Platform,
 } from "react-native";
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { useNavigation } from "@react-navigation/native";
 import HomeCard from "../components/HomeCard";
 import Carousel from "react-native-reanimated-carousel";
@@ -46,7 +47,7 @@ const HomeScreen = ({}) => {
 	}, []);
 
 	const d = new Date(); // Get the current date
-	const phoneNumber = useState("0131877653");
+	const phoneNumber = "0131877653";
 
 	const language = [
 		{ title: "Italiano", flag: "it", destination: "Italian" },
@@ -89,6 +90,9 @@ const HomeScreen = ({}) => {
 		);
 	};
 
+	const isWeb = Platform.OS === "web";
+	const containerWidth = isWeb ? 500 : Dimensions.get("window").width;
+
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
 			{/* Carousel */}
@@ -100,7 +104,7 @@ const HomeScreen = ({}) => {
 					ref={useRef(null)}
 					renderItem={RenderItem}
 					loop
-					width={Dimensions.get("window").width}
+					width={containerWidth}
 					height={Dimensions.get("window").height / 3.5}
 					autoPlay={true}
 					scrollAnimationDuration={2500}
@@ -111,7 +115,7 @@ const HomeScreen = ({}) => {
 				{/* </GestureHandlerRootView> */}
 			</View>
 			{/* Menu */}
-			<View className="flex-1 w-full max-w-screen-lg">
+			<View className="flex-1 w-full max-w-screen-lg px-4 mb-6">
 				<View className="items-center py-2">
 					<Text className="text-3xl font-bold text-white underline underline-offset-2">
 						Menù:
@@ -130,36 +134,40 @@ const HomeScreen = ({}) => {
 				</View>
 			</View>
 
-			<View className="relative bottom-3">
+			<View className="w-full max-w-screen-lg px-4 mb-10">
 				{/* Call us */}
-				<View className="items-center justify-center px-4 pt-2">
+				<View className="items-center justify-center mb-6">
 					<TouchableOpacity
-						className="rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] drop-shadow-x"
+						className="w-full rounded-2xl px-3 py-4 border-[0.5px] border-[#333] bg-[#1A1A1A]"
 						onPress={() => {
 							Linking.openURL(`tel:${phoneNumber}`);
 						}}>
 						<View className="flex-row items-center justify-center space-x-6">
-							<Text className="text-white">Contat us for reservation</Text>
+							<Text className="text-white text-lg">
+								Contact us for reservation
+							</Text>
 							<Feather name="phone-call" size={22} color="white" />
 						</View>
 					</TouchableOpacity>
 				</View>
 
 				{/* Indirizzo */}
-				<View className="items-center justify-center px-4 py-4">
+				<View className="items-center justify-center mb-6">
 					<TouchableOpacity
-						className="rounded-lg px-3 py-2 border-2 border-[#292929] bg-[#1A1A1A] drop-shadow-x"
+						className="w-full rounded-2xl px-3 py-4 border-[0.5px] border-[#333] bg-[#1A1A1A]"
 						onPress={() => {
 							Linking.openURL(
-								"https://www.google.it/maps/place/Ristorante+Al+Caminetto/@44.7805366,8.9953796,17z/data=!3m1!4b1!4m6!3m5!1s0x47875b3b5ed37021:0xe1bed66358d287c6!8m2!3d44.7805366!4d8.9979545!16s%2Fg%2F1tf3y7t_?entry=ttu"
+								"https://www.google.it/maps/place/Ristorante+Al+Caminetto/@44.7805366,8.9953796,17z/data=!3m1!4b1!4m6!3m5!1s0x47875b3b5ed37021:0xe1bed66358d287c6!8m2!3d44.7805366!4d8.9979545!16s%2Fg%2F1tf3y7t_?entry=ttu",
 							);
 						}}>
 						<View className="flex-row items-center justify-center space-x-4">
-							<View>
-								<View className="items-center justify-center">
-									<Text className="text-white">Restaurant "Al Caminetto":</Text>
+							<View className="flex-1">
+								<View className="items-center justify-center mb-1">
+									<Text className="text-white font-bold">
+										Restaurant "Al Caminetto":
+									</Text>
 								</View>
-								<Text className="text-white">
+								<Text className="text-white text-center">
 									Piemonte, IT - Garbagna, AL - Via XIV Marzo 25.
 								</Text>
 							</View>
@@ -175,7 +183,7 @@ const HomeScreen = ({}) => {
 					<TouchableOpacity
 						onPress={() => {
 							Linking.openURL(
-								"https://instagram.com/rist_alcaminetto?igshid=MzNlNGNkZWQ4Mg=="
+								"https://instagram.com/rist_alcaminetto?igshid=MzNlNGNkZWQ4Mg==",
 							);
 						}}>
 						<View className="flex-row items-center justify-center space-x-2">
@@ -187,7 +195,7 @@ const HomeScreen = ({}) => {
 					<TouchableOpacity
 						onPress={() => {
 							Linking.openURL(
-								"https://www.facebook.com/profile.php?id=100042529223639"
+								"https://www.facebook.com/profile.php?id=100042529223639",
 							);
 						}}>
 						<View className="flex-row items-center justify-center space-x-2">

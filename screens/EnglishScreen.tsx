@@ -9,7 +9,6 @@ import {
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import {
-	SfondoMenu,
 	SfondoHamburger,
 	SfondoCantina,
 	SfondoDessert,
@@ -32,108 +31,81 @@ const English = () => {
 		});
 	}, []);
 
-	const d = new Date(); // Get the current date
-
 	return (
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center">
-			<ScrollView className="flex flex-col w-full max-w-screen-lg px-4 space-y-5">
-				{/* {d.getDay() === 5 ? ( */}
-				{/* // Hamburger */}
-				<View className="flex-1 w-full">
-					<TouchableOpacity
-						className="relative w-full rounded-3xl h-44 bg-[#1A1A1A]"
-						onPress={() => navigation.navigate("HamburgerEnglish")}>
-						<ImageBackground
-							className="absolute w-full h-full opacity-40 rounded-3xl"
-							source={SfondoHamburger}
-							imageStyle={{ borderRadius: 24 }}
-						/>
-						<View className="items-center justify-center flex-1 w-full rounded-3xl">
-							<Text className="text-4xl font-bold tracking-widest text-white">
-								Hamburger
-							</Text>
-						</View>
-					</TouchableOpacity>
-				</View>
-				{/* ) : (
-					// Menu
+			<ScrollView className="flex flex-col w-full max-w-screen-lg px-4 pt-4">
+				<View className="space-y-6">
+					{/* Hamburger */}
 					<View className="flex-1 w-full">
 						<TouchableOpacity
-							className="w-full rounded-3xl"
-							style={{
-								backgroundColor: "#1A1A1A",
-								height: 180,
-								position: "relative",
-							}}
-							onPress={() => navigation.navigate("MenuEnglish" as never)}>
+							className="relative w-full rounded-2xl h-44 bg-[#1A1A1A] border-[0.5px] border-[#333]"
+							onPress={() => navigation.navigate("HamburgerEnglish" as never)}>
 							<ImageBackground
-								className="w-full"
-								source={SfondoMenu}
-								imageStyle={{ borderRadius: 24 }}
-								style={{
-									height: 180,
-									opacity: 0.35,
-									position: "absolute",
-								}}
+								className="absolute w-full h-full opacity-40 rounded-2xl"
+								source={SfondoHamburger}
+								imageStyle={{ borderRadius: 16 }}
 							/>
-							<View className="items-center justify-center flex-1 w-full rounded-3xl">
+							<View className="items-center justify-center flex-1 w-full rounded-2xl">
 								<Text className="text-4xl font-bold tracking-widest text-white">
-									Menu
+									Hamburger
 								</Text>
 							</View>
 						</TouchableOpacity>
 					</View>
-				)} */}
-				{/* Dolci */}
-				<View className="flex-1 w-full">
-					<TouchableOpacity
-						className="relative w-full rounded-3xl h-44 bg-[#1A1A1A]"
-						onPress={() => navigation.navigate("DessertEnglish")}>
-						<ImageBackground
-							className="absolute w-full h-full opacity-40 rounded-3xl"
-							source={SfondoDessert}
-							imageStyle={{ borderRadius: 24 }}
-						/>
-						<View className="items-center justify-center flex-1 w-full rounded-3xl">
-							<Text className="text-4xl font-bold tracking-widest text-white">
-								Desserts
-							</Text>
-						</View>
-					</TouchableOpacity>
-				</View>
-				{/* Bevande */}
-				<View className="flex-1 w-full">
-					<TouchableOpacity
-						className="relative w-full rounded-3xl h-44 bg-[#1A1A1A]"
-						onPress={() => navigation.navigate("DrinkEnglish")}>
-						<ImageBackground
-							className="absolute w-full h-full opacity-40 rounded-3xl"
-							source={SfondoDrink}
-							imageStyle={{ borderRadius: 24 }}
-						/>
-						<View className="items-center justify-center flex-1 w-full rounded-3xl">
-							<Text className="text-4xl font-bold tracking-widest text-white">
-								Drinks
-							</Text>
-						</View>
-					</TouchableOpacity>
-				</View>
-				{/* Cantina */}
-				<View className="flex-1 w-full">
-					<TouchableOpacity
-						className="relative w-full rounded-3xl h-44 bg-[#1A1A1A]"
-						onPress={() => navigation.navigate("WineEnglish")}>
-						<ImageBackground
-							className="absolute w-full h-full opacity-40 rounded-3xl"
-							source={SfondoCantina}
-							imageStyle={{ borderRadius: 24 }}
-						/>
-						<View className="items-center justify-center flex-1 w-full rounded-3xl">
-							<Text className="text-4xl font-bold tracking-widest text-white">
-								Winery
-							</Text>
-						</View>
-					</TouchableOpacity>
+
+					{/* Dolci */}
+					<View className="flex-1 w-full">
+						<TouchableOpacity
+							className="relative w-full rounded-2xl h-44 bg-[#1A1A1A] border-[0.5px] border-[#333]"
+							onPress={() => navigation.navigate("DessertEnglish" as never)}>
+							<ImageBackground
+								className="absolute w-full h-full opacity-40 rounded-2xl"
+								source={SfondoDessert}
+								imageStyle={{ borderRadius: 16 }}
+							/>
+							<View className="items-center justify-center flex-1 w-full rounded-2xl">
+								<Text className="text-4xl font-bold tracking-widest text-white">
+									Desserts
+								</Text>
+							</View>
+						</TouchableOpacity>
+					</View>
+
+					{/* Bevande */}
+					<View className="flex-1 w-full">
+						<TouchableOpacity
+							className="relative w-full rounded-2xl h-44 bg-[#1A1A1A] border-[0.5px] border-[#333]"
+							onPress={() => navigation.navigate("DrinkEnglish" as never)}>
+							<ImageBackground
+								className="absolute w-full h-full opacity-40 rounded-2xl"
+								source={SfondoDrink}
+								imageStyle={{ borderRadius: 16 }}
+							/>
+							<View className="items-center justify-center flex-1 w-full rounded-2xl">
+								<Text className="text-4xl font-bold tracking-widest text-white">
+									Drinks
+								</Text>
+							</View>
+						</TouchableOpacity>
+					</View>
+
+					{/* Cantina */}
+					<View className="flex-1 w-full mb-6">
+						<TouchableOpacity
+							className="relative w-full rounded-2xl h-44 bg-[#1A1A1A] border-[0.5px] border-[#333]"
+							onPress={() => navigation.navigate("WineEnglish" as never)}>
+							<ImageBackground
+								className="absolute w-full h-full opacity-40 rounded-2xl"
+								source={SfondoCantina}
+								imageStyle={{ borderRadius: 16 }}
+							/>
+							<View className="items-center justify-center flex-1 w-full rounded-2xl">
+								<Text className="text-4xl font-bold tracking-widest text-white">
+									Winery
+								</Text>
+							</View>
+						</TouchableOpacity>
+					</View>
 				</View>
 			</ScrollView>
 		</SafeAreaView>

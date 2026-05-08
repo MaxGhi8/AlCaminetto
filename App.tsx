@@ -1,4 +1,5 @@
 import React from "react";
+import { View, Platform } from "react-native";
 import { NativeWindStyleSheet } from "nativewind";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -19,15 +20,11 @@ import DrinkItalian from "./screens/DrinkItalianScreen";
 import DrinkEnglish from "./screens/DrinkEnglishScreen";
 // import DrinkDeutsch from "./screens/DrinkDeutschScreen";
 // import DrinkFrancais from "./screens/DrinkFrancaisScreen";
-import WineItalian from "./screens/WineItalianScreen";
-import WineEnglish from "./screens/WineEnglishScreen";
-// import WineDeutsch from "./screens/WineDeutschScreen";
-// import WineFrancais from "./screens/WineFrancaisScreen";
+import WineScreen from "./screens/WineScreen";
 import HamburgerItalian from "./screens/HamburgerItalianScreen";
 import HamburgerEnglish from "./screens/HamburgerEnglishScreen";
 // import HamburgerDeutsch from "./screens/HamburgerDeutschScreen";
 // import HamburgerFrancais from "./screens/HamburgerFrancaisScreen";
-import HamburgerScreen from "./screens/HamburgerScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -35,7 +32,10 @@ export default function App() {
 	NativeWindStyleSheet.setOutput({
 		default: "native",
 	});
-	return (
+
+	const isWeb = Platform.OS === "web";
+
+	const AppContent = (
 		<NavigationContainer>
 			<Stack.Navigator initialRouteName="Home">
 				<Stack.Screen
@@ -125,12 +125,12 @@ export default function App() {
 				/> */}
 				<Stack.Screen
 					name="WineItalian"
-					component={WineItalian}
+					component={WineScreen}
 					options={{ title: "Al Caminetto" }}
 				/>
 				<Stack.Screen
 					name="WineEnglish"
-					component={WineEnglish}
+					component={WineScreen}
 					options={{ title: "Al Caminetto" }}
 				/>
 				{/* <Stack.Screen
@@ -163,12 +163,33 @@ export default function App() {
 					component={HamburgerFrancais}
 					options={{ title: "Al Caminetto" }}
 				/> */}
-				<Stack.Screen
-					name="Hamburger"
-					component={HamburgerScreen}
-					options={{ title: "Al Caminetto" }}
-				/>
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
+
+	if (isWeb) {
+		return (
+			<View
+				style={{ flex: 1, backgroundColor: "#0F0F0F", alignItems: "center" }}>
+				<View
+					style={{
+						flex: 1,
+						width: "100%",
+						maxWidth: 500,
+						borderLeftWidth: 1,
+						borderRightWidth: 1,
+						borderColor: "#333",
+						backgroundColor: "#212121",
+						shadowColor: "#000",
+						shadowOffset: { width: 0, height: 0 },
+						shadowOpacity: 0.5,
+						shadowRadius: 10,
+					}}>
+					{AppContent}
+				</View>
+			</View>
+		);
+	}
+
+	return AppContent;
 }

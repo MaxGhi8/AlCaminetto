@@ -56,35 +56,45 @@ const DrinkItalian = () => {
 		<SafeAreaView className="bg-[#212121] flex-1 items-center justify-center pb-3">
 			<ScrollView className="w-full">
 				<View className="items-center justify-center flex-1 pb-3">
-					<Text className="mt-4 text-2xl font-bold text-white">BEVANDE</Text>
+					<Text className="text-3xl font-bold text-white text-center mt-6 mb-8">
+						BEVANDE
+					</Text>
+				</View>
+
+				<View className="px-5">
+					<Text className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">
+						BEVANDE
+					</Text>
 				</View>
 				{/* Schema puntato per elencare i dolci*/}
 				{bevande.map((item, key) => (
-					<View className="flex-row px-5 pb-3" key={key}>
+					<View className="flex-row px-5 mb-6 justify-between" key={key}>
 						<View className="items-start justify-start flex-1">
-							<Text className="text-base text-white">
-								{"\u2022"} {item.title}
+							<Text className="text-base font-medium text-white">
+								{item.title}
 							</Text>
 						</View>
 						<View className="justify-end">
-							<Text className="text-base text-white"> € {item.price}</Text>
+							<Text className="text-base text-white">€ {item.price}</Text>
 						</View>
 					</View>
 				))}
 
-				<View className="items-center justify-center flex-1 pt-3">
-					<Text className="mt-4 text-2xl font-bold text-white">CAFFE'</Text>
+				<View className="px-5 mt-4">
+					<Text className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">
+						CAFFETERIA
+					</Text>
 				</View>
 				{/* Schema puntato per elencare i caffe*/}
 				{caffe.map((item, key) => (
-					<View className="flex-row px-5 pb-3" key={key}>
+					<View className="flex-row px-5 mb-6 justify-between" key={key}>
 						<View className="items-start justify-start flex-1">
-							<Text className="text-base text-white">
-								{"\u2022"} {item.title}
+							<Text className="text-base font-medium text-white">
+								{item.title}
 							</Text>
 						</View>
 						<View className="justify-end">
-							<Text className="text-base text-white"> € {item.price}</Text>
+							<Text className="text-base text-white">€ {item.price}</Text>
 						</View>
 					</View>
 				))}
